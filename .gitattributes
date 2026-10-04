@@ -1,0 +1,4 @@
+# Normalize text files while preserving binary fixture bytes.
+* text=auto eol=lf
+*.dcm binary
+*.dicom binary
