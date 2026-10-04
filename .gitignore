@@ -66,3 +66,58 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Internal control/handover material: keep out of the repository entirely.
+/control/
+/.local/
+/private/
+/handover/
+/DICOMflux-private/
+/00_START_HERE.md
+/DF0_Coding_Agent_Execution_Prompt_*.md
+/DICOMflux_*Handover*.zip*
+/DICOMflux_*Review*.zip*
+/DICOMflux_*Authorised_Workspace*.zip*
+
+# Out-of-tree CMake build/install locations and user settings.
+/build/
+/build-*/
+/cmake-build-*/
+/out/
+/install/
+/stage/
+/dist/
+CMakeUserPresets.json
+compile_commands.json
+
+# Android/Gradle outputs and workstation-specific settings.
+.gradle/
+.cxx/
+.externalNativeBuild/
+local.properties
+/bindings/android/**/build/
+
+# Python environments and generated files.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Unsanitised generated evidence remains out of tracked docs/evidence.
+/artifacts/
+/test-results/
+/coverage/
+
+# Local editor/OS state and credentials.
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
