@@ -4,6 +4,7 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 include(CTest)
 option(DICOMFLUX_BUILD_FUZZER "Build the DF-0 libFuzzer harness" OFF)
+option(DICOMFLUX_BUILD_FOUNDATION_FUZZER "Build the DF-A002 foundation libFuzzer harness" OFF)
 set(DICOMFLUX_FUZZER_RUNTIME "" CACHE FILEPATH "Optional prequalified standalone libFuzzer archive")
 set(DICOMFLUX_SANITIZER "none" CACHE STRING "none, address, undefined or thread")
 set_property(CACHE DICOMFLUX_SANITIZER PROPERTY STRINGS none address undefined thread)
@@ -87,4 +88,77 @@ if(DICOMFLUX_BUILD_FUZZER)
     target_link_options(df0_fuzz PRIVATE -fsanitize=fuzzer)
   endif()
   df_qualify_target(df0_fuzz)
+endif()
+
+# Real DF-A002 foundation, deliberately separate from the DF-0 prototype.
+add_library(df_foundation_objects OBJECT src/foundation/core.cpp src/c_api/foundation.cpp)
+set_target_properties(df_foundation_objects PROPERTIES POSITION_INDEPENDENT_CODE YES
+  CXX_VISIBILITY_PRESET hidden VISIBILITY_INLINES_HIDDEN YES)
+target_compile_definitions(df_foundation_objects PRIVATE DICOMFLUX_FOUNDATION_BUILD)
+target_include_directories(df_foundation_objects PRIVATE include)
+df_qualify_target(df_foundation_objects)
+add_library(dicomflux_foundation SHARED $<TARGET_OBJECTS:df_foundation_objects>)
+add_library(DICOMflux::foundation ALIAS dicomflux_foundation)
+set_target_properties(dicomflux_foundation PROPERTIES EXPORT_NAME foundation
+  CXX_VISIBILITY_PRESET hidden VISIBILITY_INLINES_HIDDEN YES)
+target_include_directories(dicomflux_foundation PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+df_qualify_target(dicomflux_foundation)
+if(APPLE)
+  target_link_options(dicomflux_foundation PRIVATE
+    "LINKER:-exported_symbols_list,${CMAKE_CURRENT_SOURCE_DIR}/cmake/foundation.exports.darwin")
+elseif(UNIX)
+  target_link_options(dicomflux_foundation PRIVATE
+    "LINKER:--version-script=${CMAKE_CURRENT_SOURCE_DIR}/cmake/foundation.exports")
+endif()
+install(TARGETS dicomflux_foundation EXPORT DICOMfluxFoundationTargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR} LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+install(FILES include/dicomflux/foundation.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/dicomflux)
+install(EXPORT DICOMfluxFoundationTargets NAMESPACE DICOMflux::
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/DICOMfluxFoundation)
+configure_package_config_file(cmake/DICOMfluxFoundationConfig.cmake.in
+  "${CMAKE_CURRENT_BINARY_DIR}/DICOMfluxFoundationConfig.cmake"
+  INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/DICOMfluxFoundation)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/DICOMfluxFoundationConfig.cmake"
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/DICOMfluxFoundation)
+execute_process(COMMAND git rev-parse HEAD WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+  OUTPUT_VARIABLE df_foundation_head OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_QUIET)
+set(df_foundation_hashes "{}")
+foreach(input include/dicomflux/foundation.h src/foundation/core.hpp
+              src/foundation/core.cpp src/c_api/foundation.cpp)
+  file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/${input}" digest)
+  string(JSON df_foundation_hashes SET "${df_foundation_hashes}" "${input}" "\"${digest}\"")
+endforeach()
+configure_file(cmake/foundation-capabilities.json.in
+  "${CMAKE_CURRENT_BINARY_DIR}/foundation-capabilities.json" @ONLY)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/foundation-capabilities.json"
+  DESTINATION ${CMAKE_INSTALL_DATADIR}/dicomflux)
+if(BUILD_TESTING)
+  add_executable(df1_foundation_tests tests/foundation/core_tests.cpp $<TARGET_OBJECTS:df_foundation_objects>)
+  target_include_directories(df1_foundation_tests PRIVATE include src/foundation)
+  target_link_libraries(df1_foundation_tests PRIVATE Threads::Threads)
+  df_qualify_target(df1_foundation_tests)
+  add_test(NAME df1_foundation COMMAND df1_foundation_tests)
+endif()
+if(DICOMFLUX_BUILD_FOUNDATION_FUZZER)
+  if(NOT CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    message(FATAL_ERROR "The foundation libFuzzer witness requires Clang")
+  endif()
+  add_executable(df1_foundation_fuzz fuzz/foundation_core.cpp $<TARGET_OBJECTS:df_foundation_objects>)
+  target_include_directories(df1_foundation_fuzz PRIVATE include src/foundation)
+  target_compile_options(df_foundation_objects PRIVATE -fsanitize=fuzzer-no-link)
+  target_compile_options(df1_foundation_fuzz PRIVATE -fsanitize=fuzzer-no-link)
+  # The shared library also contains instrumented objects in this fuzz-only build.
+  target_link_options(dicomflux_foundation PRIVATE -fsanitize=fuzzer-no-link)
+  if(DICOMFLUX_FUZZER_RUNTIME)
+    if(NOT EXISTS "${DICOMFLUX_FUZZER_RUNTIME}")
+      message(FATAL_ERROR "Supplied libFuzzer archive is missing")
+    endif()
+    target_link_libraries(df1_foundation_fuzz PRIVATE "${DICOMFLUX_FUZZER_RUNTIME}")
+  else()
+    target_link_options(df1_foundation_fuzz PRIVATE -fsanitize=fuzzer)
+  endif()
+  df_qualify_target(df1_foundation_fuzz)
 endif()

@@ -1,0 +1,9 @@
+{
+  global:
+    dicomflux_query_abi;
+    dicomflux_context_create;
+    dicomflux_context_retain;
+    dicomflux_context_release;
+    dicomflux_error_copy;
+  local: *;
+};
