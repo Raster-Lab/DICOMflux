@@ -1,0 +1,30 @@
+{
+  "captured_before_execution": "2026-10-05T15:29:34.706634+00:00",
+  "repo": "${SOURCE}",
+  "head": "f8515e56f7064289a6e4e29a0180760d99b7107c",
+  "head_tree": "64af80b83a9c41c1c8d523fb44db59bd2ef3cb89",
+  "branch": "codex/df1-foundation-core",
+  "state": "M CMakeLists.txt\n?? cmake/DICOMfluxFoundationConfig.cmake.in\n?? cmake/foundation-capabilities.json.in\n?? cmake/foundation.exports\n?? cmake/foundation.exports.darwin\n?? docs/architecture/foundation-core.md\n?? fuzz/foundation_core.cpp\n?? include/dicomflux/foundation.h\n?? src/c_api/foundation.cpp\n?? src/foundation/core.cpp\n?? src/foundation/core.hpp\n?? tests/foundation/core_tests.cpp\n?? tests/foundation_consumer/CMakeLists.txt\n?? tests/foundation_consumer/consumer.c\n?? tests/foundation_consumer/consumer.cpp\n?? tools/check_foundation_boundary.py\n?? tools/run_foundation_suite.py",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "runner_optimize": 0,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "tool_sha256": {
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake": "9b0fd29d7e7a2adc331fd9b866fe1b1b6f7f52d06dec66c643762988fb8a8f22",
+    "${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja": "78db38d68dde4904f4a7a9cae2dfd0ef47f5f00e2ec88462b0f24d85ac610586",
+    "${PYTHON_RUNTIME}/bin/python3.12": "5ccd02f7849086e9314db5778ba9085c10a7dd3879c949626f2cf838294c7325",
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest": "af309611b696be7533737d9838ca1df35fdc020ea7474fb71a051f1539581473",
+    "${PRIVATE_WORK}/tooling/libfuzzer-build/libFuzzer.a": "177a12572bb866cde6fc0c99a590482d8759ff141f30659186e38c83ea8b21ee",
+    "/usr/bin/clang": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2",
+    "/usr/bin/clang++": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+  },
+  "configurations": [
+    "host"
+  ],
+  "sanitizer_environment": {
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1",
+    "ASAN_OPTIONS": "abort_on_error=1:allocator_may_return_null=1",
+    "TSAN_OPTIONS": "halt_on_error=1"
+  },
+  "scope": "Auxiliary host only; not Linux, Android/JNI or Pi qualification"
+}

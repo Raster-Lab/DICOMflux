@@ -1,0 +1,21 @@
+{
+  "authority": "DF-A002",
+  "scope": "foundation core only; partial DF-W06",
+  "experimental_abi": {"major": 0, "minor": 1, "stable_release": false},
+  "git_head_at_configure": "@df_foundation_head@",
+  "git_head_alone_is_not_content_identity": true,
+  "source_sha256": @df_foundation_hashes@,
+  "compiler": "@CMAKE_CXX_COMPILER_ID@ @CMAKE_CXX_COMPILER_VERSION@",
+  "language": {"c": 11, "cxx": 20},
+  "functions": ["dicomflux_query_abi", "dicomflux_context_create", "dicomflux_context_retain", "dicomflux_context_release", "dicomflux_error_copy"],
+  "operations": ["abi query", "context lifetime", "bounded diagnostic copy"],
+  "sop_profiles": [],
+  "transfer_syntaxes_by_direction": {},
+  "codecs": [],
+  "dicom_read_write": false,
+  "networking": false,
+  "public_cancellation": false,
+  "third_party_dicom_backends": [],
+  "consumer_platform_qualification": "deferred_open_not_passed",
+  "limitation": "DF-R004 partial build identity; no runtime capabilities API, writer or object validation"
+}

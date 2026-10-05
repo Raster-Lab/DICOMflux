@@ -1,0 +1,26 @@
+{
+  "authority": "DF-A002",
+  "scope": "foundation core only; partial DF-W06",
+  "experimental_abi": {"major": 0, "minor": 1, "stable_release": false},
+  "git_head_at_configure": "f8515e56f7064289a6e4e29a0180760d99b7107c",
+  "git_head_alone_is_not_content_identity": true,
+  "source_sha256": {
+  "include/dicomflux/foundation.h" : "eae82c8230c3fba17f4a94c083bbba575fe52a34c0f9990676da6088d7da3384",
+  "src/c_api/foundation.cpp" : "ca43f8f8acb05ba932dc55086e6b67a46f6276772f210f921f71a0c2cf74c218",
+  "src/foundation/core.cpp" : "61ef1e7da658a8e5399ce6c75c8b1ae9191e6a358af87c69249d453009e4c12e",
+  "src/foundation/core.hpp" : "33254fba494c8108f49b14d92556404dd29f429c9c96242da040bc3f9bb5908d"
+},
+  "compiler": "AppleClang 21.0.0.21000099",
+  "language": {"c": 11, "cxx": 20},
+  "functions": ["dicomflux_query_abi", "dicomflux_context_create", "dicomflux_context_retain", "dicomflux_context_release", "dicomflux_error_copy"],
+  "operations": ["abi query", "context lifetime", "bounded diagnostic copy"],
+  "sop_profiles": [],
+  "transfer_syntaxes_by_direction": {},
+  "codecs": [],
+  "dicom_read_write": false,
+  "networking": false,
+  "public_cancellation": false,
+  "third_party_dicom_backends": [],
+  "consumer_platform_qualification": "deferred_open_not_passed",
+  "limitation": "DF-R004 partial build identity; no runtime capabilities API, writer or object validation"
+}

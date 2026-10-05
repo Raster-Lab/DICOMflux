@@ -1,0 +1,15 @@
+{
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/validate_profile_inventory.py",
+    "--inventory",
+    "${SOURCE}/build/df0-regression-inputs/tmp4mmdryoh/bad-profile-0040-0555-1.json"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/validate_profile_inventory.py\", line 111, in <module>\n    main()\n  File \"${SOURCE}/tools/validate_profile_inventory.py\", line 47, in main\n    validate_type2_prescriptions(p)\n  File \"${SOURCE}/tools/validate_profile_inventory.py\", line 26, in validate_type2_prescriptions\n    check(not re.search(r'(reject|fail)[^.;]*\\bempty\\b', negative.replace('non-empty', 'populated')),\n  File \"${SOURCE}/tools/validate_profile_inventory.py\", line 5, in check\n    raise RuntimeError(str(message))\nRuntimeError: PHOTO-Acquisition_Context-C.7.6.14-1-000: Type 2 acceptance rejects empty values\n",
+  "expected_exit_code": 1,
+  "kind": "retained_df0_regression_child",
+  "outcome": "expected_rejection"
+}

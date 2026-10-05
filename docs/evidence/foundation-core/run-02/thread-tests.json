@@ -1,0 +1,24 @@
+{
+  "id": "thread-tests",
+  "kind": "foundation_test",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df1-fc-02-thread",
+    "--verbose",
+    "--output-on-failure",
+    "-R",
+    "^df1_foundation$"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:54.181101+00:00",
+  "elapsed_seconds": 0.7033732919953763,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df1-fc-02-thread/DartConfiguration.tcl\nParse Config file:${SOURCE}/build/df1-fc-02-thread/DartConfiguration.tcl\nTest project ${SOURCE}/build/df1-fc-02-thread\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 4\n    Start 4: df1_foundation\n\n4: Test command: ${SOURCE}/build/df1-fc-02-thread/df1_foundation_tests\n4: Working Directory: ${SOURCE}/build/df1-fc-02-thread\n4: Test timeout computed to be: 1500\n4: DF-A002 foundation checks=394 allocation_sites=3 fault_modes=4 concurrent_reference_pairs=8000 concurrent_owned_blocks=400 independent_contexts=4 context_bytes=176 options_size=200 error_size=328\n1/1 Test #4: df1_foundation ...................   Passed    0.69 sec\n\nThe following tests passed:\n\tdf1_foundation\n\n100% tests passed out of 1\n\nTotal Test time (real) =   0.69 sec\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

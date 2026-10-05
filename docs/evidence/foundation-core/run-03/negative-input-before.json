@@ -1,0 +1,7 @@
+{
+  "files": {
+    "${PRIVATE_TASK}/run-03/invalid-capabilities.json": "dc35a32b37ba4754ce6b6c04c40ec6c8f231745f572f545ec0e6e3c0c288b5b6",
+    "${PRIVATE_TASK}/run-03/invalid-source-capabilities.json": "adf514ea43a5499ef07c0ce5a85cc064cdafb3994321b0b7a83e5dfbf19604f6"
+  },
+  "captured_at": "2026-10-05T15:29:41.987469+00:00"
+}

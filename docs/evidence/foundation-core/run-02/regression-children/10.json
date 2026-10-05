@@ -1,0 +1,13 @@
+{
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/validate_profile_inventory.py"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"kind\": \"document_and_owned_fixture_check\", \"outcome\": \"passed\", \"python_optimize\": 1, \"mandatory_modules\": 10, \"attribute_rows\": 329, \"selected_tags\": 31, \"file_meta_attribute_rows\": 15, \"expected_layouts\": 2, \"engine_profile_validation\": \"not_run\"}\n",
+  "stderr": "",
+  "expected_exit_code": 0,
+  "kind": "retained_df0_regression_child",
+  "outcome": "passed"
+}

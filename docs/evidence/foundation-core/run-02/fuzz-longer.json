@@ -1,0 +1,24 @@
+{
+  "id": "fuzz-longer",
+  "kind": "coverage_guided_fuzz",
+  "command": [
+    "${SOURCE}/build/df1-fc-02-fuzz/df1_foundation_fuzz",
+    "${SOURCE}/build/df1-fc-02-corpus",
+    "-seed=20261006",
+    "-max_total_time=15",
+    "-max_len=96",
+    "-print_final_stats=1",
+    "-artifact_prefix=${PRIVATE_TASK}/run-02/"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:25:02.396140+00:00",
+  "elapsed_seconds": 16.068436000001384,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "",
+  "stderr": "INFO: Running with entropic power schedule (0xFF, 100).\nINFO: Seed: 20261006\nINFO: Loaded 1 modules   (389 inline 8-bit counters): 389 [0x100f3c000, 0x100f3c185), \nINFO: Loaded 1 PC tables (389 PCs): 389 [0x100f3c188,0x100f3d9d8), \nINFO:       34 files found in ${SOURCE}/build/df1-fc-02-corpus\nINFO: seed corpus: files: 34 min: 1b max: 19b total: 497b rss: 44Mb\n#35\tINITED cov: 231 ft: 336 corp: 20/308b exec/s: 0 rss: 45Mb\n#3041\tREDUCE cov: 231 ft: 336 corp: 20/307b lim: 45 exec/s: 0 rss: 46Mb L: 18/19 MS: 1 EraseBytes-\n#1048576\tpulse  cov: 231 ft: 336 corp: 20/307b lim: 96 exec/s: 524288 rss: 216Mb\n#2097152\tpulse  cov: 231 ft: 336 corp: 20/307b lim: 96 exec/s: 524288 rss: 385Mb\n#4194304\tpulse  cov: 231 ft: 336 corp: 20/307b lim: 96 exec/s: 524288 rss: 488Mb\n#7936386\tDONE   cov: 231 ft: 336 corp: 20/307b lim: 96 exec/s: 496024 rss: 490Mb\nDone 7936386 runs in 16 second(s)\nstat::number_of_executed_units: 7936386\nstat::average_exec_per_sec:     496024\nstat::new_units_added:          1\nstat::slowest_unit_time_sec:    0\nstat::peak_rss_mb:              490\n",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

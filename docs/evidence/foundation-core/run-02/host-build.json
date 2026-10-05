@@ -1,0 +1,22 @@
+{
+  "id": "host-build",
+  "kind": "build",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df1-fc-02-host",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:40.713323+00:00",
+  "elapsed_seconds": 1.3180403749865945,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "[1/13] Building CXX object CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o\n[2/13] Linking CXX shared library libdicomflux_probe.dylib\n[3/13] Building C object CMakeFiles/df0_contract_c.dir/tests/unit/contract_header.c.o\n[4/13] Building CXX object CMakeFiles/df0_contract_cpp.dir/tests/unit/contract_header.cpp.o\n[5/13] Building CXX object CMakeFiles/df0_unit.dir/tests/unit/foundation.cpp.o\n[6/13] Building CXX object CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o\n[7/13] Building CXX object CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o\n[8/13] Linking CXX executable df0_unit\n[9/13] Linking C executable df0_contract_c\n[10/13] Linking CXX executable df0_contract_cpp\n[11/13] Linking CXX shared library libdicomflux_foundation.dylib\n[12/13] Building CXX object CMakeFiles/df1_foundation_tests.dir/tests/foundation/core_tests.cpp.o\n[13/13] Linking CXX executable df1_foundation_tests\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

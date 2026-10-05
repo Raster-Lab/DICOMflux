@@ -1,0 +1,18 @@
+{
+  "id": "os-version",
+  "kind": "environment",
+  "command": [
+    "/usr/bin/sw_vers"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:34.862818+00:00",
+  "elapsed_seconds": 0.010822459007613361,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

@@ -1,0 +1,27 @@
+{
+  "authority_id": "DF-A002",
+  "df_g0_disposition": "accepted_narrow_auxiliary_host_foundation",
+  "execution_authority": {
+    "status": "authorised_scoped",
+    "full_df1_authorised": false,
+    "work_packages": [
+      "DF-W05",
+      "DF-W06:explicit-five-function-subset"
+    ],
+    "public_function_allowlist": [
+      "dicomflux_query_abi",
+      "dicomflux_context_create",
+      "dicomflux_context_retain",
+      "dicomflux_context_release",
+      "dicomflux_error_copy"
+    ],
+    "internal_cancellation_only": true
+  },
+  "consumer_qualification": "deferred_open_not_passed",
+  "executable_oracle_qualification": "deferred_open_not_passed",
+  "historical_linkage": "acknowledged_not_retrospectively_verified",
+  "effective_record": "authorisations/DF-A002.json",
+  "public_source": "https://github.com/Raster-Lab/DICOMflux/pull/2#issuecomment-5994925456",
+  "adopted_merge": "7f99e34a010f922b8bf85404840bc744a7af66fc",
+  "historical_submissions_are_not_current_authority": true
+}

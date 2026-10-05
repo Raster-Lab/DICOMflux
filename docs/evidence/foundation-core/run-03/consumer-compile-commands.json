@@ -1,0 +1,14 @@
+[
+{
+  "directory": "${SOURCE}/build/df1-fc-03-consumers",
+  "command": "/usr/bin/clang -isystem ${SOURCE}/stage/df1-fc-03/include -std=c11 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/foundation_consumer_c.dir/consumer.c.o -c ${SOURCE}/build/df1-fc-03-consumer-src/consumer.c",
+  "file": "${SOURCE}/build/df1-fc-03-consumer-src/consumer.c",
+  "output": "${SOURCE}/build/df1-fc-03-consumers/CMakeFiles/foundation_consumer_c.dir/consumer.c.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-03-consumers",
+  "command": "/usr/bin/clang++ -isystem ${SOURCE}/stage/df1-fc-03/include -std=c++20 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/foundation_consumer_cpp.dir/consumer.cpp.o -c ${SOURCE}/build/df1-fc-03-consumer-src/consumer.cpp",
+  "file": "${SOURCE}/build/df1-fc-03-consumer-src/consumer.cpp",
+  "output": "${SOURCE}/build/df1-fc-03-consumers/CMakeFiles/foundation_consumer_cpp.dir/consumer.cpp.o"
+}
+]

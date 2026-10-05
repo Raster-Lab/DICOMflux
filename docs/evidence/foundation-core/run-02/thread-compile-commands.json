@@ -1,0 +1,44 @@
+[
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_PROBE_BUILD -Ddicomflux_probe_EXPORTS -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o -c ${SOURCE}/src/c_api/df0_probe.cpp",
+  "file": "${SOURCE}/src/c_api/df0_probe.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -I${SOURCE}/build/df1-fc-02-thread/generated -I${SOURCE}/include -g -std=c++20 -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df0_unit.dir/tests/unit/foundation.cpp.o -c ${SOURCE}/tests/unit/foundation.cpp",
+  "file": "${SOURCE}/tests/unit/foundation.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df0_unit.dir/tests/unit/foundation.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang -g -std=c11 -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df0_contract_c.dir/tests/unit/contract_header.c.o -c ${SOURCE}/tests/unit/contract_header.c",
+  "file": "${SOURCE}/tests/unit/contract_header.c",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df0_contract_c.dir/tests/unit/contract_header.c.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -g -std=c++20 -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df0_contract_cpp.dir/tests/unit/contract_header.cpp.o -c ${SOURCE}/tests/unit/contract_header.cpp",
+  "file": "${SOURCE}/tests/unit/contract_header.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df0_contract_cpp.dir/tests/unit/contract_header.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_FOUNDATION_BUILD -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o -c ${SOURCE}/src/foundation/core.cpp",
+  "file": "${SOURCE}/src/foundation/core.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_FOUNDATION_BUILD -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o -c ${SOURCE}/src/c_api/foundation.cpp",
+  "file": "${SOURCE}/src/c_api/foundation.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-thread",
+  "command": "/usr/bin/clang++ -I${SOURCE}/include -I${SOURCE}/src/foundation -g -std=c++20 -Wall -Wextra -Wpedantic -Werror -fsanitize=thread -fno-omit-frame-pointer -o CMakeFiles/df1_foundation_tests.dir/tests/foundation/core_tests.cpp.o -c ${SOURCE}/tests/foundation/core_tests.cpp",
+  "file": "${SOURCE}/tests/foundation/core_tests.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-thread/CMakeFiles/df1_foundation_tests.dir/tests/foundation/core_tests.cpp.o"
+}
+]

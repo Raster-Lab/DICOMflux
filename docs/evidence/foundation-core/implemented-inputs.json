@@ -1,0 +1,25 @@
+{
+  "local_implementation_commit": "8cafba65fa0f7a91ccf3f336486094c0faaf08bb",
+  "remote_implementation_commit": "324320da66c2ce116286a61a601667d23917abb7",
+  "identical_implementation_tree": "ab1b08f42d58177c3dd9ce739ec6cc2ecf5d3e71",
+  "files": {
+    "CMakeLists.txt": "1430803368d01e55c7ea2e186a229a8095dcdf897402afe94b9c5f303e4158d2",
+    "cmake/DICOMfluxFoundationConfig.cmake.in": "2504f01dd85c77ac39d132de5fd8836374e1eaefad89262572f0c1e239b875ca",
+    "cmake/foundation-capabilities.json.in": "b4c398166ec137790c610b3f6d5a308dd53919bbe88c197235b7e15fae57bbf8",
+    "cmake/foundation.exports": "c5528051712cbab871fb017b7d90229af7283c697ce960d493e3d2a994096609",
+    "cmake/foundation.exports.darwin": "fc5d94748c68c68a102fcee4bba8e49b88294472282d51f25a8b688430be4ae7",
+    "docs/architecture/foundation-core.md": "8ec1103d0515cc04e6348e784b5404730c0ce7ac103fdf96b7c26f270e15c248",
+    "fuzz/foundation_core.cpp": "ed69518b55655dad73475e7143e8a2f82eefb6e74c67b963fd3438170b942ef0",
+    "include/dicomflux/foundation.h": "eae82c8230c3fba17f4a94c083bbba575fe52a34c0f9990676da6088d7da3384",
+    "src/c_api/foundation.cpp": "ca43f8f8acb05ba932dc55086e6b67a46f6276772f210f921f71a0c2cf74c218",
+    "src/foundation/core.cpp": "61ef1e7da658a8e5399ce6c75c8b1ae9191e6a358af87c69249d453009e4c12e",
+    "src/foundation/core.hpp": "33254fba494c8108f49b14d92556404dd29f429c9c96242da040bc3f9bb5908d",
+    "tests/foundation/core_tests.cpp": "9fc74e27a55c38f1bf402abcfe4d384fa16f4730e208aa94e15c9b72154b6afe",
+    "tests/foundation_consumer/CMakeLists.txt": "325f863a94a56a6a67eb23382fd27a8ad848637e5e5bf61a97ce24028674b711",
+    "tests/foundation_consumer/consumer.c": "9f0971d7dbd8c9dc21e020b69eef73ccdaa04747e4fc06b72648e49ebd7c94f6",
+    "tests/foundation_consumer/consumer.cpp": "37666464603c38723d45ee272b3a0eac921e4c7b9e94c871f124644899b399a2",
+    "tools/check_foundation_boundary.py": "4cc78e4e0da195cfccca3cebb672e8a5a1468f7ed746840703edf57d39b80ce2",
+    "tools/run_foundation_suite.py": "60b7393904f504715d43d6d2430ff1b5cfdea1b364fd8d3b8b6c5015e20f55ea"
+  },
+  "note": "Native/build/test inputs match run-02 and run-03. Final Python inspection hardening is exercised in run-03; empty-suite rejection is exercised in both modes. Later README/evidence additions do not alter compiled/tested implementation."
+}

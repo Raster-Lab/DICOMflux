@@ -1,0 +1,5 @@
+_dicomflux_query_abi
+_dicomflux_context_create
+_dicomflux_context_retain
+_dicomflux_context_release
+_dicomflux_error_copy

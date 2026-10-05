@@ -1,0 +1,24 @@
+{
+  "id": "fuzz-build",
+  "kind": "build",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df1-fc-02-fuzz",
+    "--parallel",
+    "2",
+    "--target",
+    "df1_foundation_fuzz"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:55.430436+00:00",
+  "elapsed_seconds": 0.4746643750113435,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "[1/4] Building CXX object CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o\n[2/4] Building CXX object CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o\n[3/4] Building CXX object CMakeFiles/df1_foundation_fuzz.dir/fuzz/foundation_core.cpp.o\n[4/4] Linking CXX executable df1_foundation_fuzz\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

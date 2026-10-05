@@ -1,0 +1,26 @@
+[
+{
+  "directory": "${SOURCE}/build/df1-fc-02-fuzz",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_PROBE_BUILD -Ddicomflux_probe_EXPORTS -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o -c ${SOURCE}/src/c_api/df0_probe.cpp",
+  "file": "${SOURCE}/src/c_api/df0_probe.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-fuzz/CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-fuzz",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_FOUNDATION_BUILD -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=address -fno-omit-frame-pointer -fsanitize=fuzzer-no-link -o CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o -c ${SOURCE}/src/foundation/core.cpp",
+  "file": "${SOURCE}/src/foundation/core.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-fuzz/CMakeFiles/df_foundation_objects.dir/src/foundation/core.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-fuzz",
+  "command": "/usr/bin/clang++ -DDICOMFLUX_FOUNDATION_BUILD -I${SOURCE}/include -g -std=c++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Werror -fsanitize=address -fno-omit-frame-pointer -fsanitize=fuzzer-no-link -o CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o -c ${SOURCE}/src/c_api/foundation.cpp",
+  "file": "${SOURCE}/src/c_api/foundation.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-fuzz/CMakeFiles/df_foundation_objects.dir/src/c_api/foundation.cpp.o"
+},
+{
+  "directory": "${SOURCE}/build/df1-fc-02-fuzz",
+  "command": "/usr/bin/clang++ -I${SOURCE}/include -I${SOURCE}/src/foundation -g -std=c++20 -fsanitize=fuzzer-no-link -Wall -Wextra -Wpedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/df1_foundation_fuzz.dir/fuzz/foundation_core.cpp.o -c ${SOURCE}/fuzz/foundation_core.cpp",
+  "file": "${SOURCE}/fuzz/foundation_core.cpp",
+  "output": "${SOURCE}/build/df1-fc-02-fuzz/CMakeFiles/df1_foundation_fuzz.dir/fuzz/foundation_core.cpp.o"
+}
+]

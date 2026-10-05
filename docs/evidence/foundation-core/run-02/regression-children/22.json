@@ -1,0 +1,15 @@
+{
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/validate_evidence.py",
+    "--repo",
+    "${SOURCE}/build/df0-regression-inputs/tmpnyhsz2ju"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/validate_evidence.py\", line 53, in <module>\n    main()\n  File \"${SOURCE}/tools/validate_evidence.py\", line 33, in main\n    check(record['outcome'] == ('passed' if record['exit_code'] == 0 else 'failed'), path)\n  File \"${SOURCE}/tools/validate_evidence.py\", line 5, in check\n    raise RuntimeError(str(message))\nRuntimeError: ${SOURCE}/build/df0-regression-inputs/tmpnyhsz2ju/docs/evidence/records/bad.json\n",
+  "expected_exit_code": 1,
+  "kind": "retained_df0_regression_child",
+  "outcome": "expected_rejection"
+}

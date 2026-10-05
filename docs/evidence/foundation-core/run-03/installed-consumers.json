@@ -1,0 +1,21 @@
+{
+  "id": "installed-consumers",
+  "kind": "installed_consumer",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df1-fc-03-consumers",
+    "--verbose"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:40.654108+00:00",
+  "elapsed_seconds": 1.3317644999769982,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df1-fc-03-consumers/DartConfiguration.tcl\nTest project ${SOURCE}/build/df1-fc-03-consumers\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: installed_foundation_c\n\n1: Test command: ${SOURCE}/build/df1-fc-03-consumers/foundation_consumer_c\n1: Working Directory: ${SOURCE}/build/df1-fc-03-consumers\n1: Test timeout computed to be: 10000000\n1: installed C11 consumer: five functions called; success and rejection witnessed\n1/2 Test #1: installed_foundation_c ...........   Passed    0.79 sec\ntest 2\n    Start 2: installed_foundation_cpp\n\n2: Test command: ${SOURCE}/build/df1-fc-03-consumers/foundation_consumer_cpp\n2: Working Directory: ${SOURCE}/build/df1-fc-03-consumers\n2: Test timeout computed to be: 10000000\n2: installed C++20 consumer: five functions called; zero budget rejected\n2/2 Test #2: installed_foundation_cpp .........   Passed    0.53 sec\n\n100% tests passed out of 2\n\nTotal Test time (real) =   1.32 sec\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

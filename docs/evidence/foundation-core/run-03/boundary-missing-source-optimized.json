@@ -1,0 +1,24 @@
+{
+  "id": "boundary-missing-source-optimized",
+  "kind": "expected_negative",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/check_foundation_boundary.py",
+    "--library",
+    "${SOURCE}/stage/df1-fc-03/lib/libdicomflux_foundation.dylib",
+    "--capabilities",
+    "${PRIVATE_TASK}/run-03/invalid-source-capabilities.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:43.457260+00:00",
+  "elapsed_seconds": 0.1338244170183316,
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "outcome": "expected_rejection",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 59, in <module>\n    main()\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 41, in main\n    require(set(capabilities['source_sha256']) == {'include/dicomflux/foundation.h', 'src/foundation/core.hpp',\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 17, in require\n    raise RuntimeError(message)\nRuntimeError: Incomplete source identity\n",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

@@ -1,0 +1,63 @@
+{
+  "authority_id": "DF-A002",
+  "record_type": "public_safe_effective_owner_scope_summary",
+  "recorded_on": "2026-10-05",
+  "source": "https://github.com/Raster-Lab/DICOMflux/pull/2#issuecomment-5994925456",
+  "source_comment_created_at": "2026-10-05T12:58:26Z",
+  "recorded_by": "Assistant following explicit owner approval; not an assistant self-approval or digital signature",
+  "reviewed_head": "be1e0819da36a0f9043c896d6af63a9d82144b23",
+  "reviewed_base": "cf17269a3af7af503b30c8f6310b492dd58fa302",
+  "adopted_merge": "7f99e34a010f922b8bf85404840bc744a7af66fc",
+  "adopted_tree": "0393a9676b9b8985dfd8a0ed56930dc1e2bc5af3",
+  "merged_at": "2026-10-05T12:58:49Z",
+  "df_g0_disposition": "accepted_narrow_auxiliary_host_foundation",
+  "decisions": {
+    "G0-D01": "Pi 4 Model B / Bookworm Lite 64-bit selected as first intended Linux/Pi witness, not qualified. Exact image/hash not approved; verify before acquisition/use. Other feasible requests deferred. Pi 5/Bullseye and CM5/Bullseye excluded from selected official-image route; preserve request history; no backports. Android device/build/API undecided; minSdk 23 only a candidate.",
+    "G0-D02": "Reference-tool route accepted within evidence limits, not blanket admission. Existing pydicom isolated selected-tag/rejection scope only. Disputed DCMTK remains quarantined/unexecuted. Fresh official commit-pinned DCMTK and separately built dicom3tools are future candidates for a separate scoped task with rights/hash admission and executable evidence. No toolkit backend or wrapper restart.",
+    "G0-D03": "DF0-REV-006 administratively acknowledged; preserve missing historical source/corpus links and original failures. No retrospective verification. Capture new execution inputs prospectively.",
+    "G0-D04": "DF-G0 accepted only for evidenced auxiliary-host foundation. Separately authorise DF-W05 and exactly the five-function subset of DF-W06 below. Full DF-1 is not authorised."
+  },
+  "execution_authority": {
+    "status": "authorised_scoped",
+    "full_df1_authorised": false,
+    "work_packages": [
+      "DF-W05",
+      "DF-W06:explicit-five-function-subset"
+    ],
+    "public_function_allowlist": [
+      "dicomflux_query_abi",
+      "dicomflux_context_create",
+      "dicomflux_context_retain",
+      "dicomflux_context_release",
+      "dicomflux_error_copy"
+    ],
+    "internal_cancellation_only": true
+  },
+  "consumer_qualification": "deferred_open_not_passed",
+  "executable_oracle_qualification": "deferred_open_not_passed",
+  "historical_linkage": "acknowledged_not_retrospectively_verified",
+  "exclusions": [
+    "Remaining DF-W06 functions including capabilities and public cancellation",
+    "DF-W07 through DF-W16",
+    "Builder/dataset/plan/execution/writer/profile implementation",
+    "Consumer integration or DICOM Camera acquisition changes",
+    "Third-party engine backends or new oracle acquisition/builds",
+    "Direct-main writes, merge, auto-merge, history rewrite, force push, tags, releases, package publication and settings changes"
+  ],
+  "repository_operations": {
+    "branch": "codex/df1-foundation-core",
+    "allowed": [
+      "inspect/fetch",
+      "preserving worktree",
+      "audited public-safe commits and branch publication",
+      "one draft pull request to main"
+    ],
+    "future_pr_merge_authorised": false
+  },
+  "historical_records": "Earlier null/false proposal/submission states remain unchanged and describe their original submission, not current effective authority. Nine accepted architecture decisions remain unchanged.",
+  "publication": {
+    "status": "public_safe_summary_in_repository",
+    "path": "docs/evidence/authorisations/DF-A002.json",
+    "original_private_controls_copied": false
+  }
+}
