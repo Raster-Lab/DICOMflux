@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "host-install",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--install",
+    "${SOURCE}/build/df0-corrections-suite-v1-host"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:29.495408+00:00",
+  "elapsed_seconds": 0.012976541998796165,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "-- Install configuration: \"Debug\"\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/lib/libdicomflux_probe.dylib\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/include/dicomflux/df0_probe.h\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/include/dicomflux/probe_defaults.h\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets.cmake\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets-debug.cmake\n-- Installing: ${SOURCE}/install/df0-corrections-suite-v1/lib/cmake/DICOMfluxProbe/DICOMfluxProbeConfig.cmake\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

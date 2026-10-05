@@ -31,7 +31,10 @@ board revision, kernel/page size, compiler/stdlib/glibc/sysroot and Python pin.
 No image or board was available. No 32-bit support is inferred. CM5/Bullseye
 conflicts with [official CM5 guidance](https://www.raspberrypi.com/documentation/computers/compute-module.html)
 requiring Bookworm or later, kernel 6.12.x or later and firmware from 2025-03-10.
-Pi 5/Bullseye also needs explicit supported-image compatibility resolution.
+The [official Pi 5 FAQ](https://www.raspberrypi.com/products/raspberry-pi-5/)
+checked on 2026-10-05 also excludes Raspberry Pi OS versions older than Bookworm.
+Pi 5/Bullseye and CM5/Bullseye remain requested but incompatible combinations
+requiring human disposition; neither was silently replaced.
 
 Relevant official qualification inputs: [NDK downloads](https://developer.android.com/ndk/downloads),
 [middleware runtime guidance](https://developer.android.com/ndk/guides/middleware-vendors),

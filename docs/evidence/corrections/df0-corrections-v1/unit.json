@@ -1,0 +1,21 @@
+{
+  "id": "unit",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df0-corrections-v1",
+    "--verbose",
+    "--output-on-failure"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:11.911241+00:00",
+  "elapsed_seconds": 2.336672582983738,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df0-corrections-v1/DartConfiguration.tcl\nParse Config file:${SOURCE}/build/df0-corrections-v1/DartConfiguration.tcl\nTest project ${SOURCE}/build/df0-corrections-v1\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: df0_foundation\n\n1: Test command: ${SOURCE}/build/df0-corrections-v1/df0_unit\n1: Working Directory: ${SOURCE}/build/df0-corrections-v1\n1: Test timeout computed to be: 1500\n1: DF0 prototype checks=89 allocation_sites=2 fault_modes=2 concurrent_measurements=4000 tracked_bytes=65648\n1/3 Test #1: df0_foundation ...................   Passed    1.56 sec\ntest 2\n    Start 2: df0_contract_c\n\n2: Test command: ${SOURCE}/build/df0-corrections-v1/df0_contract_c\n2: Working Directory: ${SOURCE}/build/df0-corrections-v1\n2: Test timeout computed to be: 1500\n2: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n2/3 Test #2: df0_contract_c ...................   Passed    0.36 sec\ntest 3\n    Start 3: df0_contract_cpp\n\n3: Test command: ${SOURCE}/build/df0-corrections-v1/df0_contract_cpp\n3: Working Directory: ${SOURCE}/build/df0-corrections-v1\n3: Test timeout computed to be: 1500\n3: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n3/3 Test #3: df0_contract_cpp .................   Passed    0.39 sec\n\n100% tests passed out of 3\n\nTotal Test time (real) =   2.32 sec\n",
+  "stderr": "",
+  "environment_override": {}
+}

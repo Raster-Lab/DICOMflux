@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "ninja-version",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:23.846469+00:00",
+  "elapsed_seconds": 0.0034932499984279275,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "1.13.2.git.kitware.jobserver-pipe-1\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

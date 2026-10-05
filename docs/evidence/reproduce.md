@@ -41,3 +41,12 @@ recorded. A separate corrected measurement used getrusage for one child and
 succeeded; no failed result was overwritten. The runner now uses this method.
 Profile/File Meta document checks were repeated after specification completion;
 the native build inputs remained byte-identical to the final tested hashes.
+
+## Correction follow-up
+
+The current runner gives each run fresh build/install/stage paths (`--run-id`)
+and rejects existing outputs or nonempty evidence directories. Source/test/config
+bytes and identities are frozen before execution. Corpus snapshots are saved
+before each future fuzz campaign and afterward; this does not recreate historical
+initial corpora. Use `--configs host` for the bounded correction checks and see
+`corrections/README.md` for normal/-O regression and current-source validation.

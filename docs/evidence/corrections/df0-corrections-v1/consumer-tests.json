@@ -1,0 +1,20 @@
+{
+  "id": "consumer-tests",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df0-corrections-v1/consumer-build",
+    "--verbose"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:15.266297+00:00",
+  "elapsed_seconds": 1.1522589160013013,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df0-corrections-v1/consumer-build/DartConfiguration.tcl\nTest project ${SOURCE}/build/df0-corrections-v1/consumer-build\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: installed_c\n\n1: Test command: ${SOURCE}/build/df0-corrections-v1/consumer-build/consumer_c\n1: Working Directory: ${SOURCE}/build/df0-corrections-v1/consumer-build\n1: Test timeout computed to be: 10000000\n1: C11 installed consumer: pointer_bits=64 options_size=80 alignment=8 libcxx=210106 bytes=768\n1/2 Test #1: installed_c ......................   Passed    0.78 sec\ntest 2\n    Start 2: installed_cpp\n\n2: Test command: ${SOURCE}/build/df0-corrections-v1/consumer-build/consumer_cpp\n2: Working Directory: ${SOURCE}/build/df0-corrections-v1/consumer-build\n2: Test timeout computed to be: 10000000\n2: C++20 installed consumer: 3 logical, 4 encoded\n2/2 Test #2: installed_cpp ....................   Passed    0.36 sec\n\n100% tests passed out of 2\n\nTotal Test time (real) =   1.14 sec\n",
+  "stderr": "",
+  "environment_override": {}
+}

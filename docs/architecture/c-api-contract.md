@@ -8,8 +8,9 @@ lengths and allocation limits; it cannot read or write DICOM.
 ## Version and caller-memory rules
 
 The candidate starts at experimental ABI major 0, minor 1. Call `query_abi`
-before creating any handle. Different major or a requested minor greater than
-the library minor returns `UNSUPPORTED`. Only natural platform alignment is
+before creating any handle. This candidate accepts only major 0, minor 1,
+including every nested record; other major/minor pairs return `UNSUPPORTED`.
+It does not promise minor 0 compatibility. Only natural platform alignment is
 used; there are no packed structures or wire-structure casts. Integer fields
 are fixed width except in-process spans, which use `size_t`. Numeric VR codes
 contain the two ASCII characters, independent of host byte order.
@@ -30,6 +31,94 @@ misalignment, stale handles, foreign-instance handles, overlapping input/output
 spans, or a capacity larger than the actual allocation are caller-contract
 violations; native C cannot validate arbitrary pointers. Null non-empty spans
 and ordinary invalid scalar options produce controlled statuses.
+
+Valid live handles from the same loaded library but different contexts are
+rejected with `INVALID_ARGUMENT` by `plan_create` (context/dataset mismatch)
+and `plan_execute` (plan/cancellation-token mismatch), before claiming the plan
+or calling source/sink callbacks. This is distinct from a foreign-instance or
+stale pointer, which is a caller violation. No cross-context sharing is implied.
+
+## Fixed-width state and diagnostic values
+
+These definitions revise only the unimplemented candidate, not the installed
+four-symbol probe ABI. No compatibility with the earlier candidate layout is
+claimed. Storage uses uint32_t or int32_t, never compiler-sized C enums.
+
+| Plan constant | Value | Meaning |
+| --- | --- | --- |
+| PLAN_NONE | 0 | No execution was claimed by this call; never a live plan's state. |
+| PLAN_READY | 1 | Created and not yet consumed; query execution_status is NOT_EXECUTED (-1). |
+| PLAN_EXECUTING | 2 | Internal execution state; querying concurrently is forbidden. |
+| PLAN_SUCCEEDED | 3 | Consumed successfully; query execution_status is OK. |
+| PLAN_FAILED | 4 | Consumed with an error other than cancellation. |
+| PLAN_CANCELLED | 5 | Consumed by cancellation; query execution_status is CANCELLED. |
+
+Names in these tables have the `DICOMFLUX_` prefix. `plan_query` returns state,
+execution_status and the immutable planned lengths in plan_info. Query is allowed
+only before execution or after it returns. There is no concurrent polling promise.
+For failed/cancelled plans, execution_status retains the terminal status. An
+attempt to execute a terminal plan returns INVALID_STATE without changing that
+stored status. A caller must synchronize query with execute.
+
+When valid output headers were supplied, execute sets result.status to its return
+status. A rejection before claiming the plan sets terminal_state=PLAN_NONE and
+all result counters to zero; the ready/terminal plan is unchanged. Once claimed,
+every return has terminal_state SUCCEEDED, FAILED or CANCELLED, with its status
+and valid partial counters. Pre-requested cancellation consumes a ready plan,
+returns CANCELLED with no I/O and still releases its source lease before return.
+NOT_EXECUTED is only a plan_info sentinel, never a function return or terminal
+result. Unknown states are reserved, never silently interpreted as success.
+
+| Error component | Value | Failure responsibility |
+| --- | --- | --- |
+| COMPONENT_NONE | 0 | No error (status OK). |
+| COMPONENT_ABI | 1 | Version, size, flag or ABI record validation. |
+| COMPONENT_CONTEXT | 2 | Context allocator or budget admission. |
+| COMPONENT_BUILDER | 3 | Mutable metadata input/validation. |
+| COMPONENT_DATASET | 4 | Frozen metadata/profile validation. |
+| COMPONENT_PLAN | 5 | Planning, length/state or plan argument validation. |
+| COMPONENT_SOURCE | 6 | Source retain/read/release protocol. |
+| COMPONENT_SINK | 7 | Sink write/progress protocol. |
+| COMPONENT_CANCEL | 8 | Cancellation token/request. |
+
+`operation` identifies the API entry that returned, even if a callback failed.
+Component identifies the failing subsystem; argument errors use that entry's
+subsystem, version/record errors use ABI, source and sink failures use their
+respective components. A cross-context cancellation mismatch uses CANCEL.
+
+| Operation suffix (OPERATION_) | Value | Entry |
+| --- | --- | --- |
+| NONE | 0 | No error |
+| QUERY_ABI | 1 | query_abi (no error record parameter) |
+| CONTEXT_CREATE | 2 | context_create |
+| CAPABILITIES_COPY | 3 | capabilities_copy |
+| ERROR_COPY | 4 | error_copy (does not mutate the supplied error) |
+| BUILDER_CREATE | 5 | builder_create |
+| BUILDER_SET | 6 | builder_set |
+| BUILDER_SET_EMPTY_SEQUENCE | 7 | builder_set_empty_sequence |
+| BUILDER_FREEZE | 8 | builder_freeze |
+| PLAN_CREATE | 9 | plan_create |
+| PLAN_QUERY | 10 | plan_query |
+| CANCEL_CREATE | 11 | cancel_create |
+| PLAN_EXECUTE | 12 | plan_execute |
+
+Void retain/release/request entries report no error record. Component values
+above 8 and operation values above 12 are reserved in this candidate. Unknown
+input values fail validation; output producers emit only defined values.
+
+`detail_flags` has HAS_TAG=1, HAS_SOURCE_OFFSET=2, HAS_EXPECTED=4 and
+HAS_OBSERVED=8 (mask 15). Absent tag is NO_TAG (UINT32_MAX); absent offset or
+expected/observed quantity is UNKNOWN_QUANTITY (UINT64_MAX). Each presence bit
+is authoritative, so a legitimate UINT64_MAX remains representable when its bit
+is set. A zeroed error payload is not a populated error record. For a valid error
+output, success produces status OK, component/operation NONE, zero detail_flags,
+the absent sentinels, and empty diagnostic. Failures populate status/component/
+operation and only available details; validation never dereferences invalid memory
+to fill a diagnostic. An invalid error-output header is rejected before work and
+left untouched. The diagnostic contains at most 255 bytes plus a NUL;
+diagnostic_length excludes NUL, and truncated is exactly 0 or 1. Error-copy's
+required size is diagnostic_length+1. Reserved bits must be zero. No raw values
+or patient data appear in diagnostic text.
 
 ## Ownership and lifecycle
 

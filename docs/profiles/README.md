@@ -1,7 +1,7 @@
 # Photographic fixture specification for DF-G0
 
 The JSON inventory covers all 10 mandatory modules in the VL Photographic Image
-IOD, 329 attribute rows, 19 expanded inherited macro tables, and explicit
+IOD, 329 attribute rows, 19 total expanded tables (10 expanded macro invocations, 9 distinct macro tables), and explicit
 conditions for the narrow non-specimen, non-stereo, single-frame human profile.
 Optional modules are listed with their omission reason. Nested item macros
 under absent/empty sequences are recorded as uninstantiated; non-empty sequences
@@ -41,3 +41,9 @@ Normative references: [IOD modules](https://dicom.nema.org/medical/dicom/current
 Exact local capture hashes and the limited rights boundary are in
 `third_party/manifest/standards.json`. These mutable official pages were captured
 as observed edition 2026d; a verified immutable upstream release remains open.
+
+For present Type 2/2C rows, a missing element is an error; a legal empty value
+is allowed under the recorded condition. Non-empty values must satisfy VR/VM.
+Fixed-fixture equality is a separate comparison, not a general prohibition on
+unknown/empty values. Empty Acquisition Context SQ and Patient Orientation are
+explicit positive cases. The checker has mutation regressions for this distinction.

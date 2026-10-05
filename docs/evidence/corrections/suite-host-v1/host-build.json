@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "host-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-corrections-suite-v1-host",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:24.675171+00:00",
+  "elapsed_seconds": 0.6123752910061739,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "[1/8] Building CXX object CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o\n[2/8] Linking CXX shared library libdicomflux_probe.dylib\n[3/8] Building C object CMakeFiles/df0_contract_c.dir/tests/unit/contract_header.c.o\n[4/8] Building CXX object CMakeFiles/df0_contract_cpp.dir/tests/unit/contract_header.cpp.o\n[5/8] Building CXX object CMakeFiles/df0_unit.dir/tests/unit/foundation.cpp.o\n[6/8] Linking C executable df0_contract_c\n[7/8] Linking CXX executable df0_unit\n[8/8] Linking CXX executable df0_contract_cpp\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

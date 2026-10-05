@@ -24,6 +24,47 @@ typedef int32_t dicomflux_status;
 #define DICOMFLUX_INVALID_STATE INT32_C(12)
 #define DICOMFLUX_WOULD_BLOCK_UNSUPPORTED INT32_C(13)
 #define DICOMFLUX_BUFFER_TOO_SMALL INT32_C(14)
+/* Record-only sentinel; never a returned dicomflux_status. */
+#define DICOMFLUX_NOT_EXECUTED INT32_C(-1)
+#define DICOMFLUX_ABI_MAJOR UINT32_C(0)
+#define DICOMFLUX_ABI_MINOR UINT32_C(1)
+typedef uint32_t dicomflux_plan_state;
+#define DICOMFLUX_PLAN_NONE UINT32_C(0)
+#define DICOMFLUX_PLAN_READY UINT32_C(1)
+#define DICOMFLUX_PLAN_EXECUTING UINT32_C(2)
+#define DICOMFLUX_PLAN_SUCCEEDED UINT32_C(3)
+#define DICOMFLUX_PLAN_FAILED UINT32_C(4)
+#define DICOMFLUX_PLAN_CANCELLED UINT32_C(5)
+#define DICOMFLUX_COMPONENT_NONE UINT32_C(0)
+#define DICOMFLUX_COMPONENT_ABI UINT32_C(1)
+#define DICOMFLUX_COMPONENT_CONTEXT UINT32_C(2)
+#define DICOMFLUX_COMPONENT_BUILDER UINT32_C(3)
+#define DICOMFLUX_COMPONENT_DATASET UINT32_C(4)
+#define DICOMFLUX_COMPONENT_PLAN UINT32_C(5)
+#define DICOMFLUX_COMPONENT_SOURCE UINT32_C(6)
+#define DICOMFLUX_COMPONENT_SINK UINT32_C(7)
+#define DICOMFLUX_COMPONENT_CANCEL UINT32_C(8)
+#define DICOMFLUX_OPERATION_NONE UINT32_C(0)
+#define DICOMFLUX_OPERATION_QUERY_ABI UINT32_C(1)
+#define DICOMFLUX_OPERATION_CONTEXT_CREATE UINT32_C(2)
+#define DICOMFLUX_OPERATION_CAPABILITIES_COPY UINT32_C(3)
+#define DICOMFLUX_OPERATION_ERROR_COPY UINT32_C(4)
+#define DICOMFLUX_OPERATION_BUILDER_CREATE UINT32_C(5)
+#define DICOMFLUX_OPERATION_BUILDER_SET UINT32_C(6)
+#define DICOMFLUX_OPERATION_BUILDER_SET_EMPTY_SEQUENCE UINT32_C(7)
+#define DICOMFLUX_OPERATION_BUILDER_FREEZE UINT32_C(8)
+#define DICOMFLUX_OPERATION_PLAN_CREATE UINT32_C(9)
+#define DICOMFLUX_OPERATION_PLAN_QUERY UINT32_C(10)
+#define DICOMFLUX_OPERATION_CANCEL_CREATE UINT32_C(11)
+#define DICOMFLUX_OPERATION_PLAN_EXECUTE UINT32_C(12)
+/* Validity bits disambiguate unavailable details from legitimate zero/maxima. */
+#define DICOMFLUX_ERROR_HAS_TAG UINT32_C(1)
+#define DICOMFLUX_ERROR_HAS_SOURCE_OFFSET UINT32_C(2)
+#define DICOMFLUX_ERROR_HAS_EXPECTED UINT32_C(4)
+#define DICOMFLUX_ERROR_HAS_OBSERVED UINT32_C(8)
+#define DICOMFLUX_ERROR_DETAIL_MASK UINT32_C(15)
+#define DICOMFLUX_NO_TAG UINT32_MAX
+#define DICOMFLUX_UNKNOWN_QUANTITY UINT64_MAX
 typedef struct dicomflux_context dicomflux_context;
 typedef struct dicomflux_builder dicomflux_builder;
 typedef struct dicomflux_dataset dicomflux_dataset;
@@ -41,7 +82,7 @@ typedef struct dicomflux_error {
     int32_t status;
     uint32_t component, operation, tag;
     uint64_t source_offset, expected, observed;
-    uint32_t diagnostic_length, truncated;
+    uint32_t diagnostic_length, truncated, detail_flags;
     char diagnostic[256];
 } dicomflux_error;
 typedef void *(*dicomflux_allocate_fn)(void *user, size_t bytes);
@@ -112,12 +153,14 @@ typedef struct dicomflux_write_options {
 #define DICOMFLUX_TS_EXPLICIT_VR_LITTLE_ENDIAN UINT32_C(1)
 typedef struct dicomflux_plan_info {
     dicomflux_versioned header;
+    dicomflux_plan_state state;
+    int32_t execution_status;
     uint64_t logical_bulk_bytes, encoded_bulk_bytes, padding_bytes, object_bytes;
 } dicomflux_plan_info;
 typedef struct dicomflux_execution_result {
     dicomflux_versioned header;
     int32_t status;
-    uint32_t terminal_state;
+    dicomflux_plan_state terminal_state;
     uint64_t source_consumed, sink_consumed, planned_object_bytes;
     uint64_t peak_tracked_bytes;
 } dicomflux_execution_result;

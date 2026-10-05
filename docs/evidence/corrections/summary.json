@@ -1,0 +1,14 @@
+{
+  "first_pass_commands": 24,
+  "public_host_suite_commands": 20,
+  "regression_tests_per_mode": 7,
+  "regression_modes": [
+    "normal",
+    "-O"
+  ],
+  "current_tested_input_files": 31,
+  "native_changes": false,
+  "historical_results_rewritten": false,
+  "human_disposition": null,
+  "df1_authorised": false
+}

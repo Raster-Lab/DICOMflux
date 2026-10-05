@@ -19,7 +19,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-4-Bookworm",
@@ -39,7 +40,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-4-Trixie",
@@ -59,7 +61,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-5-Bullseye",
@@ -78,8 +81,11 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "Pi 5 Bullseye compatibility unresolved; require a board-supported exact image before qualification",
-      "compatibility_source": null
+      "compatibility": "Incompatible with official Raspberry Pi OS support: Pi 5 supports Bookworm and Trixie, not older releases. Human disposition required; requested target retained.",
+      "compatibility_source": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "previous_compatibility": "Pi 5 Bullseye compatibility unresolved; require a board-supported exact image before qualification",
+      "verified_at": "2026-10-05",
+      "human_disposition": null
     },
     {
       "id": "Pi-5-Bookworm",
@@ -99,7 +105,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-5-Trixie",
@@ -119,7 +126,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-CM4-Bullseye",
@@ -139,7 +147,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-CM4-Bookworm",
@@ -159,7 +168,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-CM4-Trixie",
@@ -179,7 +189,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-CM5-Bullseye",
@@ -199,7 +210,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "conflict: official CM5 transition guidance requires Bookworm or newer, kernel 6.12.x+ and firmware 2025-03-10+",
-      "compatibility_source": "https://www.raspberrypi.com/documentation/computers/compute-module.html"
+      "compatibility_source": "https://www.raspberrypi.com/documentation/computers/compute-module.html",
+      "human_disposition": null
     },
     {
       "id": "Pi-CM5-Bookworm",
@@ -219,7 +231,8 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "Pi-CM5-Trixie",
@@ -239,19 +252,22 @@
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null
+      "compatibility_source": null,
+      "human_disposition": null
     },
     {
       "id": "auxiliary-macos-arm64",
       "build": "passed",
       "run": "passed",
-      "status": "DF-0 prototype witness only; no macOS support added"
+      "status": "DF-0 prototype witness only; no macOS support added",
+      "human_disposition": null
     },
     {
       "id": "linux-x86_64",
       "build": "blocked",
       "run": "blocked",
-      "reason": "No Linux environment/toolchain/sysroot"
+      "reason": "No Linux environment/toolchain/sysroot",
+      "human_disposition": null
     },
     {
       "id": "android-arm64-physical",
@@ -263,7 +279,8 @@
         "4096": "blocked",
         "16384": "blocked"
       },
-      "reason": "SDK/NDK/JDK/AGP/Kotlin/device unavailable; minimum API unspecified by user"
+      "reason": "SDK/NDK/JDK/AGP/Kotlin/device unavailable; minimum API unspecified by user",
+      "human_disposition": null
     },
     {
       "id": "android-x86_64-emulator",
@@ -273,12 +290,14 @@
         "4096": "blocked",
         "16384": "blocked"
       },
-      "reason": "No emulator or SDK"
+      "reason": "No emulator or SDK",
+      "human_disposition": null
     },
     {
       "id": "python-3.14",
       "run": "not_run",
-      "reason": "No selected interpreter available"
+      "reason": "No selected interpreter available",
+      "human_disposition": null
     }
   ]
 }

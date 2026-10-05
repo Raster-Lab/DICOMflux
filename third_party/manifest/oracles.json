@@ -14,7 +14,8 @@
       "coverage": "archive dictionary header identifies PS3.6/PS3.7 2025e; inspected as data only",
       "licence": "OFFIS BSD-style base plus component terms; source COPYRIGHT inspected, no code executed",
       "role": "independent dcmdump reader",
-      "expected_digest_source": "https://support.dcmtk.org/redmine/projects/dcmtk/files"
+      "expected_digest_source": "https://support.dcmtk.org/redmine/projects/dcmtk/files",
+      "follow_up": "2026-10-05: original archive SHA unchanged; live files URL redirects to a challenge; official distribution index has no checksum. Search index repeats the historical differing digest. Still quarantined; not executed. See docs/evidence/corrections/dcmtk-investigation.json."
     },
     {
       "name": "dicom3tools",

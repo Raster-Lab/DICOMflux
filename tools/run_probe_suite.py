@@ -14,6 +14,9 @@ from pathlib import Path
 import shutil
 import struct
 import subprocess
+import sys
+import platform
+import re
 import time
 
 def main():
@@ -24,18 +27,43 @@ def main():
     parser.add_argument('--evidence-dir',type=Path,required=True)
     parser.add_argument('--configs',default='host,address,undefined,thread,fuzz')
     parser.add_argument('--fuzzer-runtime',type=Path)
+    parser.add_argument('--run-id', default='df0-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f'))
     args=parser.parse_args()
+    if not re.fullmatch(r'[a-zA-Z0-9_-]+',args.run_id):
+        parser.error('run-id must be a simple directory name')
     repo=Path(__file__).resolve().parents[1]
-    evidence=args.evidence_dir.resolve(); evidence.mkdir(parents=True,exist_ok=True)
+    run_id=args.run_id
+    output_dirs=[repo/'build'/(run_id+'-'+c) for c in ['host','address','undefined','thread','fuzz','consumer-src','consumers','fuzz-corpus']]
+    output_dirs += [repo/'install'/run_id,repo/'stage'/run_id]
+    if any(p.exists() for p in output_dirs):
+        parser.error('run-id already has outputs; choose a fresh run-id to preserve them')
+    evidence=args.evidence_dir.resolve()
+    if evidence.exists() and any(evidence.iterdir()):
+        parser.error('Evidence directory must be empty; retain previous runs separately.')
+    configs=args.configs.split(',')
+    if not configs or any(c not in ['host','address','undefined','thread','fuzz'] for c in configs):
+        parser.error('Unknown or empty configuration; no successful empty suite.')
+    evidence.mkdir(parents=True,exist_ok=True)
     cmake=str(args.cmake.resolve()); ninja=str(args.ninja.resolve())
     python=str(args.python.resolve()); ctest=str(args.cmake.resolve().with_name('ctest'))
     results=[]
     source_files=[]
-    for base in ['src','include','tests/unit','tests/installed_consumer','fuzz','cmake','bindings/python_probe']:
+    for base in ['src','include','tests/unit','tests/installed_consumer','tests/regression',
+                 'tests/fixtures','fuzz','cmake','bindings/python_probe','tools','docs/profiles','docs/architecture']:
         source_files.extend(p for p in (repo/base).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
-    source_files += [repo/'CMakeLists.txt',repo/'docs/architecture/qualification-budgets.json',repo/'docs/architecture/dicomflux-c-api-candidate.h']
+    source_files += [repo/'CMakeLists.txt',repo/'CMakePresets.json']
     source_identity={str(p.relative_to(repo)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(source_files)}
     (evidence/'build-source-files.json').write_text(json.dumps(source_identity,indent=2)+'\n')
+    for name in source_identity:
+        destination=evidence/'inputs'/name
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(repo/name,destination)
+    (evidence/'environment.json').write_text(json.dumps({
+        'python':sys.version,'runner_optimize':sys.flags.optimize,'platform':platform.platform(),
+        'machine':platform.machine(),'PYTHONOPTIMIZE':os.environ.get('PYTHONOPTIMIZE'),
+        'UBSAN_OPTIONS':'halt_on_error=1:print_stacktrace=1',
+        'tools':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in
+                 [cmake,ninja,python,'/usr/bin/clang','/usr/bin/clang++']}},indent=2)+'\n')
     source_digest=hashlib.sha256(json.dumps(source_identity,sort_keys=True).encode()).hexdigest()
     def run(name,command,kind='compile_link_probe',cwd=repo,env=None):
         start=time.monotonic(); when=datetime.now(timezone.utc).isoformat()
@@ -53,10 +81,13 @@ def main():
         return process.returncode==0
     env=os.environ.copy()
     env['UBSAN_OPTIONS']='halt_on_error=1:print_stacktrace=1'
-    for config in args.configs.split(','):
-        build=repo/'build'/('df0-'+config)
+    for name,cmd in [('cmake-version',[cmake,'--version']),('ninja-version',[ninja,'--version']),
+                     ('python-version',[python,'--version']),('compiler-version',['/usr/bin/clang++','--version'])]:
+        if not run(name,cmd):return 1
+    for config in configs:
+        build=repo/'build'/(run_id+'-'+config)
         extra=[]
-        if config=='host':extra=['-DCMAKE_INSTALL_PREFIX='+str(repo/'install/df0')]
+        if config=='host':extra=['-DCMAKE_INSTALL_PREFIX='+str(repo/'install'/run_id)]
         elif config=='fuzz':
             extra=['-DDICOMFLUX_BUILD_FUZZER=ON','-DBUILD_TESTING=OFF','-DDICOMFLUX_SANITIZER=address']
             if args.fuzzer_runtime:extra+=['-DDICOMFLUX_FUZZER_RUNTIME='+str(args.fuzzer_runtime.resolve())]
@@ -70,13 +101,11 @@ def main():
             run(config+'-unit',[ctest,'--test-dir',build,'--verbose','--output-on-failure'],'foundation_test',env=env)
         if config=='host':
             if not run('host-install',[cmake,'--install',build]):continue
-            stage=repo/'stage/df0'
-            if stage.exists():shutil.rmtree(stage)
-            shutil.copytree(repo/'install/df0',stage)
-            source=repo/'build/df0-consumer-src'
-            if source.exists():shutil.rmtree(source)
+            stage=repo/'stage'/run_id
+            shutil.copytree(repo/'install'/run_id,stage)
+            source=repo/'build'/(run_id+'-consumer-src')
             shutil.copytree(repo/'tests/installed_consumer',source)
-            consumer=repo/'build/df0-consumers'
+            consumer=repo/'build'/(run_id+'-consumers')
             if run('consumer-configure',[cmake,'-S',source,'-B',consumer,'-G','Ninja',
                     '-DCMAKE_MAKE_PROGRAM='+ninja,'-DCMAKE_PREFIX_PATH='+str(stage),
                     '-DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF']):
@@ -86,6 +115,10 @@ def main():
             library=stage/'lib'/('libdicomflux_probe.'+suffix)
             run('python-probe',[python,repo/'bindings/python_probe/probe.py',library,
                 '--budgets',repo/'docs/architecture/qualification-budgets.json'],'binding_probe')
+            run('python-probe-optimized',[python,'-O',repo/'bindings/python_probe/probe.py',library,
+                '--budgets',repo/'docs/architecture/qualification-budgets.json'],'binding_probe')
+            run('correction-regressions',[python,repo/'tests/regression/test_df0_corrections.py',
+                '--library',library],'foundation_test')
             run('binary-policy',[python,repo/'tools/check_probe_binary.py',library],'binary_inspection')
             run('owned-fixture-generate',[python,repo/'tools/generate_synthetic_pixels.py'],'fixture_generation')
             run('profile-spec-check',[python,repo/'tools/validate_profile_inventory.py'],'document_check')
@@ -97,14 +130,22 @@ def main():
                 run('host-exports',['nm','-D','--defined-only',library],'binary_inspection')
                 run('host-dependencies',['readelf','-d',library],'binary_inspection')
         if config=='fuzz':
-            corpus=repo/'build/df0-fuzz-corpus'; corpus.mkdir(exist_ok=True)
+            corpus=repo/'build'/(run_id+'-fuzz-corpus'); corpus.mkdir()
             for index,values in enumerate([(0,0,0,0),(16,16,768,0),(2**64-1,2,0,1),
                                           (2**32-2,1,0,0),(7,7,8,4),(1,1,3,8)]):
                 (corpus/str(index)).write_bytes(struct.pack('<QQQQ',*values))
+            def save_corpus(label):
+                target=evidence/label
+                shutil.copytree(corpus,target)
+                entries={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(target.iterdir()) if p.is_file()}
+                (evidence/(label+'.json')).write_text(json.dumps(entries,indent=2)+'\n')
+            save_corpus('corpus-before-short')
             run('fuzz-short',[build/'df0_fuzz',corpus,'-seed=20261004','-max_total_time=10',
                 '-max_len=64','-print_final_stats=1'],'coverage_guided_fuzz',env=env)
+            save_corpus('corpus-before-longer')
             run('fuzz-longer',[build/'df0_fuzz',corpus,'-seed=20261005','-max_total_time=30',
                 '-max_len=64','-print_final_stats=1'],'coverage_guided_fuzz',env=env)
+            save_corpus('corpus-after-longer')
             corpus_manifest=[{'name':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                               'bytes':p.stat().st_size} for p in sorted(corpus.iterdir()) if p.is_file()]
             (evidence/'fuzz-corpus.json').write_text(json.dumps(corpus_manifest,indent=2)+'\n')

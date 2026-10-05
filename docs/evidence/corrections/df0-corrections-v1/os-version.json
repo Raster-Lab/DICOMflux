@@ -1,0 +1,17 @@
+{
+  "id": "os-version",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "sw_vers"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:10.417037+00:00",
+  "elapsed_seconds": 0.009317624993855134,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434\n",
+  "stderr": "",
+  "environment_override": {}
+}

@@ -25,10 +25,11 @@ harnesses. It does not read or write DICOM files. See
 [DF-G0 review request](docs/evidence/DF-G0-review-request.md).
 Android, Linux and Raspberry Pi qualification remains incomplete.
 
-**Draft checkpoint: corrections outstanding; DF-G0 is pending.** The review
-identified contradictory Type 2 test expectations, incomplete proposed C API
-state/error definitions, and Python checks skipped under optimization. See the
-[publication status](docs/evidence/publication-status.md) before using results.
+**Draft review: bounded corrections tested; DF-G0 remains pending.** Type 2
+expectations, the proposed C API state/error contract, optimized Python checks
+and macro-count wording have been corrected. See the
+[correction results](docs/evidence/corrections/README.md) and
+[publication status](docs/evidence/publication-status.md) for remaining gaps.
 
 ## Licence
 

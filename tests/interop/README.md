@@ -27,7 +27,7 @@ After DF-1 is explicitly authorised and tools are qualified:
    and error. Compare its evolving IOD templates against the reviewed 2026d
    conditions. pydicom's 2024c dictionary and DCMTK's 2025e dictionary do not
    establish current IOD conformance.
-6. Negative cases: required element omitted/empty, disallowed non-empty sequence,
+6. Negative cases: required element omitted, Type 1 element empty, malformed non-empty Type 2 value, disallowed non-empty sequence,
    duplicate tag, invalid VR/VM/UID/date, RGB layout mismatch, missing pad, wrong
    SOP/meta identity, truncation, malformed lengths and unsupported syntax.
    Future writer tests must reject bad input before sink writes where feasible.

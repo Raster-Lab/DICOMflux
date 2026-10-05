@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "binary-policy",
+  "kind": "binary_inspection",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/check_probe_binary.py",
+    "${SOURCE}/stage/df0-corrections-suite-v1/lib/libdicomflux_probe.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:32.570743+00:00",
+  "elapsed_seconds": 0.06420529098249972,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "{\"kind\": \"binary_inspection\", \"symbols\": [\"dicomflux_probe_create\", \"dicomflux_probe_measure\", \"dicomflux_probe_query_abi\", \"dicomflux_probe_release\"], \"file\": \"${SOURCE}/stage/df0-corrections-suite-v1/lib/libdicomflux_probe.dylib: Mach-O 64-bit dynamically linked shared library arm64\", \"dependencies\": \"${SOURCE}/stage/df0-corrections-suite-v1/lib/libdicomflux_probe.dylib:\\n\\t@rpath/libdicomflux_probe.dylib (compatibility version 0.0.0, current version 0.0.0)\\n\\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\\n\\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\\n\", \"outcome\": \"passed\", \"python_optimize\": 0}\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}
