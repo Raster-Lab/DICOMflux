@@ -13,26 +13,19 @@ not a wrapper around another DICOM toolkit.
 
 ## Development status
 
-Foundation stage: DF-0 is authorised. There is no engine release or
-qualified device-support claim yet. Planned capabilities must not be
-interpreted as implemented features.
+[DF-A002](docs/evidence/authorisations/DF-A002.json) records the owner's narrowed
+DF-G0 acceptance and current implementation authority: DF-W05 plus only
+`dicomflux_query_abi`, `dicomflux_context_create`, `dicomflux_context_retain`,
+`dicomflux_context_release` and `dicomflux_error_copy` from DF-W06.
+See the [effective authority index](docs/evidence/effective-authority.json).
+Full DF-1, the writer and consumer integration are not authorised in this slice.
 
-The provisional DF-0 review candidate now includes bounded arithmetic/allocation probes,
-C11/C++20 install consumers, a Python foundation probe, and qualification
-harnesses. It does not read or write DICOM files. See
-[DF-0 evidence](docs/evidence/DF-0-report.md),
-[reproduction instructions](docs/evidence/reproduce.md), and the
-[DF-G0 review request](docs/evidence/DF-G0-review-request.md).
-Android, Linux and Raspberry Pi qualification remains incomplete.
-
-**Post-merge qualification: DF-G0 remains pending.** PR #1 was merged as a
-provisional checkpoint. Fresh host evidence and the proposed narrower gate
-disposition are in the [closure submission](docs/evidence/g0-closure/README.md).
-Type 2
-expectations, the proposed C API state/error contract, optimized Python checks
-and macro-count wording have been corrected. See the
-[correction results](docs/evidence/corrections/README.md) and
-[publication status](docs/evidence/publication-status.md) for remaining gaps.
+Foundation implementation is in progress on `codex/df1-foundation-core`.
+The four-function DF-0 probe remains a separate prototype; it does not read or
+write DICOM. [Historical closure evidence](docs/evidence/g0-closure/README.md)
+retains its original unfilled submission fields; subsequent authority is recorded
+separately. Linux/Pi/Android and executable-oracle qualification remains open.
+There is no engine release, stable ABI or qualified device-support claim.
 
 ## Licence
 

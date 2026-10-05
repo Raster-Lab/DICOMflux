@@ -1,36 +1,31 @@
 # DICOMflux — repository guidance for coding agents
 
-DICOMflux is a separate, from-scratch, MIT-licensed native DICOM engine.
-Implement the engine in C++20 with an experimental versioned C11-readable
-boundary. Keep platform bindings and optional dependencies outside the
-portable foundation. Do not use another DICOM toolkit as an implementation
-backend. External tools may be isolated test oracles only.
+Current authority is [DF-A002](docs/evidence/authorisations/DF-A002.json), indexed
+by [effective-authority.json](docs/evidence/effective-authority.json). DF-G0 is
+accepted for the evidenced auxiliary-host foundation only. This task implements
+DF-W05 and exactly five DF-W06 functions: dicomflux_query_abi,
+dicomflux_context_create, dicomflux_context_retain, dicomflux_context_release,
+and dicomflux_error_copy. Full DF-1 is not authorised. Internal cancellation
+primitives add no public cancellation API. Preserve the broader candidate as
+design material; install declarations only for implemented functions.
 
-Read the current authorised task and its privately supplied baseline,
-approval addendum and work order before changing code. This public file
-is not a substitute for that task authority and does not grant new work.
+Use original MIT-licensed C++20 code and a C11-readable experimental boundary.
+Keep the distinct four-function DF-0 prototype and historical evidence intact.
+No third-party DICOM toolkit backend, writer, builder/dataset/plan/execution,
+codec, networking, scheduler or product integration belongs in this slice.
+No new oracle acquisition/build is needed. Consumer and executable-oracle
+qualification stays deferred/open; acknowledge historical linkage limits without
+retrospective claims. Read the current authorised task and applicable private
+baseline/register; this public summary does not grant broader work.
 
-Current commissioned slice: DF-0, DF-W00 through DF-W04 only. Produce real
-bounded foundation probes and meaningful harnesses where the work order
-requires them. Record exact observed versions and results. Candidate
-platform floors and toolchains are not qualified by being named.
+Capture actual checkout, source/test/configuration hashes and exact tools before
+new-code tests. Preserve existing checkouts, local work and history. Keep private
+control/review inputs, raw paths, patient/product data, credentials, restricted
+source and third-party archives outside Git. Use owned synthetic test inputs.
+Do not replace historical null/false submission fields with backdated approval.
 
-Inspect the actual checkout and preserve pre-existing changes. Keep the
-private control package outside Git. Never import private product code,
-patient data, credentials or production endpoints. Use owned synthetic
-fixtures and record permitted third-party provenance.
-
-Submit the DF-0 evidence package and DF-G0 disposition request. Stop before
-DF-1 unless a later explicit authorisation permits progression. Do not
-self-approve gates, claim absent device runs, or equate scaffolding with a
-working engine.
-
-For the explicitly authorised post-merge DF-0 qualification/closure task,
-reviewed public-safe changes may be committed and pushed to
-codex/df0-g0-closure, with one draft pull request targeting main. Start from the
-verified merged main and preserve the earlier checkout/history. This task-specific
-exception permits no private materials,
-direct-main writes, force-pushes, history rewriting, merges, releases, tags,
-repository setting changes or DF-1 work. Other repository operations require
-explicit task authority. PR #1 is already merged; do not merge it again.
-DF-G0 remains pending human disposition; the closure recommendation is not approval.
+Only codex/df1-foundation-core may receive audited public-safe commits/pushes
+for this task, with one draft PR to main. Do not merge, directly write main,
+force-push, reset/rebase history, tag/release/publish packages or change settings.
+PR #2 is already merged. Stop after the implementation/evidence PR; its merge
+and any further work package require separate authority.
