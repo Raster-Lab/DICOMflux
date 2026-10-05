@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "scope": "DF-0 post-merge closure delta, not a competing baseline",
+  "base_commit": "cf17269a3af7af503b30c8f6310b492dd58fa302",
+  "base_tree": "e007c8554228fd8c759891c3218d0ad7be1f2b21",
+  "generated_at": "2026-10-05T08:54:30.779069+00:00",
+  "file_hash_basis": "SHA-256 of published bytes; manifest excludes itself to avoid circular hashing",
+  "files": {
+    "docs/evidence/g0-closure/README.md": "54429d689a2108806d700fe7a49bf112a9d94ab7ba556622538d61e982c037cc",
+    "docs/evidence/g0-closure/adopted-source-files.json": "ffa8d95b18c8ce315bb6a533af29f88a6973e8532606e5422d140ae0e1c9202d",
+    "docs/evidence/g0-closure/adoption.json": "6995bb8b24d91f98009f4851dbd69b1fd6cfd33c0cd4e1394bacf156616a5015",
+    "docs/evidence/g0-closure/extra-run/binary-optimized.json": "d7452288d63b0bdbb58bd90ebcb2c60f1a5761d0028d7ed298e2b3f20635780e",
+    "docs/evidence/g0-closure/extra-run/evidence-normal.json": "b7dd9e5e7d1ad9f92f9a188c7c4ac5814a16fea6c28f74349ec45096825a3c9d",
+    "docs/evidence/g0-closure/extra-run/evidence-optimized.json": "bec271ae2d09c82bc2cfc5aa24814ffe20510e83f93fb03ac2d1534eb4ab2dc0",
+    "docs/evidence/g0-closure/extra-run/input-manifest.json": "b6eb2d0d3cf0b47d71186b114238a667201913bebf07f3cc7044c2f4be8b4356",
+    "docs/evidence/g0-closure/extra-run/inputs-before.json": "3885fb66aa4e4142a203cdd4127bb78963aac4cd49bee4ab0abec17a1e5fc162",
+    "docs/evidence/g0-closure/extra-run/java-availability.json": "bcccc31120bc0830ffb4f74334898553c4e313c69d47e53d0dd7304968f70b62",
+    "docs/evidence/g0-closure/extra-run/negative-input-before.json": "75240349ec1b4d39eab6be2a75b28e5a0a2ceb5c6400ae53f084b50bcfaf2148",
+    "docs/evidence/g0-closure/extra-run/oracle-bad-hash-normal.json": "9739094195963643b96942885c54f4e0c9e4ae517db2a5ad8d0976e5612170bf",
+    "docs/evidence/g0-closure/extra-run/oracle-bad-hash-optimized.json": "0d5fa3152b06c607da162245addbb87684c6fa34843a8690c13d62a5d8e56fdd",
+    "docs/evidence/g0-closure/extra-run/oracle-coverage-normal.json": "6d827b9719f5c2486914af31693827da8b1c39ecb5f42a055d32587d1f5829a8",
+    "docs/evidence/g0-closure/extra-run/oracle-coverage-optimized.json": "87af442c2fcc83f305be460036930e55a1ef9516829781bef025ea59e98870fe",
+    "docs/evidence/g0-closure/extra-run/os-version.json": "75ff4d85a37c5cf9f65da401ee41e1c24b549b405730b8c48605735d8e87d104",
+    "docs/evidence/g0-closure/extra-run/page-size.json": "28d1358beb1260e1a7f028008b8dff72708f0504fdeed530cc79854cd96577c8",
+    "docs/evidence/g0-closure/extra-run/regressions-optimized.json": "f3b81e13034f16dfb304c5630421e97bf83a1a0c7a888181629c48478345e013",
+    "docs/evidence/g0-closure/extra-run/sdk-path.json": "fdc49244a2b5b6076e5324a66b59ecfd4b94682421981d4f73fc4aea27559f99",
+    "docs/evidence/g0-closure/extra-run/sdk-version.json": "e7aff2230fa29b2b42413909fd5eab7c29b410913cc9d3c86c19716a6a5a31cc",
+    "docs/evidence/g0-closure/extra-run/stdlib-macros.json": "1cad65b0af9aa34ff898d87c3596d6e3952fb938d72c82b01559422f74313a19",
+    "docs/evidence/g0-closure/extra-run/target-availability.json": "0183efdd3e3e26432338865af953301674b4aa6b0b0789721367e2a4a4b9a6af",
+    "docs/evidence/g0-closure/final-checks/evidence-normal.json": "701dcd855c80db7bd0a55028f7caab62de8f4ab3acb3cc0d2c1ce959e4c8b4ba",
+    "docs/evidence/g0-closure/final-checks/evidence-optimized.json": "962b78598306fa31cd0599ff3e61c43b9672c4e69718c44881e9a83b2d55d2d1",
+    "docs/evidence/g0-closure/final-checks/input-manifest.json": "24c314148c7d0ea952c3f71d05ab5209259946997b1efdb48391f16339fbf4a3",
+    "docs/evidence/g0-closure/final-checks/inputs-before.json": "f7283c92759d63d33a52085957196aaf0757ca7894530823f2d46946408c72d0",
+    "docs/evidence/g0-closure/final-checks/oracle-normal.json": "b96d45cc522d5203d017d4d0e19e1e8aceb2c3d4b586ba30ce723337b556e049",
+    "docs/evidence/g0-closure/final-checks/oracle-optimized.json": "10a6b5a54f6f73bf8f723253e374b107aa67e5a25da333538fa8457fc241546c",
+    "docs/evidence/g0-closure/host-run/binary-policy.json": "03ef9a4df5f9fabe84226363dfe841b1f9b51835106428e2346c8b172a8c0166",
+    "docs/evidence/g0-closure/host-run/build-source-files.json": "7b42eedda352e11caa8e3abf94fa93b5475689058642e929b173ce33ef86d724",
+    "docs/evidence/g0-closure/host-run/cmake-version.json": "34a39f134e45bdd57a518aae6055308bfa90930e291c0602146188438149da23",
+    "docs/evidence/g0-closure/host-run/compiler-version.json": "9b469bcc924bfee1f5c1847ff898e659783ed7628177a3b4f04358ec6e4820b7",
+    "docs/evidence/g0-closure/host-run/consumer-build.json": "012b11ecc40872d4a8785f7e380d90bc382458ae45fdea80368cbcc800cbbe74",
+    "docs/evidence/g0-closure/host-run/consumer-configure.json": "3bd02dcc0729faa5a927b8fee7d16c5bd2f0fbbcb3f5b76a6d39abab104344f2",
+    "docs/evidence/g0-closure/host-run/consumer-run.json": "fce05f911f4fd143a17bd3f926bffd5a0b18c4b08edbdefb8cd58a93529e53d6",
+    "docs/evidence/g0-closure/host-run/correction-regressions.json": "768b184944b78e270552b194a69166ecb7ce2918cc2797c0f93d6ddb33fd0c27",
+    "docs/evidence/g0-closure/host-run/environment.json": "b5efcb183eec2328232a804143658dd72f6aeeb2241e44a0f4fa55ddcf2e22db",
+    "docs/evidence/g0-closure/host-run/host-build.json": "3a496cf8733c620a311bc7136bf316092cdedff2a03c9190b9e7806a9152277e",
+    "docs/evidence/g0-closure/host-run/host-configure.json": "a530d01e3575bcc1860894b8425546da9927482934f2ca738a39792effaf2cb7",
+    "docs/evidence/g0-closure/host-run/host-dependencies.json": "d69103cbfdb5e7e6b3c8ef1961ed87dc02a8f973d1db690360b428ed0ae4f4ca",
+    "docs/evidence/g0-closure/host-run/host-exports.json": "3255b961b2638700826e6ee4fc0eaaf6a3f1b0272b93e8837c7af72be371a9d4",
+    "docs/evidence/g0-closure/host-run/host-install.json": "58ad8f3e3b796a1de3ec5dcf2d2f75ba8e29dfefff5972e97de30c6d94280892",
+    "docs/evidence/g0-closure/host-run/host-unit.json": "2b123a4fc3cc9ea7102e61591c48e59aef9e6248c67ceab1273dad1e2e9e507e",
+    "docs/evidence/g0-closure/host-run/ninja-version.json": "a316f2171351970e970e9917cafda383d58a4a627adb76737a9ae9d9be935183",
+    "docs/evidence/g0-closure/host-run/owned-fixture-generate.json": "e5e1b5cb99be7dfd105def90cff3adf6c1688be479f5be1d67152afcc9a7dc52",
+    "docs/evidence/g0-closure/host-run/profile-spec-check.json": "9062be59b2baa0c61544a6dacde3354d8fbad43deac9b6ec9555267f1c954720",
+    "docs/evidence/g0-closure/host-run/python-probe-optimized.json": "0b85574edfc36c01467ab3e55967b8eaf85e2ca19bebf6e6f8c3f7c6e6563f2f",
+    "docs/evidence/g0-closure/host-run/python-probe.json": "f7a0bd20f1712bfe4a9de65f8cb7d4d614334bdb5fbbdb042f9d49bd295d6ba3",
+    "docs/evidence/g0-closure/host-run/python-version.json": "7bf4272177c99311e6670624a52cbc8649552104206a3a511aeec1b33449ce2d",
+    "docs/evidence/g0-closure/host-run/resource-observation.json": "638978f363563a208c1f0e34e1e2d54ea7597ba2304590269f11e6634214eb11",
+    "docs/evidence/g0-closure/host-run/suite.json": "55d02e372e45026ff1e6e0c352b050fa4fd7ebf82205bfe0ef2bcf4d8d6040c8",
+    "docs/evidence/g0-closure/human-decisions.json": "151563dfabf2104045d2d5a491aff45b1e12c7a3dcacbb9d4ba0f97368587cdf",
+    "docs/evidence/g0-closure/oracle-plan.md": "8e5930f83fda870e35a817c37cfa7c7e390323272dbbdf2232571b90c769a5a1",
+    "docs/evidence/g0-closure/oracle-provenance.json": "debbae5a4c837da05d4426d9cc908454e362934b03619badd5861c95d18e89f3",
+    "docs/evidence/g0-closure/oracle-run/dicom3tools-static-coverage.json": "d158d318799352cd2eb7cc7e843960090646899a65d392b5c0d1f931705e4204",
+    "docs/evidence/g0-closure/oracle-run/inputs-before.json": "8304bc0d39d5641dc7a7a19f84d9890627d4425406ebee3bc323b942bd9c7187",
+    "docs/evidence/g0-closure/oracle-run/oracle-coverage-normal.json": "c2c57116041ccadae9cd5a6c47b5547a35d3d6a8a08a769c4e55b73bd0c9657c",
+    "docs/evidence/g0-closure/oracle-run/oracle-coverage-optimized.json": "7245a476117da76dd21a99475e7dd915a2bef341b139ef055fd837c55b6f45d6",
+    "docs/evidence/g0-closure/oracle-run/oracle-invalid-wheel-normal.json": "dfe80f48ec4a57d869eee9811d81f3fafae36a944ea4b9bb43e402773e713f53",
+    "docs/evidence/g0-closure/oracle-run/oracle-invalid-wheel-optimized.json": "28cc1e90e9f15ed72858beea03e51f25d4839dcd090fa5eb7ea2dc91cc76702f",
+    "docs/evidence/g0-closure/regression-children/01.json": "78069a4d6986db35be7b8234d871d808b154736f3e41cb352a109a2ce4cebcfd",
+    "docs/evidence/g0-closure/regression-children/02.json": "6b388f0f6b26e3a0fd3fd8860c06362085b68ef7548438445e93524ec6f00314",
+    "docs/evidence/g0-closure/regression-children/03.json": "cf96c03fcee79235fd554ea184870baa0e94fdd37e6da300d56ad7930c16cb91",
+    "docs/evidence/g0-closure/regression-children/04.json": "b73c74da40aaa1dfe1e01c181a4c7732d29f8f1ba135120fc6ae350347f3d82b",
+    "docs/evidence/g0-closure/regression-children/05.json": "9ee76b607f9b2959f9de19512b8668d6782465899f01c3e15c4847e663eb676f",
+    "docs/evidence/g0-closure/regression-children/06.json": "18c201b82ddad6c312b2fef89bf4befdb7420d41a56769bc72d9d334f9f632d8",
+    "docs/evidence/g0-closure/regression-children/07.json": "9f88b952ad40e9f208864e8322b1db6193345be089c4f3db5b421d6ed65f223b",
+    "docs/evidence/g0-closure/regression-children/08.json": "6a12e102fb1f105bcc46a1c5d31be911f0ddc156ffb9619f038a1fe5f20114e2",
+    "docs/evidence/g0-closure/regression-children/09.json": "8e289b04b1498b4ad6113f9018dacd66c76c5f847448d575482e0823e9d2277a",
+    "docs/evidence/g0-closure/regression-children/10.json": "62cffff9574e3aaeee4c33b077183723df2788a42473c3e7c1832fc7b959d201",
+    "docs/evidence/g0-closure/regression-children/11.json": "69a07e4abcdc29f53de1c249b78c08b0b5458fea61fa39d0c752a0ce76a7dab5",
+    "docs/evidence/g0-closure/regression-children/12.json": "b5388f94d12005c3c6754129035a59c6a7433a6c6d673d8d316551a6635616bc",
+    "docs/evidence/g0-closure/regression-children/13.json": "bbbe56d6bcada2e74b8579bac33615e03155cbbcc664dd66a7269eab29b07276",
+    "docs/evidence/g0-closure/regression-children/14.json": "3fdc1ed8e3f493a81462b61ad9ae2e0c768548e713e2748106b8bf7e88b1c1a1",
+    "docs/evidence/g0-closure/regression-children/15.json": "fb3eaa7f43fd3e2ab48d0b1f799e666ad6b8beb2c78b39162e1961447f014790",
+    "docs/evidence/g0-closure/regression-children/16.json": "c92d484fb1c4fd8ca3ebb24a34af033a42fb474fd1cc5998749bb81fd77129b7",
+    "docs/evidence/g0-closure/regression-children/17.json": "4603ef5046062e8110523f30392ce143e82d3336effc77bd992f9485b44276ce",
+    "docs/evidence/g0-closure/regression-children/18.json": "e6c0352cec1b42debda10c86987541e278f172968b730820599330b5b8bb6a2b",
+    "docs/evidence/g0-closure/regression-children/19.json": "322ddfb3c360308ab5afc8038be8ecd2764448a45634844aeba3edc04e287c0f",
+    "docs/evidence/g0-closure/regression-children/20.json": "4614f87f0ab9a69df4afe9b7a69a25178382476d6e936c391ff9668e5a37b6f9",
+    "docs/evidence/g0-closure/regression-children/21.json": "3128433ae082ba30137edaae50bae7a222757df181369170cf21c3b0a5625479",
+    "docs/evidence/g0-closure/regression-children/22.json": "4b980cf11e2eb6632218dcee2262aadd3c41275f9ccefbaaa8ab333ccd5ee35b",
+    "docs/evidence/g0-closure/regression-children/23.json": "f30865184d3f0709d2618bba16a14b03e4c268f984973236f58d4e22b445a6b4",
+    "docs/evidence/g0-closure/regression-children/24.json": "20036fbbded2f29e741a2b50e84896810781b2c3f6d775de6638b5a6654d4fae",
+    "docs/evidence/g0-closure/regression-input-hashes.json": "2be66f1766961faf9be1d2071a32e13f08ab123e15311045ce921e120ab27ad5",
+    "docs/evidence/g0-closure/target-selection.json": "8f3ed41c8ed1a4966a0625d4bbb1100879086c9d7a04ac15b8c629c085b0f071",
+    "AGENTS.md": "305977c191688ae5aa68909d99d1657150665d8dd3a16fd2e29f7202f5339579",
+    "README.md": "d78736086dc1de435e144016508f683b11880459db5d40f39fb2f075405a9c24",
+    "tools/check_reader_dictionary.py": "1107d73f38f4ea552ebb952c7868ae1ff96fe5a638a9120c5199cfe120d20757",
+    "third_party/manifest/oracles.json": "a806224d298abbce2e7545a75e41030b02d01924829dcc1d931882a35905e02f",
+    "docs/evidence/target-matrix.json": "82be58c01a09abe64b30a6343d2aa695c61b8b8d81a7c1a2fed028cd0e93a00f",
+    "docs/evidence/df-g0-review-request.json": "4160d4f5741f37339b47b1d10c66efa958fd8e73c9a5b3704b390d2be56e1c95",
+    "docs/evidence/DF-G0-review-request.md": "d0b548bb940831c2ef798d5bf00fef86de4b4f14b5108aedbbaa42f885668ce5",
+    "docs/evidence/publication-status.md": "8ae150bf37630cc682d6a7237999cc7c98de0fac51dfcb113cb30d6a1be95aa5",
+    "docs/evidence/corrections/finding-dispositions.json": "74f2d443b68deae886819024abf918b1379380a2f856275d8d89f13b94ad493c"
+  },
+  "commands": [
+    {
+      "file": "extra-run/binary-optimized.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "e0eb21203f20e12b5d3c2b76687f3ad1f74907e50f8fd0f35a07c0feb1bc8710"
+    },
+    {
+      "file": "extra-run/evidence-normal.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "67b555a5ad509ffc9b0ed23ad40961c256abe4ff41200ebe23fb6495fa5b116d"
+    },
+    {
+      "file": "extra-run/evidence-optimized.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0e670f14d5e30811de3289beddc3e6274f132a19d3703eb90b52cbe527b37254"
+    },
+    {
+      "file": "extra-run/java-availability.json",
+      "kind": "unavailable_prerequisite",
+      "outcome": "unavailable",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "aed5ffeda196b5d6bb07ffe3484b3214a1263e462bfe5c6cfef4c28e9498fc76"
+    },
+    {
+      "file": "extra-run/oracle-bad-hash-normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "d77f5e37dd999cf95941b8dca66766569d67e88e6308799cccab0513eaec2802"
+    },
+    {
+      "file": "extra-run/oracle-bad-hash-optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "c1582606217dc53089c6781e982836f9c9fc5aa8cb18a2ef060e36851123d463"
+    },
+    {
+      "file": "extra-run/oracle-coverage-normal.json",
+      "kind": "oracle_setup",
+      "outcome": "failed",
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "original_record_sha256": "856fe1b800a7796d6b774c68285141c8d1a11ff8adebe33c876a92cb78887212"
+    },
+    {
+      "file": "extra-run/oracle-coverage-optimized.json",
+      "kind": "oracle_setup",
+      "outcome": "failed",
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5375d34d0d6d4dc760bbd7247be17df88158571a2098816a7d6886f0dd864557"
+    },
+    {
+      "file": "extra-run/os-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "a0814500d41891e38ef16ebc51139ff2dbbf4f2005cd5f09d3ea23a21d0ff085"
+    },
+    {
+      "file": "extra-run/page-size.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "277cd4da5191dd8e51b69b899e52b158533ba242a3e4e966902fb18704cede7d"
+    },
+    {
+      "file": "extra-run/regressions-optimized.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "28bcfced7f57ce3633b6d656515bc76969d61198d7558e2b50aa4563102ce004"
+    },
+    {
+      "file": "extra-run/sdk-path.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "7f1d347aa0a8aa4b91d20e76250df4fcaca1c160cb6eeb72d82d5c00ae5743f8"
+    },
+    {
+      "file": "extra-run/sdk-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0e22a5e03ff7d5a578c2b2d1caf9fb560b19ef7bdc5092ee8ffc5c1e3496e99e"
+    },
+    {
+      "file": "extra-run/stdlib-macros.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "6cab716212caaac121a6cb74086177dae1fadfeeac28caaa9847a56927376613"
+    },
+    {
+      "file": "final-checks/evidence-normal.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "d299c0e5d9d8609d37c13b27b242e63f5d87d86ec5dc5ccfae81824fa419cf90"
+    },
+    {
+      "file": "final-checks/evidence-optimized.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "feabc03b8f04de5ef01e7a82179c3f76a48bcc5e3840dbe5abe36182ff903860"
+    },
+    {
+      "file": "final-checks/oracle-normal.json",
+      "kind": "oracle_setup",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "29ab15e7c9e0662f8db76acac1940a72ed281f82483880732756d55ab00e1965"
+    },
+    {
+      "file": "final-checks/oracle-optimized.json",
+      "kind": "oracle_setup",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3aa7795a4c5e0b713d82b9a77a2bcfa024b3c1048f6c23b5223adef0a844c79e"
+    },
+    {
+      "file": "host-run/binary-policy.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "34991ef915048d0070bfb3d31050767724a431047676a48c5b9fed5f8a6d9797"
+    },
+    {
+      "file": "host-run/cmake-version.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0f37fb7718e1f4c573b162d3a8f2353eb3fdaee4a0edd74bcb69bd68e2041157"
+    },
+    {
+      "file": "host-run/compiler-version.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "6ed20ae4388acbc70d79d7dd8ab493586e08b541faef5427b5860c01ca9ca32e"
+    },
+    {
+      "file": "host-run/consumer-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "2c6a8e34a9a8c9639b540672eb097c4ad2d626bc33561e6f8b97a24034dc3215"
+    },
+    {
+      "file": "host-run/consumer-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "84abd52a8fdeef65d5cb03db4fb8b7fcbc2b484376ed3ba538365cddc09fd524"
+    },
+    {
+      "file": "host-run/consumer-run.json",
+      "kind": "installed_consumer_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0c0ed5e3552095caaf95ab30b9ec9761d9cc41c35a97b1bc53203efd18ba184f"
+    },
+    {
+      "file": "host-run/correction-regressions.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "1c7b4bcb97f768d84f36fa125a404a17adcd19ce363968e9245771c033bcb412"
+    },
+    {
+      "file": "host-run/host-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "a9ae271f4813f00501f547d588a4f8495e2576b3b40c23bff96030fe902cc364"
+    },
+    {
+      "file": "host-run/host-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "e22e67151ae820f4c06ac0274c04f5ba2eff60f780b8584626e884a121dddd28"
+    },
+    {
+      "file": "host-run/host-dependencies.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5cd990b45dd5d194859ee51ed74dd599b3b6359d19ab63ab9a307f1825ace726"
+    },
+    {
+      "file": "host-run/host-exports.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5278a7269a7c8855522ac2e45ccc4328459e229f584d7c57f521397590ee95e9"
+    },
+    {
+      "file": "host-run/host-install.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "356fd85e27d7b160266815c1b9d0b7a8090d20277824a8821dbaaf0afd02b5b3"
+    },
+    {
+      "file": "host-run/host-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "dbb98c1841ef75d8b2759663f241a4360f9b919d04ead55951974ab4b98f3522"
+    },
+    {
+      "file": "host-run/ninja-version.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9051acf9156a0e0022ff52270d0e0b2948f6159c1fea7bf5ed46b45ab5c2f60b"
+    },
+    {
+      "file": "host-run/owned-fixture-generate.json",
+      "kind": "fixture_generation",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "569ac1b039aa8f80e21a0dc823c0859f8a636e7d73d3bb922fe5b638e8ede6ab"
+    },
+    {
+      "file": "host-run/profile-spec-check.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "68943e689a1b28179337c00890a84b903cc5fbd04d4c43e3e5983a510698f61e"
+    },
+    {
+      "file": "host-run/python-probe-optimized.json",
+      "kind": "binding_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "de04cafc200a26507f38761c91ad2d49b457084a341c77fd6bfc40428264795f"
+    },
+    {
+      "file": "host-run/python-probe.json",
+      "kind": "binding_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "495180369b083d10ab8d54d5dd3df16f6f2896945141a48fddf6fdd3f01a076c"
+    },
+    {
+      "file": "host-run/python-version.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "47715a3d955018c176edbb9f3cb250f7325a84a5f18e064eb83fb045a1616404"
+    },
+    {
+      "file": "host-run/resource-observation.json",
+      "kind": "resource_measurement",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "fab0b1dc1ff12fb6e3d625dade7b9fdc9eccfea452ab8ef61169e168e715f488"
+    },
+    {
+      "file": "oracle-run/oracle-coverage-normal.json",
+      "kind": "oracle_setup",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "ea68149d594d894b1698cc31faee669b13f731df1d4bf5ed5865a2bd25e793fb"
+    },
+    {
+      "file": "oracle-run/oracle-coverage-optimized.json",
+      "kind": "oracle_setup",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "fad69e4792cc3dd5fb8b1a487c3083d5eeeb54a5590387edb684464928d6ea77"
+    },
+    {
+      "file": "oracle-run/oracle-invalid-wheel-normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "76583a224cfe462f1488828c28ced4beee97049abf226a3d52c890753562b316"
+    },
+    {
+      "file": "oracle-run/oracle-invalid-wheel-optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "fd8533b2b16630c52a089d3310405874f092753399a41581e15edf39ae282309"
+    },
+    {
+      "file": "regression-children/01.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/02.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/03.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/04.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/05.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/06.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/07.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/08.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/09.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/10.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/11.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/12.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/13.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/14.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/15.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/16.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/17.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/18.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/19.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/20.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/21.json",
+      "kind": "regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/22.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/23.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    },
+    {
+      "file": "regression-children/24.json",
+      "kind": "regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": null
+    }
+  ],
+  "outcome_counts": {
+    "passed": 43,
+    "unavailable": 1,
+    "expected_rejection": 20,
+    "failed": 2
+  },
+  "counting_note": "Command counts include parent suites and child rejection invocations; do not add them to infer independent test coverage. Two initial isolated oracle setup failures are retained. Java availability is not acceptance.",
+  "unrun": [
+    "Complete Linux repository/install consumer qualification",
+    "All Pi physical target requests",
+    "Android/JNI physical and emulator 4 KB/16 KB qualification",
+    "Positive own-engine object reading and IOD validation",
+    "24 engine acceptance tests"
+  ],
+  "no_new_sanitizer_fuzz_campaign": true,
+  "historical_records_unchanged": true,
+  "human_disposition": null,
+  "df1_authorised": false
+}

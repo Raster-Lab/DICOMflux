@@ -25,9 +25,12 @@ DF-1 unless a later explicit authorisation permits progression. Do not
 self-approve gates, claim absent device runs, or equate scaffolding with a
 working engine.
 
-For the explicitly authorised DF-0 reconciliation task, reviewed public-safe
-files may be committed and pushed to codex/df0-foundation-review, with a draft
-pull request targeting main. This narrow exception permits no private materials,
+For the explicitly authorised post-merge DF-0 qualification/closure task,
+reviewed public-safe changes may be committed and pushed to
+codex/df0-g0-closure, with one draft pull request targeting main. Start from the
+verified merged main and preserve the earlier checkout/history. This task-specific
+exception permits no private materials,
 direct-main writes, force-pushes, history rewriting, merges, releases, tags,
 repository setting changes or DF-1 work. Other repository operations require
-explicit task authority. DF-G0 remains pending human disposition.
+explicit task authority. PR #1 is already merged; do not merge it again.
+DF-G0 remains pending human disposition; the closure recommendation is not approval.

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "G0-D01",
+    "decision": "Consumer qualification selection",
+    "recommendation": "Select Pi 4 / Bookworm 64-bit Legacy Lite as the first Linux/Pi witness; retain other requests as deferred candidates. Disposition Pi 5 and CM5 Bullseye as incompatible and consider Bookworm/Trixie alternatives. Confirm Android arm64 device and minSdk 23 candidate before JNI qualification.",
+    "consequence": "No Linux/Pi/Android support claim until exact selected runtime evidence; missing devices can be deferred for host-only foundation work.",
+    "human_disposition": null
+  },
+  {
+    "id": "G0-D02",
+    "decision": "External oracle admission",
+    "recommendation": "Retain pydicom 3.0.2 as an isolated selected-tag/strict-reader candidate; keep the disputed DCMTK archive quarantined. Prefer a fresh official commit-pinned DCMTK source as proposed second reader, with a separately built dicom3tools dciodvfy. Review new input rights/hashes and exact selected-profile diagnostics before object acceptance.",
+    "consequence": "No third-party implementation dependency. Setup/template coverage is partial; two-reader/IOD object acceptance stays unrun. If clean DCMTK acquisition is declined, propose dicom3tools dcdump as the second reader with its reduced independence from dciodvfy disclosed.",
+    "human_disposition": null
+  },
+  {
+    "id": "G0-D03",
+    "decision": "Historical evidence limitation",
+    "recommendation": "Administratively acknowledge DF0-REV-006 with the original missing source/corpus links and seven failures preserved. Rely on fresh linked host evidence for this submission; retain prospective source/config and before/after corpus capture.",
+    "consequence": "No retrospective validation claim or forced replay. Repeat a sanitizer/fuzz campaign only for a new bug class, material code change or defined evidence gap.",
+    "human_disposition": null
+  },
+  {
+    "id": "G0-D04",
+    "decision": "DF-G0 and next work authority",
+    "recommendation": "Accept only the narrower auxiliary-host foundation boundary, if the reviewer agrees; separately authorise DF-W05 plus the ABI-query/context/error-copy/release subset of DF-W06 on the observed host. Stop before builder/dataset/write-plan/execution APIs, profile/writer/oracle-object work, JNI/Pi integration and all later work orders.",
+    "consequence": "Current DF-1 authority stays false. Consumer gates remain open. Any future expansion requires explicit scope and its prerequisite target/oracle evidence; the draft PR or its possible merge is not that authority.",
+    "human_disposition": null
+  }
+]

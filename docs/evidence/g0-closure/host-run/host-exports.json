@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "host-exports",
+  "kind": "binary_inspection",
+  "command": [
+    "nm",
+    "-gU",
+    "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:21.515496+00:00",
+  "elapsed_seconds": 0.010069791984278709,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "0000000000001100 T _dicomflux_probe_create\n0000000000001738 T _dicomflux_probe_measure\n0000000000001030 T _dicomflux_probe_query_abi\n0000000000001a10 T _dicomflux_probe_release\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

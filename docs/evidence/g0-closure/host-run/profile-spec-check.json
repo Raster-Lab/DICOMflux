@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "profile-spec-check",
+  "kind": "document_check",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/validate_profile_inventory.py"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:21.443889+00:00",
+  "elapsed_seconds": 0.032653165981173515,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "{\"kind\": \"document_and_owned_fixture_check\", \"outcome\": \"passed\", \"python_optimize\": 0, \"mandatory_modules\": 10, \"attribute_rows\": 329, \"selected_tags\": 31, \"file_meta_attribute_rows\": 15, \"expected_layouts\": 2, \"engine_profile_validation\": \"not_run\"}\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

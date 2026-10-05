@@ -1,0 +1,23 @@
+{
+  "id": "oracle-invalid-wheel-normal",
+  "kind": "expected_negative",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-I",
+    "-S",
+    "${SOURCE}/tools/check_reader_dictionary.py",
+    "--wheel",
+    "${PRIVATE_CLOSURE}/extra-run/owned-invalid-wheel.whl",
+    "--scratch",
+    "${PRIVATE_CLOSURE}/pydicom-normal-invalid"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:23:45.608306+00:00",
+  "elapsed_seconds": 0.03787854200345464,
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/check_reader_dictionary.py\", line 103, in <module>\n    main()\n  File \"${SOURCE}/tools/check_reader_dictionary.py\", line 34, in main\n    require(digest == pin['sha256'], 'Wheel hash mismatch; refusing import')\n  File \"${SOURCE}/tools/check_reader_dictionary.py\", line 18, in require\n    raise RuntimeError(message)\nRuntimeError: Wheel hash mismatch; refusing import\n",
+  "outcome": "expected_rejection",
+  "input_manifest_sha256": "8938e66c528720de9d24e47a6930edea0646b061ca0517c4126130cac4e8c2a9"
+}

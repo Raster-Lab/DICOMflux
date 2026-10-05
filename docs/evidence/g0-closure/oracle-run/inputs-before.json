@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-05T08:23:45.314601+00:00",
+  "files": {
+    "${SOURCE}/tools/check_reader_dictionary.py": "1107d73f38f4ea552ebb952c7868ae1ff96fe5a638a9120c5199cfe120d20757",
+    "${SOURCE}/third_party/manifest/oracles.json": "0c562739a65480aee36046d1258e902544a009cb16b86b9f2f9bc34553cab672",
+    "${SOURCE}/docs/profiles/DF-PHOTO-RGB8-v0.1.0.json": "21b7a0b8af7ebdc88b4683d599d9d8e1e3f9cff1b5d7882feea6f6f48885d98b",
+    "${SOURCE}/docs/profiles/file-meta-inventory.json": "cee55e97c0226b20d2849806f3d025c9f99e71fc85df88eb8581a53a41fbaee1",
+    "${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl": "abf971a5440f84dbaf42c4b6758e30e62480902584f8b270b9a5d146e278a07b",
+    "${PRIVATE_WORK}/oracle-archives/dicom3tools_1.00.snapshot.20260901072548.tar.bz2": "5ce41f561177b001e7c6d531cd5a815887901997d94f5c48888568955364f0cf",
+    "${PYTHON_RUNTIME}/bin/python3.12": "5ccd02f7849086e9314db5778ba9085c10a7dd3879c949626f2cf838294c7325",
+    "${PRIVATE_CLOSURE}/run-oracle.py": "fe7f347ea620a6ab2561f6283aff87b8d92f657015901b853a8be5812178c472"
+  }
+}

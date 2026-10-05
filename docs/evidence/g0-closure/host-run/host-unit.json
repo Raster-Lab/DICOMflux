@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "host-unit",
+  "kind": "foundation_test",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/g0-adopted-main-host",
+    "--verbose",
+    "--output-on-failure"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:15.197251+00:00",
+  "elapsed_seconds": 1.9862604169757105,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/g0-adopted-main-host/DartConfiguration.tcl\nParse Config file:${SOURCE}/build/g0-adopted-main-host/DartConfiguration.tcl\nTest project ${SOURCE}/build/g0-adopted-main-host\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: df0_foundation\n\n1: Test command: ${SOURCE}/build/g0-adopted-main-host/df0_unit\n1: Working Directory: ${SOURCE}/build/g0-adopted-main-host\n1: Test timeout computed to be: 1500\n1: DF0 prototype checks=89 allocation_sites=2 fault_modes=2 concurrent_measurements=4000 tracked_bytes=65648\n1/3 Test #1: df0_foundation ...................   Passed    1.05 sec\ntest 2\n    Start 2: df0_contract_c\n\n2: Test command: ${SOURCE}/build/g0-adopted-main-host/df0_contract_c\n2: Working Directory: ${SOURCE}/build/g0-adopted-main-host\n2: Test timeout computed to be: 1500\n2: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n2/3 Test #2: df0_contract_c ...................   Passed    0.41 sec\ntest 3\n    Start 3: df0_contract_cpp\n\n3: Test command: ${SOURCE}/build/g0-adopted-main-host/df0_contract_cpp\n3: Working Directory: ${SOURCE}/build/g0-adopted-main-host\n3: Test timeout computed to be: 1500\n3: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n3/3 Test #3: df0_contract_cpp .................   Passed    0.49 sec\n\n100% tests passed out of 3\n\nTotal Test time (real) =   1.95 sec\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

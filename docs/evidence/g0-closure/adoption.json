@@ -1,0 +1,22 @@
+{
+  "repository": "Raster-Lab/DICOMflux",
+  "branch": "codex/df0-g0-closure",
+  "adopted_main": "cf17269a3af7af503b30c8f6310b492dd58fa302",
+  "adopted_tree": "e007c8554228fd8c759891c3218d0ad7be1f2b21",
+  "reviewed_pr1_head": "26be4ee0f904e0b538d474b59e90a292a12d78d5",
+  "observed_before_execution": "2026-10-05T08:14:13.495481+00:00",
+  "working_tree_state": "clean",
+  "source_path": "${SOURCE}",
+  "original_checkout": "${ORIGINAL_SOURCE}",
+  "original_head": "3f5aeba65275b86de39ae62cb55946d0f0cffc8d",
+  "original_branch": "codex/df0-foundation-review",
+  "original_state": "No tracked changes; two untracked private metadata files preserved outside this worktree",
+  "source_file_count": 182,
+  "merged_input_manifest_sha256": "728a5d89aa51c12bec6e6a60a0a84ecb7740cc4c918f8d483ba3101a78f0c643",
+  "private_controls_readable": true,
+  "private_integrity_verifier": "PASS: 32 frozen files",
+  "authority": "Existing DF-A001; DF-W00 through DF-W04 only; task-specific closure branch publication permitted",
+  "private_original_record": "Retained separately with actual source/control paths and hashes",
+  "human_disposition": null,
+  "df1_authorised": false
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "host-install",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--install",
+    "${SOURCE}/build/g0-adopted-main-host"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:17.184093+00:00",
+  "elapsed_seconds": 0.012244958023075014,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "-- Install configuration: \"Debug\"\n-- Installing: ${SOURCE}/install/g0-adopted-main/lib/libdicomflux_probe.dylib\n-- Installing: ${SOURCE}/install/g0-adopted-main/include/dicomflux/df0_probe.h\n-- Installing: ${SOURCE}/install/g0-adopted-main/include/dicomflux/probe_defaults.h\n-- Installing: ${SOURCE}/install/g0-adopted-main/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets.cmake\n-- Installing: ${SOURCE}/install/g0-adopted-main/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets-debug.cmake\n-- Installing: ${SOURCE}/install/g0-adopted-main/lib/cmake/DICOMfluxProbe/DICOMfluxProbeConfig.cmake\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

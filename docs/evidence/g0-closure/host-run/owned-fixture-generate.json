@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "owned-fixture-generate",
+  "kind": "fixture_generation",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/generate_synthetic_pixels.py"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:21.421938+00:00",
+  "elapsed_seconds": 0.021313083008863032,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "{\n  \"schema_version\": \"1\",\n  \"kind\": \"owned_synthetic_raw_pixels_not_DICOM\",\n  \"formula\": \"r=17*x, g=17*y, b=17*(x XOR y), row-major interleaved RGB\",\n  \"licence\": \"MIT; Copyright (c) 2026 Raster Images\",\n  \"fixtures\": [\n    {\n      \"name\": \"rgb16x16\",\n      \"file\": \"rgb16x16.rgb\",\n      \"rows\": 16,\n      \"columns\": 16,\n      \"samples_per_pixel\": 3,\n      \"logical_bytes\": 768,\n      \"encoded_pixel_value_bytes\": 768,\n      \"padding_byte\": null,\n      \"sha256\": \"3d0cbf70d818e173369ce87844e0f00780d87bf3235333518f486874ed1b9924\"\n    },\n    {\n      \"name\": \"rgb1x3-odd\",\n      \"file\": \"rgb1x3-odd.rgb\",\n      \"rows\": 1,\n      \"columns\": 3,\n      \"samples_per_pixel\": 3,\n      \"logical_bytes\": 9,\n      \"encoded_pixel_value_bytes\": 10,\n      \"padding_byte\": 0,\n      \"sha256\": \"308b4f746e186d9a2c10ac4624c25e3b3ad0902d66057eb850f620894d5ca205\"\n    }\n  ]\n}\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

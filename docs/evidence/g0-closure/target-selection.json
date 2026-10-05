@@ -1,0 +1,42 @@
+{
+  "scope": "Proposal, not a supported-platform declaration",
+  "first_pi": {
+    "id": "first-pi-proposal",
+    "board": "Raspberry Pi 4 Model B",
+    "architecture": "AArch64 / 64-bit",
+    "image": "Raspberry Pi OS Legacy Lite (Bookworm)",
+    "published_release": "2026-09-15",
+    "published_kernel_family": "6.12",
+    "sha256": "bcaefdf9c40dbed31dcaeb3b8494e498b4f1e3078c2604b0d9f5f595f8f6fd91",
+    "url": "https://downloads.raspberrypi.com/raspios_oldstable_lite_arm64/images/raspios_oldstable_lite_arm64-2026-09-15/2026-09-15-raspios-bookworm-arm64-lite.img.xz",
+    "metadata_source": "https://www.raspberrypi.com/software/operating-systems/",
+    "image_acquired": false,
+    "image_executed": false,
+    "human_selection": null,
+    "reason": "One common AArch64 Linux/Pi witness first; other requested boards and OSes remain separate candidates, not a mandatory 12-target gate."
+  },
+  "first_android": {
+    "abi_candidate": "arm64-v8a",
+    "min_sdk_candidate": 23,
+    "ndk_candidate": "30.0.16248370 (r30), inherited candidate, not downloaded or qualified",
+    "decision_needed": "Confirm API floor and supply one physical arm64 device with exact OS/build plus a separate 4 KB/16 KB execution configuration as necessary. Record getconf PAGESIZE on each; do not infer from ABI.",
+    "blocked_checks": [
+      "NDK build/link and JNI load/close",
+      "ELF export/dependency and load-segment inspection",
+      "APK alignment",
+      "physical lifetime/GC/close checks at observed page sizes"
+    ],
+    "human_selection": null
+  },
+  "first_linux": {
+    "proposal": "The Pi 4 selection can provide the first full Linux AArch64 repository/install witness. If Linux x86_64 support is claimed separately, a full Linux x86_64 environment remains required.",
+    "reviewer_result": "PR1 review copied five files for direct GCC testing; no full-repository or installed-consumer qualification.",
+    "qualification": "blocked"
+  },
+  "access_request": "For device qualification, provide the selected Pi 4 board/revision, permissioned test access and the approved exact image; for Android, the device/build/API and SDK/NDK/JDK/AGP/Kotlin pins with physical/emulator access. These are not prerequisites for preparing this submission or the proposed host-only foundation work.",
+  "deferred_checks": [
+    "Complete Linux/Pi CMake build, install/relocation, native and Python lifetime probes with exact compiler/stdlib/glibc/Python and observed kernel/page size",
+    "Android/JNI and 4 KB/16 KB physical/emulator evidence",
+    "Additional Pi combinations and Python 3.14"
+  ]
+}

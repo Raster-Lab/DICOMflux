@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-05T08:21:34.136944+00:00",
+  "tools_in_path": {
+    "docker": null,
+    "podman": null,
+    "colima": null,
+    "limactl": null,
+    "qemu-system-aarch64": null,
+    "adb": null,
+    "emulator": null,
+    "sdkmanager": null,
+    "imake": null,
+    "makedepend": null,
+    "mkdirhier": null,
+    "java": "/usr/bin/java",
+    "make": "/usr/bin/make"
+  },
+  "device_access_supplied": false,
+  "linux_target_environment_supplied": false,
+  "interpretation": "No usable configured target runtime identified; PATH absence alone is not proof no software exists elsewhere."
+}

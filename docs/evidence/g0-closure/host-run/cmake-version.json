@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "cmake-version",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:14:13.742655+00:00",
+  "elapsed_seconds": 0.011708333011483774,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+  "stdout": "cmake version 4.4.4\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

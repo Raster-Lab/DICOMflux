@@ -4,37 +4,44 @@
     {
       "id": "DF0-REV-001",
       "status": "corrected; pending human review",
-      "result": "All 15 present Type 2/2C rows separate presence, legal emptiness, non-empty VR/VM and fixture-only equality. Mutation regressions reject the old contradictions for every row and protect both empty fixture witnesses."
+      "result": "All 15 present Type 2/2C rows separate presence, legal emptiness, non-empty VR/VM and fixture-only equality. Mutation regressions reject the old contradictions for every row and protect both empty fixture witnesses.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-002",
       "status": "corrected proposal; pending human review",
-      "result": "Fixed-width plan states/query fields, status sentinel, component/operation mappings and validity-bit-qualified absent sentinels specified. C11/C++20 consumers reference fields and numeric values. Unsupported minor and live cross-context behavior explicit; no engine functions implemented."
+      "result": "Fixed-width plan states/query fields, status sentinel, component/operation mappings and validity-bit-qualified absent sentinels specified. C11/C++20 consumers reference fields and numeric values. Unsupported minor and live cross-context behavior explicit; no engine functions implemented.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-003",
       "status": "corrected; pending human review",
-      "result": "No essential Python calls or acceptance checks remain in removable asserts. Normal, -O and PYTHONOPTIMIZE=1 native probes pass with ABI 80/8. Deliberate bad budgets and contradictory profiles/records exit 1 in normal and -O. Binary policy rejects extra exports/dependencies. Original private review/export helpers remain frozen historical artifacts, not newly qualified current validators."
+      "result": "No essential Python calls or acceptance checks remain in removable asserts. Normal, -O and PYTHONOPTIMIZE=1 native probes pass with ABI 80/8. Deliberate bad budgets and contradictory profiles/records exit 1 in normal and -O. Binary policy rejects extra exports/dependencies. Original private review/export helpers remain frozen historical artifacts, not newly qualified current validators.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-004",
-      "status": "blocked; human disposition required",
-      "result": "All 12 requested Pi combinations retained; no Linux/Android/JNI/device/4K/16K execution. Official Pi 5 FAQ now confirms pre-Bookworm OS incompatibility; CM5 Bookworm+ requirement reconfirmed. Android exact device/minimum API still missing."
+      "status": "open; proposed consumer deferral for human review",
+      "result": "12 Pi requests classified without adding mandatory gates. One Pi4/Bookworm image proposed, two Bullseye incompatibilities retained. Fresh macOS page size 16384 only. No complete Linux/Android/JNI/Pi witness; five-file reviewer check remains limited.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-005",
-      "status": "open; DCMTK quarantined",
-      "result": "Archive hash rechecked; distribution listing has no digest and live files page returns a challenge. Historical differing indexed digest preserved. dciodvfy unbuilt, strict reader/IOD/profile coverage unqualified, no DICOM object produced. Standards captures/prose and third-party binaries remain private."
+      "status": "partial setup/coverage advanced; provenance disposition pending",
+      "result": "All 3516 quarantined DCMTK archive files match official tagged Git blobs (one .gitignore omitted), but archive-digest discrepancy persists; no execution. pydicom selected VR/VM 38/38 and strict rejection witnessed in normal/-O. dicom3tools dictionary/template presence checked as data; build prerequisites absent. Object acceptance not run.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-006",
-      "status": "historical limitation retained; forward input capture improved",
-      "result": "60 historical command records and 7 failures unchanged; 28 retain final 16-file digest, 32 have no such linkage. New runs captured source/test/config/tool identities before execution. Runner snapshots source bytes and before/after fuzz corpus for future runs; no new fuzz campaign or historical reconstruction claimed."
+      "status": "historical limitation retained; administrative acknowledgement proposed",
+      "result": "Historical 60 commands / 7 failures unchanged; 28 linked to final 16-file digest and 32 unlinked. New host source bytes frozen before execution; fresh follow-up inputs hashed prospectively. Before/after corpus capture remains in current runner; no new native change or campaign justified.",
+      "closure_evidence": "../g0-closure/README.md"
     },
     {
       "id": "DF0-REV-007",
       "status": "corrected; pending human review",
-      "result": "README and checker agree on 19 expanded tables, 10 expanded macro invocations and 9 distinct macro tables."
+      "result": "README and checker agree on 19 expanded tables, 10 expanded macro invocations and 9 distinct macro tables.",
+      "closure_evidence": "../g0-closure/README.md"
     }
   ],
   "human_disposition": null,

@@ -1,0 +1,17 @@
+{
+  "id": "os-version",
+  "kind": "environment",
+  "command": [
+    "/usr/bin/sw_vers"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:21:34.063310+00:00",
+  "elapsed_seconds": 0.010207250015810132,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434\n",
+  "stderr": "",
+  "input_text": null,
+  "input_manifest_sha256": "08cf34484fbf467e90019b9513e38187dc37f810a147e6443b73e54fe56160f6"
+}
