@@ -1,0 +1,19 @@
+{
+  "id": "python-version",
+  "kind": "environment",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:39.829089+00:00",
+  "elapsed_seconds": 0.0077861669997219,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "Python 3.12.14\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

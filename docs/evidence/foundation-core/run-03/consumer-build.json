@@ -1,0 +1,22 @@
+{
+  "id": "consumer-build",
+  "kind": "install",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df1-fc-03-consumers",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:40.404270+00:00",
+  "elapsed_seconds": 0.24951270798919722,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "[1/4] Building C object CMakeFiles/foundation_consumer_c.dir/consumer.c.o\n[2/4] Linking C executable foundation_consumer_c\n[3/4] Building CXX object CMakeFiles/foundation_consumer_cpp.dir/consumer.cpp.o\n[4/4] Linking CXX executable foundation_consumer_cpp\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

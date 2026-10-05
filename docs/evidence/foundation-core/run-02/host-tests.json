@@ -1,0 +1,22 @@
+{
+  "id": "host-tests",
+  "kind": "foundation_test",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df1-fc-02-host",
+    "--verbose",
+    "--output-on-failure"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:42.031709+00:00",
+  "elapsed_seconds": 2.2254090829810593,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df1-fc-02-host/DartConfiguration.tcl\nParse Config file:${SOURCE}/build/df1-fc-02-host/DartConfiguration.tcl\nTest project ${SOURCE}/build/df1-fc-02-host\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: df0_foundation\n\n1: Test command: ${SOURCE}/build/df1-fc-02-host/df0_unit\n1: Working Directory: ${SOURCE}/build/df1-fc-02-host\n1: Test timeout computed to be: 1500\n1: DF0 prototype checks=89 allocation_sites=2 fault_modes=2 concurrent_measurements=4000 tracked_bytes=65648\n1/4 Test #1: df0_foundation ...................   Passed    0.96 sec\ntest 2\n    Start 2: df0_contract_c\n\n2: Test command: ${SOURCE}/build/df1-fc-02-host/df0_contract_c\n2: Working Directory: ${SOURCE}/build/df1-fc-02-host\n2: Test timeout computed to be: 1500\n2: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n2/4 Test #2: df0_contract_c ...................   Passed    0.43 sec\ntest 3\n    Start 3: df0_contract_cpp\n\n3: Test command: ${SOURCE}/build/df1-fc-02-host/df0_contract_cpp\n3: Working Directory: ${SOURCE}/build/df1-fc-02-host\n3: Test timeout computed to be: 1500\n3: candidate API declaration-only: context_options=200 source=72 sink=48 error=328 result=56 alignment=8\n3/4 Test #3: df0_contract_cpp .................   Passed    0.41 sec\ntest 4\n    Start 4: df1_foundation\n\n4: Test command: ${SOURCE}/build/df1-fc-02-host/df1_foundation_tests\n4: Working Directory: ${SOURCE}/build/df1-fc-02-host\n4: Test timeout computed to be: 1500\n4: DF-A002 foundation checks=394 allocation_sites=3 fault_modes=4 concurrent_reference_pairs=8000 concurrent_owned_blocks=400 independent_contexts=4 context_bytes=176 options_size=200 error_size=328\n4/4 Test #4: df1_foundation ...................   Passed    0.40 sec\n\n100% tests passed out of 4\n\nTotal Test time (real) =   2.21 sec\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

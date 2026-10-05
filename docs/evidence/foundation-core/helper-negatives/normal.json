@@ -1,0 +1,30 @@
+{
+  "id": "runner-reject-empty-normal",
+  "kind": "expected_negative",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/run_foundation_suite.py",
+    "--cmake",
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--ninja",
+    "${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "--python",
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "--fuzzer-runtime",
+    "${PRIVATE_WORK}/tooling/libfuzzer-build/libFuzzer.a",
+    "--evidence-dir",
+    "${PRIVATE_TASK}/helper-negatives/must-not-exist",
+    "--run-id",
+    "invalid-config-check",
+    "--configs",
+    ""
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:35.903706+00:00",
+  "elapsed_seconds": 0.042601833,
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "outcome": "expected_rejection",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/run_foundation_suite.py\", line 161, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"${SOURCE}/tools/run_foundation_suite.py\", line 36, in main\n    require(len(configs) == len(set(configs)) and set(configs) <= {'host','address','undefined','thread','fuzz'}, 'Invalid configurations')\n  File \"${SOURCE}/tools/run_foundation_suite.py\", line 23, in require\n    raise RuntimeError(message)\nRuntimeError: Invalid configurations\n"
+}

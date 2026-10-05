@@ -1,0 +1,13 @@
+{
+  "repository": "Raster-Lab/DICOMflux",
+  "source": "${SOURCE}",
+  "adopted_merge": "7f99e34a010f922b8bf85404840bc744a7af66fc",
+  "adopted_tree": "0393a9676b9b8985dfd8a0ed56930dc1e2bc5af3",
+  "branch": "codex/df1-foundation-core",
+  "state_before_edits": "",
+  "captured_at": "2026-10-05T13:14:10.056971+00:00",
+  "main_at_adoption": "7f99e34a010f922b8bf85404840bc744a7af66fc",
+  "public_approval": "https://github.com/Raster-Lab/DICOMflux/pull/2#issuecomment-5994925456",
+  "original_checkouts": "Both prior DF-0 worktrees, divergent history and private untracked metadata remain untouched. Actual paths and private control hashes retained in the private adoption record.",
+  "authority": "DF-A002; current effective record supersedes prior scope stops only for DF-W05 and the five-function DF-W06 subset."
+}

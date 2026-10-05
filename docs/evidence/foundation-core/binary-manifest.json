@@ -1,0 +1,77 @@
+{
+  "artifacts": [
+    {
+      "path": "stage/df1-fc-02/lib/libdicomflux_foundation.dylib",
+      "bytes": 45808,
+      "sha256": "1a0fedbc38bf8cac5f5458e2ec2f84412c4f249a7c53a8fd0df8e5ed75316282"
+    },
+    {
+      "path": "stage/df1-fc-02/lib/libdicomflux_probe.dylib",
+      "bytes": 38168,
+      "sha256": "f67342670d77c0f1b55e1af82ca1dee1a5e663a165cd494296e91d7ac123a97d"
+    },
+    {
+      "path": "build/df1-fc-02-host/df1_foundation_tests",
+      "bytes": 134600,
+      "sha256": "a6bebf96d6d2aaf93af418deeb5f903e1e3a5c39169b54541a8a65492c134734"
+    },
+    {
+      "path": "build/df1-fc-02-consumers/foundation_consumer_c",
+      "bytes": 34120,
+      "sha256": "1feebbb3f18def3d3d88c7ba8e8469f92e50a55b3a4597c407cbeede11010da6"
+    },
+    {
+      "path": "build/df1-fc-02-consumers/foundation_consumer_cpp",
+      "bytes": 34216,
+      "sha256": "5e0e249730e7620c7405a7660825576028fc158a36ab22f7aea0c84233d66e22"
+    },
+    {
+      "path": "stage/df1-fc-03/lib/libdicomflux_foundation.dylib",
+      "bytes": 45808,
+      "sha256": "51649067b94632723dc570abd286ef40c5b0896b5103a48399c90c58b02400be"
+    },
+    {
+      "path": "stage/df1-fc-03/lib/libdicomflux_probe.dylib",
+      "bytes": 38168,
+      "sha256": "26981241227e1f5850d2373a130f405ae6a948ac8998028d176b7e7a79d5a451"
+    },
+    {
+      "path": "build/df1-fc-03-host/df1_foundation_tests",
+      "bytes": 134600,
+      "sha256": "00372262c5e20c61566ce9050339782474470b55a530d28e0838031d4fe435bf"
+    },
+    {
+      "path": "build/df1-fc-03-consumers/foundation_consumer_c",
+      "bytes": 34120,
+      "sha256": "7d48631daa9b25517da1780ed8e3da4a18bb320c0d7e84ccbddf4fa4dba71e2d"
+    },
+    {
+      "path": "build/df1-fc-03-consumers/foundation_consumer_cpp",
+      "bytes": 34216,
+      "sha256": "c2cb31d2431d036d06f74ecb1fe31a3790d126439ef030de54ed1919963d9d7a"
+    },
+    {
+      "path": "build/df1-fc-02-address/df1_foundation_tests",
+      "bytes": 257624,
+      "sha256": "95bd1b86af65e250890201500de7520296a2284ff04268e9c5fc47718366e6f5"
+    },
+    {
+      "path": "build/df1-fc-02-undefined/df1_foundation_tests",
+      "bytes": 251272,
+      "sha256": "29ffc2f78f784f6a23cdc10ae49ce5096c26a8a0a4bf69a4a734a0d3fe6a42a8"
+    },
+    {
+      "path": "build/df1-fc-02-thread/df1_foundation_tests",
+      "bytes": 187048,
+      "sha256": "9744980079b0d77b5fa9d00ce350e802d6ef3b202c6cf78ff8de83fada73b96e"
+    },
+    {
+      "path": "build/df1-fc-02-fuzz/df1_foundation_fuzz",
+      "bytes": 512192,
+      "sha256": "af0a1ce02332dd4bd03c36f03ec3a4c20ba97393d348dae24350f564184d9f3c"
+    }
+  ],
+  "binary_bytes_published": false,
+  "native_input_identity": "implemented-inputs.json",
+  "public_surface": "five foundation functions; separate four-function prototype"
+}

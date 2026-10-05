@@ -1,0 +1,19 @@
+{
+  "id": "ninja-version",
+  "kind": "environment",
+  "command": [
+    "${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:34.819577+00:00",
+  "elapsed_seconds": 0.003811624977970496,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "1.13.2.git.kitware.jobserver-pipe-1\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "foundation-dependencies",
+  "kind": "binary_inspection",
+  "command": [
+    "/usr/bin/otool",
+    "-L",
+    "${SOURCE}/stage/df1-fc-03/lib/libdicomflux_foundation.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:44.654122+00:00",
+  "elapsed_seconds": 0.011030333989765495,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "${SOURCE}/stage/df1-fc-03/lib/libdicomflux_foundation.dylib:\n\t@rpath/libdicomflux_foundation.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

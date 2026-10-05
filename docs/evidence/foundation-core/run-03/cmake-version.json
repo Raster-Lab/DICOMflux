@@ -1,0 +1,19 @@
+{
+  "id": "cmake-version",
+  "kind": "environment",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:29:34.808519+00:00",
+  "elapsed_seconds": 0.01071425000554882,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "cmake version 4.4.4\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "4d0220f632e63c082850e8183ff0ba319927581c16a22a497c62357fa700b629",
+  "scope": "DF-A002 foundation-only host evidence"
+}

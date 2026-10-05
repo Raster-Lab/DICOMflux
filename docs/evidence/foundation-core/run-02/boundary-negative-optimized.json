@@ -1,0 +1,24 @@
+{
+  "id": "boundary-negative-optimized",
+  "kind": "expected_negative",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/check_foundation_boundary.py",
+    "--library",
+    "${SOURCE}/stage/df1-fc-02/lib/libdicomflux_foundation.dylib",
+    "--capabilities",
+    "${PRIVATE_TASK}/run-02/invalid-capabilities.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:47.582798+00:00",
+  "elapsed_seconds": 0.12914608299615793,
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "outcome": "expected_rejection",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 56, in <module>\n    main()\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 36, in main\n    require(set(capabilities['functions']) == FUNCTIONS and len(capabilities['functions']) == 5, 'Capability surface mismatch')\n  File \"${SOURCE}/tools/check_foundation_boundary.py\", line 17, in require\n    raise RuntimeError(message)\nRuntimeError: Capability surface mismatch\n",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

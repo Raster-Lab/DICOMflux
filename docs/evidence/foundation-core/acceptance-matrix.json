@@ -1,0 +1,200 @@
+{
+  "scope": "DF-W05 and explicitly five functions of DF-W06 on the auxiliary host; each requirement mapping is limited to applicable foundation behavior",
+  "cases": [
+    {
+      "id": "FC-01",
+      "requirements": [
+        "DF-R010",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Fresh C++20/C11 real foundation build; native inputs and exact tools captured before execution",
+      "evidence": [
+        "run-03/identity-before.json",
+        "run-03/input-manifest.json",
+        "run-03/host-configure.json",
+        "run-03/host-build.json"
+      ]
+    },
+    {
+      "id": "FC-02",
+      "requirements": [
+        "DF-R010",
+        "DF-R011",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Installed and relocated independent C11/C++20 clients call all five functions. Original install prefix renamed and retained; consumer compile commands do not include source headers",
+      "evidence": [
+        "run-03/install.json",
+        "run-03/consumer-compile-commands.json",
+        "run-03/installed-consumers.json"
+      ]
+    },
+    {
+      "id": "FC-03",
+      "requirements": [
+        "DF-R010",
+        "DF-R012",
+        "DF-R035"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Outer/nested short/oversized/version/flags/reserved negatives; four-byte records under ASan; null handles and untouched invalid output headers/canaries",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/address-tests.json"
+      ]
+    },
+    {
+      "id": "FC-04",
+      "requirements": [
+        "DF-R012",
+        "DF-R035"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Error categories/details/authoritative sentinels; empty/255-byte/truncated text; query/exact/short copy; unknown fields and source immutability",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/address-tests.json"
+      ]
+    },
+    {
+      "id": "FC-05",
+      "requirements": [
+        "DF-R025",
+        "DF-R026",
+        "DF-R035"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Addition/multiplication/even padding/narrowing/signed boundaries; overflow distinguished from resource exhaustion",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/undefined-tests.json",
+        "run-02/fuzz-longer.json"
+      ]
+    },
+    {
+      "id": "FC-06",
+      "requirements": [
+        "DF-R011",
+        "DF-R012",
+        "DF-R026",
+        "DF-R036"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Three new allocation sites; NULL, bad_alloc, controlled C++ callback exception and misaligned allocation cases; pairing/rollback and diagnostics without new allocation",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/address-tests.json"
+      ]
+    },
+    {
+      "id": "FC-07",
+      "requirements": [
+        "DF-R011",
+        "DF-R035"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Create/retain/release, null release, copied descriptors and internal owners outliving the external context reference; nonwrapping private reference counter boundaries",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/address-tests.json"
+      ]
+    },
+    {
+      "id": "FC-08",
+      "requirements": [
+        "DF-R011",
+        "DF-R013",
+        "DF-R035"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "8,000 legitimate reference pairs, 400 concurrent owned allocations, four independent contexts; internal atomic cancellation request with separate ownership; TSan witness",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-02/thread-tests.json"
+      ]
+    },
+    {
+      "id": "FC-09",
+      "requirements": [
+        "DF-R004",
+        "DF-R010",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Exactly five real C exports, libc++/libSystem only; installed function/capability identity; separate four-symbol probe inspection",
+      "evidence": [
+        "run-03/foundation-exports.json",
+        "run-03/foundation-dependencies.json",
+        "run-03/boundary-normal.json",
+        "run-03/probe-boundary.json"
+      ]
+    },
+    {
+      "id": "FC-10",
+      "requirements": [
+        "DF-R035",
+        "DF-R036",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Retained DF-0 native/C-contract and seven regression tests; Python checks normal/-O reject unauthorized export claims and empty source hashes. Runner rejects an empty suite in both modes",
+      "evidence": [
+        "run-03/host-tests.json",
+        "run-03/df0-regressions-normal.json",
+        "run-03/df0-regressions-optimized.json",
+        "run-03/boundary-optimized.json",
+        "run-03/boundary-negative-normal.json",
+        "run-03/boundary-negative-optimized.json",
+        "run-03/boundary-missing-source-normal.json",
+        "run-03/boundary-missing-source-optimized.json",
+        "helper-negatives/normal.json",
+        "helper-negatives/optimized.json"
+      ]
+    },
+    {
+      "id": "FC-11",
+      "requirements": [
+        "DF-R025",
+        "DF-R026",
+        "DF-R035",
+        "DF-R036",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Fresh ASan/UBSan/TSan plus bounded new-code coverage-guided fuzzing; seeds, initial/continuation/final corpus bytes and identities retained",
+      "evidence": [
+        "run-02/address-tests.json",
+        "run-02/undefined-tests.json",
+        "run-02/thread-tests.json",
+        "run-02/fuzz-short.json",
+        "run-02/fuzz-longer.json",
+        "run-02/owned-corpus-bytes.json"
+      ]
+    },
+    {
+      "id": "FC-12",
+      "requirements": [
+        "DF-R004",
+        "DF-R038"
+      ],
+      "status": "passed_scoped",
+      "demonstration": "Effective DF-A002 permits only this slice. Historical gate/proposal/engine-acceptance records remain unchanged; no device/object qualification inferred",
+      "evidence": [
+        "run-03/boundary-normal.json",
+        "run-03/boundary-optimized.json",
+        "../effective-authority.json",
+        "../authorisations/DF-A002.json"
+      ]
+    }
+  ],
+  "not_completed": [
+    "Full DF-W06",
+    "DF-W07 through DF-W16",
+    "DF-R004 beyond partial build identity",
+    "DF-R014 consumer/object integration",
+    "DF-R037 object validation"
+  ],
+  "excluded_engine_acceptance": "The original 24 engine acceptance entries remain not_run; no blanket promotion."
+}

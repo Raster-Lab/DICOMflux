@@ -1,0 +1,1104 @@
+{
+  "schema_version": 1,
+  "authority": "DF-A002",
+  "scope": "Completed DF-W05 and the five-function DF-W06 subset on the evidenced auxiliary host; full DF-1 remains unauthorised",
+  "adopted_merge": "7f99e34a010f922b8bf85404840bc744a7af66fc",
+  "adopted_tree": "0393a9676b9b8985dfd8a0ed56930dc1e2bc5af3",
+  "local_governance_commit": "f8515e56f7064289a6e4e29a0180760d99b7107c",
+  "remote_governance_commit": "61045d3c7389d09ce43eaa41425ca33919ac0541",
+  "local_implementation_commit": "8cafba65fa0f7a91ccf3f336486094c0faaf08bb",
+  "remote_implementation_commit": "324320da66c2ce116286a61a601667d23917abb7",
+  "identical_implementation_tree": "ab1b08f42d58177c3dd9ce739ec6cc2ecf5d3e71",
+  "generated_at": "2026-10-05T15:42:19.823114+00:00",
+  "hash_basis": "SHA-256 of sanitised published file bytes; manifest excludes itself. Source digests in commands refer to raw pre-execution input maps, which use repository-relative names. Raw private record digests are separately labelled.",
+  "files": {
+    "docs/evidence/foundation-core/README.md": "62315db889a913784d709535c0d30f14f2cc6e3804f3359080aa6cb58f10d0ad",
+    "docs/evidence/foundation-core/acceptance-matrix.json": "914007480f99dd138745c274c5d33511137e5c0d79978d493c02292bd6ab8dea",
+    "docs/evidence/foundation-core/adoption.json": "a6886b5641d8b36562df7b99360ffaf4d6ee4be09789787ed1b9ebf004a52c6f",
+    "docs/evidence/foundation-core/binary-manifest.json": "e71b141f4a3e8f7c1a007143f01a86778b178c2eea69ebca34aca4c4f1fdd74b",
+    "docs/evidence/foundation-core/helper-negatives/inputs-before.json": "f01a547a3d135ad29e5da021d8d11c4db0df9f59d6802841f7dbf619751cb767",
+    "docs/evidence/foundation-core/helper-negatives/normal.json": "b6e3d82e6f378c1eb100fd2b6bedd4a5f225142b36cb7747ae68092897b46382",
+    "docs/evidence/foundation-core/helper-negatives/optimized.json": "35897b89b206becdbbb0ff2e21d34dbb1c5e840f4dd6572c81c85c4a7df271e3",
+    "docs/evidence/foundation-core/implemented-inputs.json": "348b379fff7c20caa92196186a891b95ff920925ee538ea11004f1bdbf770363",
+    "docs/evidence/foundation-core/initial-run-summary.json": "daad86ec3ea8e38918328aa3bd8cb7e17910f07c54b18d8064aa61ffdb7f9bdc",
+    "docs/evidence/foundation-core/run-02/address-build.json": "d528e67b2ede948a1d77c8d4c7a4bcb929994b5334ee01091f8db51cb6c60904",
+    "docs/evidence/foundation-core/run-02/address-compile-commands.json": "ba0d8d34b1c8af7e567d3b044abe88c12e8c34a755231bd585f1482e0d3b69ae",
+    "docs/evidence/foundation-core/run-02/address-configure.json": "00850ed1b6059bfabc807806da71a6c1018d9b528797d8a49e7fb0ab94c96fac",
+    "docs/evidence/foundation-core/run-02/address-tests.json": "1d18674dffd0d1bd4ad99870673b2ef8498a268808dfb2f4c0363ac0cb2fa625",
+    "docs/evidence/foundation-core/run-02/boundary-negative-normal.json": "3096e0238b4bc12e3ac029019edbea476263481aab86b322e9156310c6d61032",
+    "docs/evidence/foundation-core/run-02/boundary-negative-optimized.json": "6bb6e2d2e66ce1de67e76a527b6547597e467cbffa0809332d70a51d45fbb366",
+    "docs/evidence/foundation-core/run-02/boundary-normal.json": "30050081886f7fb4aacf5223a1ddb67bfe5493089f4d331a8bf0a3a684f073f1",
+    "docs/evidence/foundation-core/run-02/boundary-optimized.json": "65e1f288dd491cdf58ee8d8d4c937fcc5f506e5130f26661eacdf91adad730bb",
+    "docs/evidence/foundation-core/run-02/cmake-version.json": "7541125cf7280cc0ba7908e65436c4d2b4e7379556fc54239fb97a9a8079c6b6",
+    "docs/evidence/foundation-core/run-02/compiler-version.json": "799be75ad77f40458a8c628477d9fee396829aac14b2970b8279d70b9d72b6f0",
+    "docs/evidence/foundation-core/run-02/consumer-build.json": "e08fcbe62deb214c708da937d735f19ae741138a76df9d63cac8520b11939931",
+    "docs/evidence/foundation-core/run-02/consumer-compile-commands.json": "4b77e27b7042037e95ba1038617db4d4bc19e085f9281f7dac4c0d80574b0b23",
+    "docs/evidence/foundation-core/run-02/consumer-configure.json": "d13f5c54800a73bddcd3a31b51f58360395a80a7d254e43db246a06019d8e03f",
+    "docs/evidence/foundation-core/run-02/corpus-after-longer.json": "52d1adf881b0741c96985e60239aed56c8eb466237f812b542de97e32b8f0768",
+    "docs/evidence/foundation-core/run-02/corpus-before-longer.json": "1b5a4217771b55bebd135a0f2e92a1b3f97440a0ad74f2c279dab9a2089a6d50",
+    "docs/evidence/foundation-core/run-02/corpus-before-short.json": "f41459e95c34fa3f938a4021a908da8c696d1516a9b0515c5765a1be7a84ee96",
+    "docs/evidence/foundation-core/run-02/df0-regressions-normal.json": "23c11b9ff733f2897e285c8fd0807f634f6ce9b28b73509705923103ecedcdb3",
+    "docs/evidence/foundation-core/run-02/df0-regressions-optimized.json": "1a31a1d552797e4da700fbe8259fb2e5abe535e91fc8cfca1c81e9d893989354",
+    "docs/evidence/foundation-core/run-02/foundation-dependencies.json": "9e9dc7b6e82014933d570e1e22fc2bf350f8162a0962ab28dbc60609db41d009",
+    "docs/evidence/foundation-core/run-02/foundation-exports.json": "a1a021d1bcca83bbbfa5894ed4e465244ac66b266d9866a9cdf66da661fc2e93",
+    "docs/evidence/foundation-core/run-02/fuzz-build.json": "5ba324ac451f7e0b2bbbe50d49ab63c39456cc38c5f0cb5ba094fbe0e146f67f",
+    "docs/evidence/foundation-core/run-02/fuzz-compile-commands.json": "78bce0b4b1ad0a64ce52150188186bb7afca69cda7d0b4a3c36e1407f81e3ad3",
+    "docs/evidence/foundation-core/run-02/fuzz-configure.json": "7242e5b924acbac8d779e1b7e1ff3fc5c15f8119ec625e83fdd6f4421009d6c2",
+    "docs/evidence/foundation-core/run-02/fuzz-longer.json": "5ea18b5d99738c15b77357c3aa65759a6054e95035910e24ea918b1c1774be3e",
+    "docs/evidence/foundation-core/run-02/fuzz-short.json": "6509fea45f8fc8a834169418fb92f402f87bc6f287c185e758afd6d1603c6a94",
+    "docs/evidence/foundation-core/run-02/host-build.json": "49ff267c85acf58b2dff52f0366d20eb8c0736507312f6c6c08fcb43c2d3a8c4",
+    "docs/evidence/foundation-core/run-02/host-compile-commands.json": "c7fa23e2b110cd4ec96ed22b4b5e8f615dff6eb11f5735638c217102b6dc3578",
+    "docs/evidence/foundation-core/run-02/host-configure.json": "93b2244b1ab545efc2915f5517f2103c9450f8b65d40c0999b20b9d45776af14",
+    "docs/evidence/foundation-core/run-02/host-tests.json": "8aa9d7d27c984abd9bf517e566c8bcf0e97e6cc18d22e71ac8417b535b23b025",
+    "docs/evidence/foundation-core/run-02/identity-before.json": "064dcd12977d97d3dc9dfcd83cbef670a8af6e5db7a4146db5bf94e3fbba0b1b",
+    "docs/evidence/foundation-core/run-02/input-manifest.json": "8bb8fdd86a49d06a86337b7e91fb8b06255a66eac93a75b48bc02dd7a8289977",
+    "docs/evidence/foundation-core/run-02/install.json": "32496e7a23dcf428861086e5ccf01f235aac60731a68b3e60cf06b7b2fa5c151",
+    "docs/evidence/foundation-core/run-02/installed-capabilities.json": "38fcdb1e1fdd861d4e7d8a3a186118d2ea7dbca40f108915ebc4bfe080f397b4",
+    "docs/evidence/foundation-core/run-02/installed-consumers.json": "36f075df0947beccf354dbacb4c67973092eb0e01c3f0a7fc4d302829f415b93",
+    "docs/evidence/foundation-core/run-02/invalid-capabilities.json": "dc35a32b37ba4754ce6b6c04c40ec6c8f231745f572f545ec0e6e3c0c288b5b6",
+    "docs/evidence/foundation-core/run-02/negative-input-before.json": "b6212015ea51dd641d4b8f9282b974acf3f869f1a897057b51b5ad9fc06cb221",
+    "docs/evidence/foundation-core/run-02/ninja-version.json": "de0999e093f2cf679e9a44195836e128e02c686406dca87e5a572ca3fc2954be",
+    "docs/evidence/foundation-core/run-02/os-version.json": "c1521f7d5e19d5daf733c8bcfc8849b430c88c6c7f74e20ac8c0424d41dbea8e",
+    "docs/evidence/foundation-core/run-02/owned-corpus-bytes.json": "24c133b4d5d8dacea9f4c4aeeac20f83a6f06e6ef8194e79e1262f0e06b3d685",
+    "docs/evidence/foundation-core/run-02/page-size.json": "9678a9191644a59d794432994da74929e7c81cb23f384d9e9d0c4d154194f836",
+    "docs/evidence/foundation-core/run-02/probe-boundary.json": "935a9d34ef19ce013f85c283a37400a2ba8c326fd71b31c5fe4f6c6c748581a9",
+    "docs/evidence/foundation-core/run-02/python-version.json": "49fd95d663a6293f5ad82891a75eed9392c201113c7fe5b855f58cd473b07aa5",
+    "docs/evidence/foundation-core/run-02/regression-children/01.json": "77f5a0ea3eb45fc7bf36330439a62f566416d854d13b2921706cc82a38d77152",
+    "docs/evidence/foundation-core/run-02/regression-children/02.json": "68b9a1806031798273858dfb1fb6e8e19b8f52889537b0b7b694c061b6531b1b",
+    "docs/evidence/foundation-core/run-02/regression-children/03.json": "36db271c177dc6d43303c1e086f4dd1d1788d9032ce1049948dcf529b7d6c26d",
+    "docs/evidence/foundation-core/run-02/regression-children/04.json": "d044b134fef543ece1543996f880101ba00e5c3dbd5eecfba69a651b95a0e930",
+    "docs/evidence/foundation-core/run-02/regression-children/05.json": "ac1c03bbb8eb99655b0bb9368426abdc86984bfa80fc33553dcf2e07a767985f",
+    "docs/evidence/foundation-core/run-02/regression-children/06.json": "baccd0e79eb7f9cb184ebc7a1d665bd8d01a4a83892fb55a10b4d407178f63bf",
+    "docs/evidence/foundation-core/run-02/regression-children/07.json": "77f5a0ea3eb45fc7bf36330439a62f566416d854d13b2921706cc82a38d77152",
+    "docs/evidence/foundation-core/run-02/regression-children/08.json": "93b2504d982c3a2f721136d7b9b86c90437eb74d431270724b0827b6dd8fafdb",
+    "docs/evidence/foundation-core/run-02/regression-children/09.json": "07d925dc1714eeeeb9fad1c2db5d36fcb7d5f2a19e41c4685cb094a669839e76",
+    "docs/evidence/foundation-core/run-02/regression-children/10.json": "d044b134fef543ece1543996f880101ba00e5c3dbd5eecfba69a651b95a0e930",
+    "docs/evidence/foundation-core/run-02/regression-children/11.json": "0d61eab1465de575553b1e3dc30475044e11ad12842dee5154680a92148ac46d",
+    "docs/evidence/foundation-core/run-02/regression-children/12.json": "35b1c826a545da670db989174dc435781fb191195b13c18bbb8d0e364fb031c2",
+    "docs/evidence/foundation-core/run-02/regression-children/13.json": "674b79fcf09ba22cab7a0e6893afeccb140ff6c41fd3e6eeeb2dfabdabc40d80",
+    "docs/evidence/foundation-core/run-02/regression-children/14.json": "1d5459cf2c3367493cd95ccbecd4dbb2d2c7d46335c8e844a729c5b7b33fcc54",
+    "docs/evidence/foundation-core/run-02/regression-children/15.json": "447ad430f104ddbd74ea8eb3df392416dd617d08dbfe8a193089d387f4b646e7",
+    "docs/evidence/foundation-core/run-02/regression-children/16.json": "dd16b69819a8139af12a9442d7b04ee8487afa31cdc7004b732310dc8948d257",
+    "docs/evidence/foundation-core/run-02/regression-children/17.json": "674b79fcf09ba22cab7a0e6893afeccb140ff6c41fd3e6eeeb2dfabdabc40d80",
+    "docs/evidence/foundation-core/run-02/regression-children/18.json": "894abd29d72e7ab49977e30f7733c5fa4a333289e71f39a398ca2cbb615c8891",
+    "docs/evidence/foundation-core/run-02/regression-children/19.json": "447ad430f104ddbd74ea8eb3df392416dd617d08dbfe8a193089d387f4b646e7",
+    "docs/evidence/foundation-core/run-02/regression-children/20.json": "3d10b745b518b9ecd22a8f1da4e79b1bf7725013099ca9c179c3817aa7cb6303",
+    "docs/evidence/foundation-core/run-02/regression-children/21.json": "8f447aaf7a8fb7daca79ea34690af311e572ddc174972bab938e6ffd04f3b982",
+    "docs/evidence/foundation-core/run-02/regression-children/22.json": "15e1fe32a92cf880c16a8193a7d7576d78b999514afe76e8f592063591ca3686",
+    "docs/evidence/foundation-core/run-02/regression-children/23.json": "2b0129b737da0d8f6f4d70ac003eb75932e0f5e35f0650a41ff5809b16be9cf9",
+    "docs/evidence/foundation-core/run-02/regression-children/24.json": "1f2eba5b772ba46f3f2f6b797ab8dc1e59d16e83b5ec1485a1b11a323ddebd6c",
+    "docs/evidence/foundation-core/run-02/regression-input-hashes.json": "c725771f05f4ce94f18b81cdea7128308864cfc1a309fa61fab0a4a841cbc717",
+    "docs/evidence/foundation-core/run-02/sdk-path.json": "c9ec097163f5927def60aa783fa458ce664735fcc1f9adbfa8a06e03fc3378eb",
+    "docs/evidence/foundation-core/run-02/sdk-version.json": "c1bfe07bea6f004da8fc5628c2418a41eccf967c6cbd26935bca662b8413967d",
+    "docs/evidence/foundation-core/run-02/stdlib-macros.json": "b75f09f9422b52095ffa1911cf6e1a40ba327df39fc2346afa0941b0880dea24",
+    "docs/evidence/foundation-core/run-02/suite.json": "c51443b46f55b1b7a3ed0a815c6226bf0beb25877132ba7ab178b022528ab391",
+    "docs/evidence/foundation-core/run-02/thread-build.json": "aeeea0145b49353fd2e736a92322d20fb9e011d4e0d593117cbaa72d59f491f6",
+    "docs/evidence/foundation-core/run-02/thread-compile-commands.json": "36e6132009dd88e3e6832c71d354e36e9e55cf099409705c473762c75b310af0",
+    "docs/evidence/foundation-core/run-02/thread-configure.json": "5afec01475afb3692f9fb71a0f840633cf3042e5c3334027c737b50c250df0ce",
+    "docs/evidence/foundation-core/run-02/thread-tests.json": "95735bf35520e260f9916c0cd8d3017d6ab29eed89a6eee5fcbf112ced1cf698",
+    "docs/evidence/foundation-core/run-02/undefined-build.json": "9bfd539522378027210448114585039b83bd3cbde38c2679225d2a9025fc5876",
+    "docs/evidence/foundation-core/run-02/undefined-compile-commands.json": "2a52fd8aab1c04a7a6a8607a34e7c194b5318d45f87664fb9006eabacd0dc401",
+    "docs/evidence/foundation-core/run-02/undefined-configure.json": "3dd50ee29b164d819acc48064ff87c98a6f5ccdb00de15a7ed3674e5c391cb37",
+    "docs/evidence/foundation-core/run-02/undefined-tests.json": "0c7e0882e33e214f53ad714f3b5279f5aa1b175b4c4d1ecfd4b42e3ec0c55fbe",
+    "docs/evidence/foundation-core/run-03/boundary-missing-source-normal.json": "0340185f1138a417bef124d2840548258720b29a3a8da0ea26e4489e942e21a0",
+    "docs/evidence/foundation-core/run-03/boundary-missing-source-optimized.json": "4e6b13ecb22821584d8e5e43a428631181472e8fb74a263558b9f2553ce6a26d",
+    "docs/evidence/foundation-core/run-03/boundary-negative-normal.json": "0e2a1fd2b1dd5dad588dcc53c91ee7b6d1e2d4791dccab0c011596f2a63c9d35",
+    "docs/evidence/foundation-core/run-03/boundary-negative-optimized.json": "9d49bfbfcea94c4771b1a5933409b858109568d491cc5ce42ec360af3735101c",
+    "docs/evidence/foundation-core/run-03/boundary-normal.json": "b778f025d9ffba13853e0f392797017007c0ba69fabedb462033c11a55cce608",
+    "docs/evidence/foundation-core/run-03/boundary-optimized.json": "4a0d6a20dd467ca928d984250dab33da448e80c97d2380e91fc6bd354b49d21c",
+    "docs/evidence/foundation-core/run-03/cmake-version.json": "3d4191474383e6487a6b9d92fc4293a71ac049d62aed5c2b46519a58718a6f68",
+    "docs/evidence/foundation-core/run-03/compiler-version.json": "46cdf337b7c339bbe7257c47e93a4ca3f89a1c00c3b8f8e876043de84a42a6d9",
+    "docs/evidence/foundation-core/run-03/consumer-build.json": "3d6521e584bd20c1c8d1b1600ed3e37307a659ec99f6afba1f5a848a0c64cae0",
+    "docs/evidence/foundation-core/run-03/consumer-compile-commands.json": "61d8c4bdc2f7b754f82c03e7d30b1cab67e7cc9606e16cfd96b0b63ee9dc7474",
+    "docs/evidence/foundation-core/run-03/consumer-configure.json": "100b6fdadeb184d85e5d75aa0e7db15b0f915791fd262aec0ac24b92c3367a33",
+    "docs/evidence/foundation-core/run-03/df0-regressions-normal.json": "1698c26d8920726b12c20e59d4ccf175c2222d2cf4903d7754a70b0297af29e6",
+    "docs/evidence/foundation-core/run-03/df0-regressions-optimized.json": "94265727665fe1ac379b6319f4603cd17e664ada17a55658ee7829713c638a21",
+    "docs/evidence/foundation-core/run-03/foundation-dependencies.json": "81696aa356e97a731e1bb586fdcb26e8cc96155ef57cd45f70b63fd01375fefd",
+    "docs/evidence/foundation-core/run-03/foundation-exports.json": "8d2ec34e6361ec1ef66b6b4d2cd13d34c6c564e21b26706baf4c766dea6e9758",
+    "docs/evidence/foundation-core/run-03/host-build.json": "bafadf03dbd8319728646771fbf1d09fc8353349b1446ba1f4ab9ee55bad7432",
+    "docs/evidence/foundation-core/run-03/host-compile-commands.json": "78189b776e0bd123e9ec044f65fc043d84ccc702b4943f8c5af3d6d5e7745be5",
+    "docs/evidence/foundation-core/run-03/host-configure.json": "a64cd88d96e2e10584b3f9c6400b64723c0e09e67e3bf59971522383773c8e20",
+    "docs/evidence/foundation-core/run-03/host-tests.json": "6fbb9bf3e53efadc8652174cba66df14e2e675997041ec7d46ac54bc1bc7017e",
+    "docs/evidence/foundation-core/run-03/identity-before.json": "c8b410dc6c3f3368ab1125f40b5232a0e74eeb65115a25a0faa3489fb76b59d1",
+    "docs/evidence/foundation-core/run-03/input-manifest.json": "4b1e92d3c01ca8395a15808b5108d01433d8299017cc7a72633dbd3a0169bce9",
+    "docs/evidence/foundation-core/run-03/install.json": "75a06dfb4362cee8594b68e0bd542b3d5474fdd7633548752812b9cdb35990c6",
+    "docs/evidence/foundation-core/run-03/installed-capabilities.json": "38fcdb1e1fdd861d4e7d8a3a186118d2ea7dbca40f108915ebc4bfe080f397b4",
+    "docs/evidence/foundation-core/run-03/installed-consumers.json": "740f221dfd472e178aac1397a4e68e241a6217a1685de1d62b0691001a9cabfd",
+    "docs/evidence/foundation-core/run-03/invalid-capabilities.json": "dc35a32b37ba4754ce6b6c04c40ec6c8f231745f572f545ec0e6e3c0c288b5b6",
+    "docs/evidence/foundation-core/run-03/invalid-source-capabilities.json": "adf514ea43a5499ef07c0ce5a85cc064cdafb3994321b0b7a83e5dfbf19604f6",
+    "docs/evidence/foundation-core/run-03/negative-input-before.json": "1d11e36b3d13dff760513a9c5b3c3ed0dc60d3e985473fc23997b63f45fd0358",
+    "docs/evidence/foundation-core/run-03/ninja-version.json": "78c9b695cd4c92889292cf269bb529668c7f5a3218e823401c55d1da7a1907a9",
+    "docs/evidence/foundation-core/run-03/os-version.json": "86c45eb9f5c7857c9a71c56949c307747d4972b18c122a18a45e08f9d76bdd37",
+    "docs/evidence/foundation-core/run-03/page-size.json": "790220c2eb3b12229f88e7726ea7bd8d5be6ce2b1ab495396f5d75308f8eaa35",
+    "docs/evidence/foundation-core/run-03/probe-boundary.json": "e2e6a2380c4ac373eef627c79d7f3fd77661d1a1338b5daab81439f8dc7c5db2",
+    "docs/evidence/foundation-core/run-03/python-version.json": "6408a1c0e554d16bb84544409854a9811829d88516bde1536df1fc41b56526a3",
+    "docs/evidence/foundation-core/run-03/regression-children/01.json": "77f5a0ea3eb45fc7bf36330439a62f566416d854d13b2921706cc82a38d77152",
+    "docs/evidence/foundation-core/run-03/regression-children/02.json": "872b3e0692735e3411cc013a32506fe9fabe65af01529f1c1c237751c416c3a7",
+    "docs/evidence/foundation-core/run-03/regression-children/03.json": "86b57c0efa1a517fb794bc13561174f39f0bc3b151a8fd4cf8242f95d8138a09",
+    "docs/evidence/foundation-core/run-03/regression-children/04.json": "d044b134fef543ece1543996f880101ba00e5c3dbd5eecfba69a651b95a0e930",
+    "docs/evidence/foundation-core/run-03/regression-children/05.json": "ddced919254c3c96e26ebcf6392a03f444d3a2899a20e224f3fb1e80803de204",
+    "docs/evidence/foundation-core/run-03/regression-children/06.json": "ab74cdba68b3d0301657fed8637d2e905d5237e40dc1dd991fa1be19a349cc88",
+    "docs/evidence/foundation-core/run-03/regression-children/07.json": "77f5a0ea3eb45fc7bf36330439a62f566416d854d13b2921706cc82a38d77152",
+    "docs/evidence/foundation-core/run-03/regression-children/08.json": "6d4f9813c2249cd77f914549ed72cfb925b16e8365eb051210331fbb7a723f62",
+    "docs/evidence/foundation-core/run-03/regression-children/09.json": "f652a01f066bfddfb25fe56603d6a03750520fba035001966ca7dba8db59bee0",
+    "docs/evidence/foundation-core/run-03/regression-children/10.json": "d044b134fef543ece1543996f880101ba00e5c3dbd5eecfba69a651b95a0e930",
+    "docs/evidence/foundation-core/run-03/regression-children/11.json": "46f907618054ff1eebd3f2f0cf8d50254755868443808ae039c31f5534bbaa94",
+    "docs/evidence/foundation-core/run-03/regression-children/12.json": "990d091e7f4c7629db45e9547ef821389dd6c79b6a5f709f6542d06a3bb0ce15",
+    "docs/evidence/foundation-core/run-03/regression-children/13.json": "f9fa7d3223674f6dfbc198c5921c373fc3f115ff6b19270c3c26cf2e524fd669",
+    "docs/evidence/foundation-core/run-03/regression-children/14.json": "5b2526af6f5a480d724d6d81d217b54eb26418d7e402ba68cdd40e4b38f9427b",
+    "docs/evidence/foundation-core/run-03/regression-children/15.json": "13e4b56fbebd0031553b97979e2263b2c1fa4560c7dabc9f14c925341fca5609",
+    "docs/evidence/foundation-core/run-03/regression-children/16.json": "75414bda19185dce686b59e5ce3ca9e3bd95a422d4c1ee42191fb3aa19abeb42",
+    "docs/evidence/foundation-core/run-03/regression-children/17.json": "f9fa7d3223674f6dfbc198c5921c373fc3f115ff6b19270c3c26cf2e524fd669",
+    "docs/evidence/foundation-core/run-03/regression-children/18.json": "56c3ec41a474d4aa9ad4c69a769a7aa82e01bb83d1db9480977bf6d240cbb363",
+    "docs/evidence/foundation-core/run-03/regression-children/19.json": "13e4b56fbebd0031553b97979e2263b2c1fa4560c7dabc9f14c925341fca5609",
+    "docs/evidence/foundation-core/run-03/regression-children/20.json": "02538ff01e810e673d74e5e8de288dfd7c922fe52cd4d5e25be3f72a9c53ede1",
+    "docs/evidence/foundation-core/run-03/regression-children/21.json": "a1b83ce43fccbe999f7d1a46343316ecefb0e4fd8e3adc3477f38ef413f22c22",
+    "docs/evidence/foundation-core/run-03/regression-children/22.json": "8b974c3e021592ed003504d33eabeb97d3ac28ca66a5bff439e6e7722414a655",
+    "docs/evidence/foundation-core/run-03/regression-children/23.json": "c9a0814cb370d7779e5010de3dbd536c6470e6277c7bdaf1cfadf1f15eafa898",
+    "docs/evidence/foundation-core/run-03/regression-children/24.json": "533396b7c622389331ae990ea41f8085bbca17ecc4babd7d1c5aa7c0d432954c",
+    "docs/evidence/foundation-core/run-03/regression-input-hashes.json": "869713e8af41b9593b55a94db20c8b61d8a71c7fea8cb1d53e195f69c4ba6580",
+    "docs/evidence/foundation-core/run-03/sdk-path.json": "04fa8163d76ba657fd44ddc11f5735f4f1b62a6b70e7f48a7897c6475e3a2399",
+    "docs/evidence/foundation-core/run-03/sdk-version.json": "5f8f754855cb5f9818c48c6f41591387e09a44a8fb361334adccfa724bd0a9b0",
+    "docs/evidence/foundation-core/run-03/stdlib-macros.json": "b6605d9075d5b88ab48eac1427a4ffb67733335df0de9273e99ed8a8cd1a0e91",
+    "docs/evidence/foundation-core/run-03/suite.json": "d7446bc31be8245706aa4f706ce8580871b6ee6eeae1079faed9828a73ed2272",
+    "README.md": "71b76f6a9feaf8b4dc021d19775c9002c70eded1c6bc50cb260eed653f6f4e7b"
+  },
+  "commands": [
+    {
+      "path": "run-02/address-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3aa924cb1e0b53066b6aede4dff8d272b73b9ef9487c2a47f250310b5854fe0f"
+    },
+    {
+      "path": "run-02/address-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "4196688d18bb0b833b50fb7e00ca0c15042ac2e50790f6943d0eb689be61b495"
+    },
+    {
+      "path": "run-02/address-tests.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0ef5da9164c0c77c8e1e141c1ce3824a6c43f455d11bfc9ea8f87d74a6106832"
+    },
+    {
+      "path": "run-02/boundary-negative-normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "2e6779dd3f6ec2e748cc58d5b851a2376b1980c66ff6b4109842d25457539a46"
+    },
+    {
+      "path": "run-02/boundary-negative-optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "616d94ececc19ed7b70acaa8f4ac6cb6d6cca996aeacf7bf966e13ea82842093"
+    },
+    {
+      "path": "run-02/boundary-normal.json",
+      "kind": "binary_and_scope",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9e5246aa907a6d5e6c141be443cc38827cbee2d81822238e86eb3f12a1d013fa"
+    },
+    {
+      "path": "run-02/boundary-optimized.json",
+      "kind": "binary_and_scope",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "99e8edba386ddc2ada6b9bb2ae56060d0f5d76ae8422d299715c92bc7045eb8a"
+    },
+    {
+      "path": "run-02/cmake-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5b94e0f418fc02e30e288f23e6cf516b9c812f079d5bd635b0217c60db6c8fca"
+    },
+    {
+      "path": "run-02/compiler-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0950f6983d7bef1fdd1b3b9b6c77eb9ce628d14c0f767703324ed42632896e83"
+    },
+    {
+      "path": "run-02/consumer-build.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "32fb6ad9d9008e68c6dc9e3d3eb14c87d08449374340644bd5fa92087455920b"
+    },
+    {
+      "path": "run-02/consumer-configure.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "f23626c3a4490add7482221032e3e44b65b84004dfa52de1ea8a1ebf8fb1463b"
+    },
+    {
+      "path": "run-02/df0-regressions-normal.json",
+      "kind": "retained_regression",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "8b25f2d0423b90f4161c42cfe6d6ff3810a3a7ba173e7ce54011d6ee9b5533c7"
+    },
+    {
+      "path": "run-02/df0-regressions-optimized.json",
+      "kind": "retained_regression",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "ca858811a21a447b09d9a6b2a53613e0887ffaf9e14de865dbc5c859ec9790a2"
+    },
+    {
+      "path": "run-02/foundation-dependencies.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3f9c8f35fe06b25b1f6ce6bb870b37d53cde83346e679a132dc0c706be3bfb79"
+    },
+    {
+      "path": "run-02/foundation-exports.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "c67eeefaca76b9579ad61f466f38ca7d081d1453e8ab3d3bfbdde6bb3329ee14"
+    },
+    {
+      "path": "run-02/fuzz-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "c3ccffa6d2cd055dd292cb56759905fbf346e86651e08d42f7f5eadaa9a7e787"
+    },
+    {
+      "path": "run-02/fuzz-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "da9d18827bddaf6e0123e8ccfad786c9b8ab6d6f6c11122c0219136ac580fa34"
+    },
+    {
+      "path": "run-02/fuzz-longer.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "cd12fa88709dbbf5009644a23a1d31897ce2037937ae257d0158734a78a77b19"
+    },
+    {
+      "path": "run-02/fuzz-short.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "56bd0539a21bdd86a1cbed3e2d7a681f9a45cf71d5ecd558c49124312e176edf"
+    },
+    {
+      "path": "run-02/host-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "f8a444e006d12bea103b7e87b23c3c90ef5655be13766d5e4cd915a158572706"
+    },
+    {
+      "path": "run-02/host-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3e46de943fcfe48bc60e7780f8bf8c794e039d340a40ce53678e5b6098e425b9"
+    },
+    {
+      "path": "run-02/host-tests.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "8bfec011d7ca0cf2baff2dd6763a42310a75c459960e16b3622fb045113971ec"
+    },
+    {
+      "path": "run-02/install.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "dc66b69f00498e841168a55e37a4d34b9309c812e1f0a9b8fbb153cba3db7476"
+    },
+    {
+      "path": "run-02/installed-consumers.json",
+      "kind": "installed_consumer",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "e3d1705dc7d2ec87237e7d03db0ddb264126d040dc7fa94d671803f2026f5792"
+    },
+    {
+      "path": "run-02/ninja-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "8ea56468821d5d1298dc86fb3042d362ab38e764beb735f33799456b6f0c179e"
+    },
+    {
+      "path": "run-02/os-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "e8e8cd00130e890dd15b49a899cf5d8fd790e0d5014d7c6fad82473e54a5c9e0"
+    },
+    {
+      "path": "run-02/page-size.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9f7849f254c294c7f7de25d2f3b50383a435bdc2b607bfad1be1160e285fef9d"
+    },
+    {
+      "path": "run-02/probe-boundary.json",
+      "kind": "separate_prototype_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5c46bf588d4c49ac9bbfaed5d8f434e8919e50d330988705d54234d6adc6bad6"
+    },
+    {
+      "path": "run-02/python-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9fa9ebfde82fc10b585fd44c61e85d684e728674eadedbe96aa493bbab1b2fa0"
+    },
+    {
+      "path": "run-02/sdk-path.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "c072c288ba74724caefb1708220c69d8479afde36259680cccae0c2d0f0a661f"
+    },
+    {
+      "path": "run-02/sdk-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "97427763cc105b0176f8535fcd793b2e8e41485188830792a2f010f3701c390a"
+    },
+    {
+      "path": "run-02/stdlib-macros.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "858264dc205ba74bc9e9594d27419079833203c99cdca09f7ae7d2a3b77f2fd2"
+    },
+    {
+      "path": "run-02/thread-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "8965434b03418c189c983f5ef7abf37eb1e77b69b19fe5c65a7dd62794790422"
+    },
+    {
+      "path": "run-02/thread-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "4b0d761afafa41bde1891a4c9c14b3aaf4c64f1455319874723ad6fe1583087f"
+    },
+    {
+      "path": "run-02/thread-tests.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "a6c9834f59266b8ccea17a8770cbbd42d93d3a2ab3b964788964579f96e20754"
+    },
+    {
+      "path": "run-02/undefined-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "fb4a5b1f78002075f29c082caa8f8edd0f087f32f0bb67aec90ccee3ff15fe5b"
+    },
+    {
+      "path": "run-02/undefined-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "36afda0b0f19d1dff3f0c53bcf8fc2cb7262ade5f85612c79d48cd10b687bfad"
+    },
+    {
+      "path": "run-02/undefined-tests.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "27b1e6d97656c332010a8072244527971e0ee66cf8e9be6a85abcb45a97d31cd"
+    },
+    {
+      "path": "run-02/regression-children/01.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3c3f214854c23bbeee4364554cf9e3778abf6b18961811fe7a6003dc69f9c139"
+    },
+    {
+      "path": "run-02/regression-children/02.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "c35d477a562b1c8d27f3dc6c956f1bc3277bd3f61a7d2a4eab4e2098843e8b8d"
+    },
+    {
+      "path": "run-02/regression-children/03.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "d244114555c2b29e25f433dfb27ded63e9aec92c0d90a1efd2500503db838386"
+    },
+    {
+      "path": "run-02/regression-children/04.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "44292033d6628d95d13ff68a412aba9036a4ae46f470e50e4da051393d197142"
+    },
+    {
+      "path": "run-02/regression-children/05.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "c1f78fc4569f6f4f8b636b268dd4f30a020e70821f708a11cf1b90ca210f6642"
+    },
+    {
+      "path": "run-02/regression-children/06.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "c5a4848880c28fdb452d8822f5c4ca24ebac010216fc0479b1a231003435549b"
+    },
+    {
+      "path": "run-02/regression-children/07.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3c3f214854c23bbeee4364554cf9e3778abf6b18961811fe7a6003dc69f9c139"
+    },
+    {
+      "path": "run-02/regression-children/08.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "521740754ac661713897362a323b5c06140fccc2f46cd70452ab57f04ec658f4"
+    },
+    {
+      "path": "run-02/regression-children/09.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8044f8e49c69643fac9e135424a3d925751ec44f519bcaa1e73fcd90214ec707"
+    },
+    {
+      "path": "run-02/regression-children/10.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "44292033d6628d95d13ff68a412aba9036a4ae46f470e50e4da051393d197142"
+    },
+    {
+      "path": "run-02/regression-children/11.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "ae66dcb74fc321e50583e87655c4559d3bc79f8a85578e1c305398fa3f028d2b"
+    },
+    {
+      "path": "run-02/regression-children/12.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "321ae72a4274ef0f3c1712c5d73324191a66debd64eb2078e5058990115a354b"
+    },
+    {
+      "path": "run-02/regression-children/13.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "ed93c671d1cd492a69853ad7bf705f201a1d349a9a723856e38d710488d3bb89"
+    },
+    {
+      "path": "run-02/regression-children/14.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "7daf88c97f9fb5e83c10209450ef99dfa51bd8a37620376a21d8ab6bae432ce4"
+    },
+    {
+      "path": "run-02/regression-children/15.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3e32ba40284409c861af7acebaaa6d8f4f4e5ae05556bc84e9fab083035fb389"
+    },
+    {
+      "path": "run-02/regression-children/16.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "bf841e2b071ef18bb5cdda6e61dee259e1c4a69463c4fa1a4048f9b8e3475948"
+    },
+    {
+      "path": "run-02/regression-children/17.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "ed93c671d1cd492a69853ad7bf705f201a1d349a9a723856e38d710488d3bb89"
+    },
+    {
+      "path": "run-02/regression-children/18.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "14eec2f781fb46a618010dc7172d2ffe4a3c84b064e8e3b63f9e178df6433f96"
+    },
+    {
+      "path": "run-02/regression-children/19.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3e32ba40284409c861af7acebaaa6d8f4f4e5ae05556bc84e9fab083035fb389"
+    },
+    {
+      "path": "run-02/regression-children/20.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "d1331e96515ece8afaee02af38b8fd5d4658a7ee29ec0f2c8ede6d9d13cced97"
+    },
+    {
+      "path": "run-02/regression-children/21.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8dc72b23ff2373ded169d81f46b69782c4fa690cf852a44eb459b7b4b8941b6d"
+    },
+    {
+      "path": "run-02/regression-children/22.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8fa78f01681a63d27d40694710a47f2c9cc11935449567960ddab53f9d68b576"
+    },
+    {
+      "path": "run-02/regression-children/23.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "61f8a19cfaf6fca51ad320d0679d230ef896c479a379810c68be23cf8d2d252f"
+    },
+    {
+      "path": "run-02/regression-children/24.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "ee0f633c35e0959c7eee47173acc5a02bd513670828bdd789f55b3507c9fbd0c"
+    },
+    {
+      "path": "run-03/boundary-missing-source-normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "4e3b7f0683199c045639d8dabe036e52b183bca2086c52050289d75bfe800670"
+    },
+    {
+      "path": "run-03/boundary-missing-source-optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "ee7de63ccb670efa4c88bc2164b129c7ec78570fc58439ee4015040b7c993629"
+    },
+    {
+      "path": "run-03/boundary-negative-normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "0a9cd384e3b824132c97f3548bd7e4a70a29d89fbe0399c0e06bb8aa906d9050"
+    },
+    {
+      "path": "run-03/boundary-negative-optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "84fd667b75fdccab1a064b2ce569e88fd03ada1330b4695f399264cdae6d56c1"
+    },
+    {
+      "path": "run-03/boundary-normal.json",
+      "kind": "binary_and_scope",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "255fb81b135022288f45a8ac468fe3b7f5a1df87d817be53d2efbd7f5b7e3771"
+    },
+    {
+      "path": "run-03/boundary-optimized.json",
+      "kind": "binary_and_scope",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "27db6dc2b5d5cec988838f403e84e9935dfd9f84ce6e350e4b9b1f196c0aa648"
+    },
+    {
+      "path": "run-03/cmake-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "60639c42a3b423d0b85d043d012fc54d4ac91dda08aaa5864ead89314c9484cf"
+    },
+    {
+      "path": "run-03/compiler-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "d345e6ea3107a1bfb0f72f223227748b1d28ac5f48c4b3bc4a083d668ab1ef63"
+    },
+    {
+      "path": "run-03/consumer-build.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "331f18df7548a9ae249bda9d0bb640c790cdfcc63f3c46e0cebf5146df6eda87"
+    },
+    {
+      "path": "run-03/consumer-configure.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "ec43384cd999b1a7e9ab48bdbde8f6f4678577b6b546b1362de2e4c42d7a4e82"
+    },
+    {
+      "path": "run-03/df0-regressions-normal.json",
+      "kind": "retained_regression",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "27e23199c443ae0e7785199eaef8a617eb73c75be862096b8a96514dbf964355"
+    },
+    {
+      "path": "run-03/df0-regressions-optimized.json",
+      "kind": "retained_regression",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "33a0b19e035597d12f9f5c46779deb1bb4474245b22633bf1e1143bf74f4aa83"
+    },
+    {
+      "path": "run-03/foundation-dependencies.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9d43f2fe02cb958c8a4e0b4e0717899630f03c318ff1031b8501249401020552"
+    },
+    {
+      "path": "run-03/foundation-exports.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "6cec9450f6118f16b013471eb2712edeb851f7590cb0567fc5d14162ff3bec77"
+    },
+    {
+      "path": "run-03/host-build.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "9a17bac70e19b419f3c214e2cd19a73241c367d8104a475719c9e656ff4adc5c"
+    },
+    {
+      "path": "run-03/host-configure.json",
+      "kind": "build",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "222e1a3728b06eefe3f95c582e4dfd2215a90f2d27afbfa810b286acdc3a7eae"
+    },
+    {
+      "path": "run-03/host-tests.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "e44c8219504b849099c9a41baeb559bd3f494556ef0a3911175984f6efc80705"
+    },
+    {
+      "path": "run-03/install.json",
+      "kind": "install",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "0c6fc71fc4da28222cab5d689fe15998fa642f30dfcd03b8c4a53e6eaccd2009"
+    },
+    {
+      "path": "run-03/installed-consumers.json",
+      "kind": "installed_consumer",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "d0f7898810c7c67d55ef20c92889a6b1376833272cf56be8a89406f1dd2087c9"
+    },
+    {
+      "path": "run-03/ninja-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "664051bb524f369896c3b837f525adb1396d10ec39db56e5c40765b820734783"
+    },
+    {
+      "path": "run-03/os-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3f11f63a25095caf585600ea5a6737f726e0a142ab43d12a1dd80abbaca4d7e6"
+    },
+    {
+      "path": "run-03/page-size.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "b67c9152f99499443ebef34815fd4a666b7ee67defa42db85f6d29ec128a9781"
+    },
+    {
+      "path": "run-03/probe-boundary.json",
+      "kind": "separate_prototype_inspection",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "8ce99b2b8ccb593c1e12cae3c50bcd40c210ee131b933bb6607f7a2969bcffce"
+    },
+    {
+      "path": "run-03/python-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "89a490c6ac96e2fdf981d9db791927829b9156450eef96b4596935dfc8175902"
+    },
+    {
+      "path": "run-03/sdk-path.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "1ad1482b18867ae21f64f138398c890c0a4a927ff53adc6a2ed879af34b4ee66"
+    },
+    {
+      "path": "run-03/sdk-version.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "388110d587becff033efc377d5d9196a0536aabc91c2db0f40f5876b4b826911"
+    },
+    {
+      "path": "run-03/stdlib-macros.json",
+      "kind": "environment",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "fb350576d9df1b6f20aa8d7b71b23a23c9e589f3797f9d1b59fd59358ac5c170"
+    },
+    {
+      "path": "run-03/regression-children/01.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3c3f214854c23bbeee4364554cf9e3778abf6b18961811fe7a6003dc69f9c139"
+    },
+    {
+      "path": "run-03/regression-children/02.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "6e84a4d1bee15a1c1a41ae3b4e42cd5e7a5ef340c0321e68fa96ae1a4486dc0c"
+    },
+    {
+      "path": "run-03/regression-children/03.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8ad89d31d1278ecf25abcf69700dece663e5ed1ad1b6d1b93bf0acb52cc1d0f4"
+    },
+    {
+      "path": "run-03/regression-children/04.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "44292033d6628d95d13ff68a412aba9036a4ae46f470e50e4da051393d197142"
+    },
+    {
+      "path": "run-03/regression-children/05.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "7347def02dd5452d3b672cad8519a3c9ee488c650558642ca436f4e6a313e640"
+    },
+    {
+      "path": "run-03/regression-children/06.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "fc825cffe20610d89d495e4766a1f15e2d2e9f399d486fccc421ce7747c9b383"
+    },
+    {
+      "path": "run-03/regression-children/07.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "3c3f214854c23bbeee4364554cf9e3778abf6b18961811fe7a6003dc69f9c139"
+    },
+    {
+      "path": "run-03/regression-children/08.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "ac37d5e0b44d95389949d58454f8df869e9b9a54af3c191ebd8ff87a16a761e4"
+    },
+    {
+      "path": "run-03/regression-children/09.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "d5e2f0f3e9fa6725612361153c533dff7b4d14a6a3e5e1060e5fe147c6cd4823"
+    },
+    {
+      "path": "run-03/regression-children/10.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "44292033d6628d95d13ff68a412aba9036a4ae46f470e50e4da051393d197142"
+    },
+    {
+      "path": "run-03/regression-children/11.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "932b5eea46396f5baf9b3121aeaff1ef87cb19c2a29f0895a70cad837dc27923"
+    },
+    {
+      "path": "run-03/regression-children/12.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8af8853dc7c43ed9a1ca81edf6baefc7cd57ca30a3d57c138534858fd862943c"
+    },
+    {
+      "path": "run-03/regression-children/13.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "72c9c9583103a36973418e371a43b30747cc393d34a79c56633e565d52f78c39"
+    },
+    {
+      "path": "run-03/regression-children/14.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "602b058a22f9e97f5c2027e8b4f2e40b567d87dd4d450b5711e52126e45c15a3"
+    },
+    {
+      "path": "run-03/regression-children/15.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5c4d227e431d26d76fe49a85e07daa39722d5fe6776cd2f08af3fc2d826b0275"
+    },
+    {
+      "path": "run-03/regression-children/16.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "7b26113ced5a6c0b8984d0caa845df44858998a12934d917cf5baae5c8101384"
+    },
+    {
+      "path": "run-03/regression-children/17.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "72c9c9583103a36973418e371a43b30747cc393d34a79c56633e565d52f78c39"
+    },
+    {
+      "path": "run-03/regression-children/18.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "996c6751b271bb7bc747fd875f95918371fad90cded8a7dab010996f9fca65e4"
+    },
+    {
+      "path": "run-03/regression-children/19.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "passed",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "original_record_sha256": "5c4d227e431d26d76fe49a85e07daa39722d5fe6776cd2f08af3fc2d826b0275"
+    },
+    {
+      "path": "run-03/regression-children/20.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "5e60373ae70092f30617b49979cab866eec016921c4bcf2789a39a5edf29c3e9"
+    },
+    {
+      "path": "run-03/regression-children/21.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "f2077c8eaaacd4995a95a2db9ca5a59629df40053ba251a0907ef875c6a830d4"
+    },
+    {
+      "path": "run-03/regression-children/22.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "c6f3868e6d466aa0c2136d974c88df272416c6d064cdfe569a8064df9918a9b5"
+    },
+    {
+      "path": "run-03/regression-children/23.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "8d2398fd2e2746b14a42305cabdc8c12442efae572a147735882cff6d6d67ae3"
+    },
+    {
+      "path": "run-03/regression-children/24.json",
+      "kind": "retained_df0_regression_child",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "aa1b2197652fca018be005ca07ddd0ef01f4afd312682fae92e8df22bf2bf0ae"
+    },
+    {
+      "path": "helper-negatives/normal.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "5756f31f7c1a211a2c1fc74df05227d9741e109750feb4e4b13b1131cd625b07"
+    },
+    {
+      "path": "helper-negatives/optimized.json",
+      "kind": "expected_negative",
+      "outcome": "expected_rejection",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "original_record_sha256": "27ad79b9e43bf8dd8201e1cbfa6941812aaab8044d3136c2403589934693317e"
+    }
+  ],
+  "outcome_counts": {
+    "passed": 75,
+    "expected_rejection": 40
+  },
+  "counting_note": "Parent suite and child invocations overlap; do not infer independent coverage from record count. Original run-01 is summarized separately and retained with all raw input/output.",
+  "historical_records_preserved": true,
+  "new_native_sanitizers": [
+    "address",
+    "undefined",
+    "thread"
+  ],
+  "new_native_fuzz": "Meaningful arithmetic/record/budget/context/internal-ownership harness; max_len 96; timed finite campaigns, not a safety proof",
+  "consumer_qualification": "deferred_open_not_passed",
+  "executable_oracle_qualification": "deferred_open_not_passed",
+  "full_df1_authorised": false,
+  "new_pr_merge_authorised": false
+}

@@ -20,7 +20,11 @@ DF-G0 acceptance and current implementation authority: DF-W05 plus only
 See the [effective authority index](docs/evidence/effective-authority.json).
 Full DF-1, the writer and consumer integration are not authorised in this slice.
 
-Foundation implementation is in progress on `codex/df1-foundation-core`.
+The authorised foundation core and five-function C subset are implemented and
+host-tested. Use the installed `dicomflux/foundation.h` header and
+`DICOMfluxFoundation` CMake package (`DICOMflux::foundation`). See the
+[implemented contract](docs/architecture/foundation-core.md) and
+[implementation evidence](docs/evidence/foundation-core/README.md).
 The four-function DF-0 probe remains a separate prototype; it does not read or
 write DICOM. [Historical closure evidence](docs/evidence/g0-closure/README.md)
 retains its original unfilled submission fields; subsequent authority is recorded

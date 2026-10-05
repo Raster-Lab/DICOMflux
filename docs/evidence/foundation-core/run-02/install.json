@@ -1,0 +1,20 @@
+{
+  "id": "install",
+  "kind": "install",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--install",
+    "${SOURCE}/build/df1-fc-02-host"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:44.257581+00:00",
+  "elapsed_seconds": 0.013772709004115313,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "-- Install configuration: \"Debug\"\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/libdicomflux_probe.dylib\n-- Installing: ${SOURCE}/install/df1-fc-02/include/dicomflux/df0_probe.h\n-- Installing: ${SOURCE}/install/df1-fc-02/include/dicomflux/probe_defaults.h\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxProbe/DICOMfluxProbeTargets-debug.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxProbe/DICOMfluxProbeConfig.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/libdicomflux_foundation.dylib\n-- Installing: ${SOURCE}/install/df1-fc-02/include/dicomflux/foundation.h\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxFoundation/DICOMfluxFoundationTargets.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxFoundation/DICOMfluxFoundationTargets-debug.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/lib/cmake/DICOMfluxFoundation/DICOMfluxFoundationConfig.cmake\n-- Installing: ${SOURCE}/install/df1-fc-02/share/dicomflux/foundation-capabilities.json\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}

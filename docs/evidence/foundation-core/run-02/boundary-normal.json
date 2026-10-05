@@ -1,0 +1,23 @@
+{
+  "id": "boundary-normal",
+  "kind": "binary_and_scope",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/check_foundation_boundary.py",
+    "--library",
+    "${SOURCE}/stage/df1-fc-02/lib/libdicomflux_foundation.dylib",
+    "--capabilities",
+    "${SOURCE}/stage/df1-fc-02/share/dicomflux/foundation-capabilities.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T15:24:46.286962+00:00",
+  "elapsed_seconds": 0.07325124999624677,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"actual_binary_and_scope_inspection\", \"python_optimize\": 0, \"functions\": [\"dicomflux_context_create\", \"dicomflux_context_release\", \"dicomflux_context_retain\", \"dicomflux_error_copy\", \"dicomflux_query_abi\"], \"dependencies\": [\"@rpath/libdicomflux_foundation.dylib\", \"/usr/lib/libc++.1.dylib\", \"/usr/lib/libSystem.B.dylib\"], \"library_sha256\": \"1a0fedbc38bf8cac5f5458e2ec2f84412c4f249a7c53a8fd0df8e5ed75316282\", \"source_sha256\": {\"include/dicomflux/foundation.h\": \"eae82c8230c3fba17f4a94c083bbba575fe52a34c0f9990676da6088d7da3384\", \"src/c_api/foundation.cpp\": \"ca43f8f8acb05ba932dc55086e6b67a46f6276772f210f921f71a0c2cf74c218\", \"src/foundation/core.cpp\": \"61ef1e7da658a8e5399ce6c75c8b1ae9191e6a358af87c69249d453009e4c12e\", \"src/foundation/core.hpp\": \"33254fba494c8108f49b14d92556404dd29f429c9c96242da040bc3f9bb5908d\"}, \"outcome\": \"passed\", \"scope\": \"DF-A002 auxiliary host foundation; no consumer or writer qualification\"}\n",
+  "stderr": "",
+  "input_text": null,
+  "source_digest": "841a7d136c3966992c24fcd8e7a1c54260f3a518955dbb3652569fce9a323d94",
+  "scope": "DF-A002 foundation-only host evidence"
+}
