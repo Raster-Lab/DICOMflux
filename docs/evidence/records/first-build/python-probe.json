@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "id": "python-probe",
+  "kind": "binding_probe",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/bindings/python_probe/probe.py",
+    "${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib",
+    "--budgets",
+    "${SOURCE}/docs/architecture/qualification-budgets.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:57:26.081913+00:00",
+  "elapsed_seconds": 0.035709375006263144,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"foundation_probe\", \"python\": \"3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]\", \"machine\": \"arm64\", \"abi_options_size\": 80, \"abi_options_alignment\": 8, \"load_call_gc_explicit_close_double_wrapper_close_invalid_options\": \"passed\", \"engine_writer_tests\": \"not_run; no engine writer implemented\"}\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

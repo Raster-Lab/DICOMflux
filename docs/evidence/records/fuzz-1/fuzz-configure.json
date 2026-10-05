@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "id": "fuzz-configure",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "-S",
+    "${SOURCE}",
+    "-B",
+    "${SOURCE}/build/df0-fuzz",
+    "-G",
+    "Ninja",
+    "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCMAKE_C_COMPILER=/usr/bin/clang",
+    "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+    "-DDICOMFLUX_BUILD_FUZZER=ON",
+    "-DBUILD_TESTING=OFF",
+    "-DDICOMFLUX_SANITIZER=address",
+    "-DDICOMFLUX_FUZZER_RUNTIME=${PRIVATE_WORK}/tooling/libfuzzer-build/libFuzzer.a"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:06:34.106510+00:00",
+  "elapsed_seconds": 0.11132520899991505,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "-- Configuring done (0.1s)\n-- Generating done (0.0s)\n-- Build files have been written to: ${SOURCE}/build/df0-fuzz\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

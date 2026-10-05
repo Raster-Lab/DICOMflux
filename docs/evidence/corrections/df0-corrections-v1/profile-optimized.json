@@ -1,0 +1,19 @@
+{
+  "id": "profile-optimized",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "-O",
+    "${SOURCE}/tools/validate_profile_inventory.py"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:19.072880+00:00",
+  "elapsed_seconds": 0.08154858299531043,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "{\"kind\": \"document_and_owned_fixture_check\", \"outcome\": \"passed\", \"python_optimize\": 1, \"mandatory_modules\": 10, \"attribute_rows\": 329, \"selected_tags\": 31, \"file_meta_attribute_rows\": 15, \"expected_layouts\": 2, \"engine_profile_validation\": \"not_run\"}\n",
+  "stderr": "",
+  "environment_override": {}
+}

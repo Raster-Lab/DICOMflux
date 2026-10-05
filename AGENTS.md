@@ -25,8 +25,9 @@ DF-1 unless a later explicit authorisation permits progression. Do not
 self-approve gates, claim absent device runs, or equate scaffolding with a
 working engine.
 
-Do not initialise or create repositories, alter remotes or visibility,
-commit, push, publish packages, or change another product without explicit
-permission for the operation. The user's repository setup is not an
-extension of the engineering scope. Return local changes and evidence
-under the current authorised task.
+For the explicitly authorised DF-0 reconciliation task, reviewed public-safe
+files may be committed and pushed to codex/df0-foundation-review, with a draft
+pull request targeting main. This narrow exception permits no private materials,
+direct-main writes, force-pushes, history rewriting, merges, releases, tags,
+repository setting changes or DF-1 work. Other repository operations require
+explicit task authority. DF-G0 remains pending human disposition.

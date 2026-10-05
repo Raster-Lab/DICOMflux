@@ -1,0 +1,20 @@
+{
+  "id": "regressions-normal",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "${SOURCE}/tests/regression/test_df0_corrections.py",
+    "--library",
+    "${SOURCE}/stage/df0-corrections-v1/lib/libdicomflux_probe.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:16.458514+00:00",
+  "elapsed_seconds": 0.930289542011451,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "mutation-input docs/evidence/records/bad.json 7f9bb5d0752d9540b43266d0b65bc94595d0db08aef4220887d7d2e680722d19\ntools/validate_evidence.py optimize= False exit= 1 expected= 1\ntools/validate_evidence.py optimize= True exit= 1 expected= 1\nmutation-input invalid-budgets.json bd077500f0c94467a40967c61dbb03e196473424d5e5304921ee8dc28f0ba6b8\nbindings/python_probe/probe.py optimize= False exit= 0 expected= 0\nbindings/python_probe/probe.py optimize= False exit= 1 expected= 1\nbindings/python_probe/probe.py optimize= True exit= 0 expected= 0\nbindings/python_probe/probe.py optimize= True exit= 1 expected= 1\ntools/validate_profile_inventory.py optimize= False exit= 0 expected= 0\nmutation-input bad-profile.json 2d7a8995553182dfdb51d13508b58114148e4bc375b674a9e5f7409af3d7938b\ntools/validate_profile_inventory.py optimize= False exit= 1 expected= 1\nmutation-input bad-profile.json 49452142bbabab2c3d171f5ddc68c0b56cf12f55265889994e560ae11c9c5de9\ntools/validate_profile_inventory.py optimize= False exit= 1 expected= 1\ntools/validate_profile_inventory.py optimize= True exit= 0 expected= 0\nmutation-input bad-profile.json 2d7a8995553182dfdb51d13508b58114148e4bc375b674a9e5f7409af3d7938b\ntools/validate_profile_inventory.py optimize= True exit= 1 expected= 1\nmutation-input bad-profile.json 49452142bbabab2c3d171f5ddc68c0b56cf12f55265889994e560ae11c9c5de9\ntools/validate_profile_inventory.py optimize= True exit= 1 expected= 1\n",
+  "stderr": "test_all_type2_contradictions (__main__.Corrections.test_all_type2_contradictions) ... ok\ntest_binary_policy_rejects_extra_export_and_dependency (__main__.Corrections.test_binary_policy_rejects_extra_export_and_dependency) ... ok\ntest_empty_positive_witnesses (__main__.Corrections.test_empty_positive_witnesses) ... ok\ntest_evidence_false_pass_rejected (__main__.Corrections.test_evidence_false_pass_rejected) ... ok\ntest_native_probe_process_modes (__main__.Corrections.test_native_probe_process_modes) ... ok\ntest_no_removable_python_acceptance_checks (__main__.Corrections.test_no_removable_python_acceptance_checks) ... ok\ntest_profile_process_modes (__main__.Corrections.test_profile_process_modes) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.806s\n\nOK\n",
+  "environment_override": {}
+}

@@ -1,0 +1,11 @@
+{
+  "file": "dcmtk-3.7.0.tar.gz",
+  "sha256": "f103df876040a4f904f01d2464f7868b4feb659d8cd3f46a5f1f61aa440be415",
+  "bytes": 9735627,
+  "execution": "not run; quarantine retained",
+  "official_distribution_index": "https://dicom.offis.de/download/dcmtk/current/",
+  "files_page": "https://support.dcmtk.org/redmine/projects/dcmtk/files",
+  "files_page_live_result": "HTTP 200 challenge redirect, not usable digest metadata",
+  "indexed_files_page_digest": "4158ecde05904b075204db1ce07b0f82922dd62ab79586a5ad50cea22e92be08",
+  "resolution": "not resolved; distribution listing names archive but supplies no digest, indexed metadata alone cannot reconcile identities"
+}

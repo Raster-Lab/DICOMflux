@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "consumer-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-corrections-suite-v1-consumers",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:30.049971+00:00",
+  "elapsed_seconds": 0.473541874991497,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "[1/4] Building C object CMakeFiles/consumer_c.dir/consumer.c.o\n[2/4] Linking C executable consumer_c\n[3/4] Building CXX object CMakeFiles/consumer_cpp.dir/consumer.cpp.o\n[4/4] Linking CXX executable consumer_cpp\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

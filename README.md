@@ -17,6 +17,20 @@ Foundation stage: DF-0 is authorised. There is no engine release or
 qualified device-support claim yet. Planned capabilities must not be
 interpreted as implemented features.
 
+The provisional DF-0 review candidate now includes bounded arithmetic/allocation probes,
+C11/C++20 install consumers, a Python foundation probe, and qualification
+harnesses. It does not read or write DICOM files. See
+[DF-0 evidence](docs/evidence/DF-0-report.md),
+[reproduction instructions](docs/evidence/reproduce.md), and the
+[DF-G0 review request](docs/evidence/DF-G0-review-request.md).
+Android, Linux and Raspberry Pi qualification remains incomplete.
+
+**Draft review: bounded corrections tested; DF-G0 remains pending.** Type 2
+expectations, the proposed C API state/error contract, optimized Python checks
+and macro-count wording have been corrected. See the
+[correction results](docs/evidence/corrections/README.md) and
+[publication status](docs/evidence/publication-status.md) for remaining gaps.
+
 ## Licence
 
 MIT. See LICENSE for the full licence text.

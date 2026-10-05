@@ -1,0 +1,79 @@
+[
+  {
+    "id": "DF0-I01",
+    "status": "open",
+    "area": "blocking target qualification",
+    "observation": "No Linux x86_64 environment/compiler/glibc/sysroot; no Pi board/image available. All 12 requested Pi combinations remain unexecuted.",
+    "disposition": "Obtain named witnesses under DF-0; no support claim."
+  },
+  {
+    "id": "DF0-I02",
+    "status": "open",
+    "area": "blocking JNI/Android qualification",
+    "observation": "No SDK/NDK/JDK/AGP/Kotlin, emulator, physical Android device or approved minimum API. No JNI load/close or Android page-size run.",
+    "disposition": "Select exact environment and run JNI foundation, exports, runtime and 4 KB/16 KB checks."
+  },
+  {
+    "id": "DF0-I03",
+    "status": "open",
+    "area": "target compatibility",
+    "observation": "CM5/Bullseye conflicts with official Bookworm+ guidance. Pi5/Bullseye exact-image compatibility unresolved.",
+    "disposition": "Human disposition of requested combinations; do not silently discard or qualify them."
+  },
+  {
+    "id": "DF0-I04",
+    "status": "open",
+    "area": "oracle provenance",
+    "observation": "DCMTK 3.7.0 archive actual SHA-256 f103df876040a4f904f01d2464f7868b4feb659d8cd3f46a5f1f61aa440be415 differs from files-page digest 4158ecde05904b075204db1ce07b0f82922dd62ab79586a5ad50cea22e92be08. Initial assertion failed with empty text.",
+    "disposition": "Archive quarantined from execution outside Git. Reconcile upstream distribution identity; no silent substitution."
+  },
+  {
+    "id": "DF0-I05",
+    "status": "open",
+    "area": "oracle qualification",
+    "observation": "dciodvfy source pinned but executable unbuilt; pydicom pinned but no fixture parsed. pydicom dictionary 2024c, DCMTK inspected dictionary 2025e, dciodvfy snapshot not verified complete for 2026d.",
+    "disposition": "Review per-IOD coverage and qualify tools before DF-1 validation."
+  },
+  {
+    "id": "DF0-I06",
+    "status": "open",
+    "area": "standards provenance/review",
+    "observation": "Official current pages captured as 2026d and hashed locally; upstream immutable release archive not verified. No permission inferred to redistribute full standards/dictionaries under MIT.",
+    "disposition": "Review narrow factual inventory/provenance and settle reusable build-input/rights route before dictionary expansion."
+  },
+  {
+    "id": "DF0-I07",
+    "status": "resolved for host",
+    "area": "bootstrap failure preserved",
+    "observation": "Initial CMake configurations used wrong Ninja path and failed. Correct pinned binary path fixed the host builds.",
+    "disposition": "Keep initial records; successful later configurations supersede only affected commands."
+  },
+  {
+    "id": "DF0-I08",
+    "status": "resolved for host",
+    "area": "fuzzer runtime absence",
+    "observation": "Apple Clang lacked a libFuzzer runtime archive; first fuzz link failed.",
+    "disposition": "Compiled pinned compiler-rt 21.1.8 libFuzzer privately; two final campaigns passed. Platform-conditional empty archive members explain warnings."
+  },
+  {
+    "id": "DF0-I09",
+    "status": "resolved for host",
+    "area": "resource wrapper failure",
+    "observation": "/usr/bin/time -l failed on sandbox-restricted sysctl after a passing child. The final aggregate suite returned 1.",
+    "disposition": "Preserve failure; separate getrusage child measurement passed. Runner now uses it; no aggregate all-pass claim for historical suite."
+  },
+  {
+    "id": "DF0-I10",
+    "status": "resolved for host",
+    "area": "architecture observation",
+    "observation": "Initial /usr/local Python 3.9.0 ran x86_64 under Rosetta and clang lookup timed out once.",
+    "disposition": "Use observed native arm64 tools/CPython 3.12.14 for final witnesses; preserve initial record."
+  },
+  {
+    "id": "DF0-I11",
+    "status": "open",
+    "area": "unqualified floors",
+    "observation": "CMake 3.24, GCC12+/Clang18+, CPython3.14, NDKr30 and minSdk23 remain candidates.",
+    "disposition": "A newer auxiliary host build does not qualify a minimum or change product floors."
+  }
+]

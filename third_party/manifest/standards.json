@@ -1,0 +1,321 @@
+{
+  "reviewed_edition": "2026d observed in official captures",
+  "retrieval_date": "2026-10-04 UTC",
+  "snapshot_status": "content-addressed local captures of mutable current pages, not a verified immutable upstream release archive",
+  "sources": [
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/PS3.3.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/PS3.3.html",
+      "file": "part03_PS3.3.html",
+      "sha256": "477568c95a9f0426a4bfb4f202a9497fe1dae1fe0f95dc7e44c9307979e37083",
+      "bytes": 1610227,
+      "retrieved_at": "2026-10-04T17:47:46.249203+00:00",
+      "etag": "\"de5dc670fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:20:36 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_Notice.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_Notice.html",
+      "file": "part03_chapter_Notice.html",
+      "sha256": "485a6037108c59c5466d98668817dc3707c1da6eb68e604c8d435def7803e5d7",
+      "bytes": 7056,
+      "retrieved_at": "2026-10-04T17:47:09.950817+00:00",
+      "etag": "\"9fc666fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:17:37 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.3.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.3.html",
+      "file": "part03_sect_A.32.4.3.html",
+      "sha256": "58cf32aab8eaada0bee523398db1675cad6476cad2dabe92321fe5fb29686141",
+      "bytes": 31511,
+      "retrieved_at": "2026-10-04T17:47:11.920379+00:00",
+      "etag": "\"f1b767a2fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:21:59 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.4.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.4.html",
+      "file": "part03_sect_A.32.4.4.html",
+      "sha256": "d03de2b817e35c33de5089dc3485966e3db08a250138a93a0f5baa8d26ae06d8",
+      "bytes": 5145,
+      "retrieved_at": "2026-10-04T17:47:10.567013+00:00",
+      "etag": "\"350f2a2fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:22:00 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.1.1.html",
+      "file": "part03_sect_C.7.1.1.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.1.html",
+      "file": "part03_sect_C.7.2.1.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.3.1.html",
+      "file": "part03_sect_C.7.3.1.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.5.1.html",
+      "file": "part03_sect_C.7.5.1.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.10.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.10.html",
+      "file": "part03_sect_C.7.10.html",
+      "sha256": "7fc16a7091904402389793ea742f4c2e3c54d6c9b4e32d13bab8a681b035b290",
+      "bytes": 20332,
+      "retrieved_at": "2026-10-04T17:47:13.605852+00:00",
+      "etag": "\"e939a33fb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:26:02 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.html",
+      "file": "part03_sect_C.7.6.html",
+      "sha256": "8d7d584b8f88144261d198617be50573609d307e0038dc225d25fd433c8f8054",
+      "bytes": 85604,
+      "retrieved_at": "2026-10-04T17:47:15.138887+00:00",
+      "etag": "\"ddfba631fb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:25:59 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html",
+      "file": "part03_sect_C.7.6.3.html",
+      "sha256": "bb72b6e1018b42f3fcf76494085e2cd09a077caab272d0078ffbac14f68142ac",
+      "bytes": 78302,
+      "retrieved_at": "2026-10-04T17:47:15.303707+00:00",
+      "etag": "\"1ac2c727fb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:25:43 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.14.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.14.html",
+      "file": "part03_sect_C.7.6.14.html",
+      "sha256": "47bfabdd313ad6a6b500ac3599a48b9f8a91ed812d11f8627d197e3eea452303",
+      "bytes": 11162,
+      "retrieved_at": "2026-10-04T17:47:15.130578+00:00",
+      "etag": "\"53bcc2afb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:25:48 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.html",
+      "file": "part03_sect_C.8.12.html",
+      "sha256": "58ec40864aaa95465f991bc66c8d5370c569ebf59394bdb3930d7a88a844bc7a",
+      "bytes": 78118,
+      "retrieved_at": "2026-10-04T17:47:17.430358+00:00",
+      "etag": "\"998ab95ffb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:27:17 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.12.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.12.html",
+      "file": "part03_sect_C.12.html",
+      "sha256": "9b7cca8d3ae620249bd3d619e54e86b8dba467fd3ba454256b32696a7ce9008b",
+      "bytes": 458876,
+      "retrieved_at": "2026-10-04T17:47:20.776198+00:00",
+      "etag": "\"d9c094a3fb48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:29:10 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.7.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.7.html",
+      "file": "part03_sect_10.7.html",
+      "sha256": "37b9aa64db0761d8ccbcbca0525011b7c842992c6d462c296823ca69b37b2bcb",
+      "bytes": 22992,
+      "retrieved_at": "2026-10-04T17:47:16.823917+00:00",
+      "etag": "\"29cc4f82fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:21:05 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.8.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.8.html",
+      "file": "part03_sect_10.8.html",
+      "sha256": "9d81740f93a8e4b87acc825a164ed59980f1a7f37f43974908ecbc5f45529dd3",
+      "bytes": 8389,
+      "retrieved_at": "2026-10-04T17:47:18.045907+00:00",
+      "etag": "\"4adca082fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:21:06 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.15.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.15.html",
+      "file": "part03_sect_10.15.html",
+      "sha256": "c1f13680ef6bdc700a662c26fb155219dc31fe157bdc834bab22190846599512",
+      "bytes": 21880,
+      "retrieved_at": "2026-10-04T17:47:18.941438+00:00",
+      "etag": "\"49d13e85fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:21:10 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.16.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.16.html",
+      "file": "part03_sect_10.16.html",
+      "sha256": "233fc2fef0eefaea878f6e63a14b0e6609d020831d93b1f182cf85d4a90ac37e",
+      "bytes": 15416,
+      "retrieved_at": "2026-10-04T17:47:19.615549+00:00",
+      "etag": "\"fd7e8d85fa48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:21:11 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html",
+      "file": "part05_sect_6.2.html",
+      "sha256": "3e16d2f8d9059f9d939c334bb0c0f829fa8b3266cc94834d2486d6d5f623c90d",
+      "bytes": 106967,
+      "retrieved_at": "2026-10-04T17:47:21.291466+00:00",
+      "etag": "\"f869f05dfc48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:34:23 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_7.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_7.html",
+      "file": "part05_chapter_7.html",
+      "sha256": "7646dc7a3a0603657bf5c8c08b2fb513ec3ca3d2274f3959bc2ba431e01718d5",
+      "bytes": 41626,
+      "retrieved_at": "2026-10-04T17:47:21.480672+00:00",
+      "etag": "\"a7caf255fc48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:34:10 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_B.2.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_B.2.html",
+      "file": "part05_sect_B.2.html",
+      "sha256": "fde552cb15069e40083a2185247dc73e0761ad07a2c4c146406b306910bd0395",
+      "bytes": 5797,
+      "retrieved_at": "2026-10-04T17:47:22.053375+00:00",
+      "etag": "\"bf31716efc48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:34:51 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_6.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_6.html",
+      "file": "part06_chapter_6.html",
+      "sha256": "7f3518a7edfccf99f5ff90e3efc40ac96e19f34efb7a803ce14962f460a0d2b1",
+      "bytes": 8388291,
+      "retrieved_at": "2026-10-04T17:48:57.766091+00:00",
+      "etag": "\"82328ce2f249dd1:0\"",
+      "last_modified": "Mon, 21 Sep 2026 17:59:02 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_A.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_A.html",
+      "file": "part06_chapter_A.html",
+      "sha256": "778ad3e471c81885b828d814e71b9395fd06a5b64abfe43728e903173a461eff",
+      "bytes": 2757519,
+      "retrieved_at": "2026-10-04T17:47:47.594692+00:00",
+      "etag": "\"5d9283e9f249dd1:0\"",
+      "last_modified": "Mon, 21 Sep 2026 17:59:13 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html",
+      "final_url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html",
+      "file": "part10_chapter_7.html",
+      "sha256": "8eb857e6e66f1d2ed4c65cc7d613be394ca267d2b97b8fcb30ab4b8a35c65cae",
+      "bytes": 40568,
+      "retrieved_at": "2026-10-04T17:47:23.821864+00:00",
+      "etag": "\"47b50aefc48dd1:0\"",
+      "last_modified": "Sun, 20 Sep 2026 12:36:38 GMT",
+      "status": "acquired"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.html",
+      "file": "part03_sect_C.7.html",
+      "sha256": "5db9d3f563e1aea9e66c100f08e0d4a195dd31b8637553b56870a6b9000e0bbe",
+      "retrieved_at": "2026-10-04T17:49:05.846160+00:00",
+      "role": "private standards review"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html",
+      "file": "part03_sect_C.7.2.html",
+      "sha256": "4da89b652992fd6a695ec09c4fe166a770cff4d01b8a8bbfc1be9ec0f2665a92",
+      "retrieved_at": "2026-10-04T17:49:07.789265+00:00",
+      "role": "private standards review"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.3.html",
+      "file": "part03_sect_C.7.3.html",
+      "sha256": "46d204abfda3bf5c8c40f5dbe2979fcf1673bed2d73f048aa97df811a13fdf0a",
+      "retrieved_at": "2026-10-04T17:49:14.364326+00:00",
+      "role": "private standards review"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.5.html",
+      "file": "part03_sect_C.7.5.html",
+      "sha256": "48e80ea4e2d05d9d5a3121bbe8504ba79874a4a5678f254b74947ad1d04abf39",
+      "retrieved_at": "2026-10-04T17:49:16.476104+00:00",
+      "role": "private standards review"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.14.html",
+      "file": "part03_sect_10.14.html",
+      "sha256": "b8eb76235cb438755eaced651d706f59ab31016d24f6b6d708cf56eb34b17ebe",
+      "retrieved_at": "2026-10-04T17:49:17.919360+00:00",
+      "role": "private standards review"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.3.html",
+      "file": "part03_sect_C.7.6.3.3.html",
+      "sha256": "6c224ad8d60b19cfe179b9bf68c17a6752a454c4e128d3030d245e00acf0cf8a",
+      "retrieved_at": "2026-10-04T18:01:50.800069+00:00"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.5.html",
+      "file": "part03_sect_10.5.html",
+      "sha256": "3c3b35b5daee7a3b5eef95cb293a5f6dca0459a042cf03c2e96603999b6a533a",
+      "retrieved_at": "2026-10-04T18:01:52.958411+00:00"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.13.html",
+      "file": "part03_sect_10.13.html",
+      "sha256": "6297814e9487f20744fa6545d5c6f3b52a149b4e31fcb21e375d657ba5bdca3f",
+      "retrieved_at": "2026-10-04T18:01:54.513916+00:00"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.41.html",
+      "file": "part03_sect_10.41.html",
+      "sha256": "441bbe40efd5b07d38b04d0c5a98f57d676c76665ec278cde87ee5e17afe53e6",
+      "retrieved_at": "2026-10-04T18:01:56.438758+00:00"
+    },
+    {
+      "url": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html",
+      "file": "part06_chapter_7.html",
+      "sha256": "be0d47f73859a8f51a41fe064685eed5cb8214fbfccd78663476726e5d6f3b23",
+      "bytes": 39922,
+      "retrieved_at": "2026-10-04T18:20:47.075976+00:00",
+      "integrity": "local snapshot hash"
+    }
+  ],
+  "use": "review factual tag/VR/VM/module requirements for an owned narrow profile; no runtime dictionary generated",
+  "rights_boundary": "DICOM standard retains its own copyright. Captures stay outside Git and are not relicensed under the project MIT licence. Full dictionary generation or redistributed standard-derived tables require a separate rights/provenance review. No third-party dictionary code or fixture is imported.",
+  "public_material": "Original conditions/fixture specifications and narrow factual identifiers with source links; not full normative prose."
+}

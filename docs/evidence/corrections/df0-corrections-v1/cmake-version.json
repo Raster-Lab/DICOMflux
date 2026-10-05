@@ -1,0 +1,18 @@
+{
+  "id": "cmake-version",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:10.300207+00:00",
+  "elapsed_seconds": 0.07180212499224581,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "cmake version 4.4.4\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+  "stderr": "",
+  "environment_override": {}
+}

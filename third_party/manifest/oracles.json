@@ -1,0 +1,54 @@
+{
+  "admission": "isolated test oracle candidates only; no execution/backend substitution",
+  "oracles": [
+    {
+      "name": "dcmtk",
+      "version": "3.7.0",
+      "url": "https://dicom.offis.de/download/dcmtk/current/dcmtk-3.7.0.tar.gz",
+      "status": "blocked_integrity_discrepancy",
+      "reason": "archive digest differs from the OFFIS files-page digest surfaced by search; initial acquisition assertion failed with empty message. Do not use until upstream distribution identity is reconciled.",
+      "execution": "not_run; no native DICOM output exists in DF-0",
+      "production_dependency": false,
+      "sha256": "f103df876040a4f904f01d2464f7868b4feb659d8cd3f46a5f1f61aa440be415",
+      "expected_sha256": "4158ecde05904b075204db1ce07b0f82922dd62ab79586a5ad50cea22e92be08",
+      "coverage": "archive dictionary header identifies PS3.6/PS3.7 2025e; inspected as data only",
+      "licence": "OFFIS BSD-style base plus component terms; source COPYRIGHT inspected, no code executed",
+      "role": "independent dcmdump reader",
+      "expected_digest_source": "https://support.dcmtk.org/redmine/projects/dcmtk/files",
+      "follow_up": "2026-10-05: original archive SHA unchanged; live files URL redirects to a challenge; official distribution index has no checksum. Search index repeats the historical differing digest. Still quarantined; not executed. See docs/evidence/corrections/dcmtk-investigation.json."
+    },
+    {
+      "name": "dicom3tools",
+      "version": "1.00.snapshot.20260901072548",
+      "url": "https://dclunie.com/dicom3tools/workinprogress/dicom3tools_1.00.snapshot.20260901072548.tar.bz2",
+      "archive": "dicom3tools_1.00.snapshot.20260901072548.tar.bz2",
+      "sha256": "5ce41f561177b001e7c6d531cd5a815887901997d94f5c48888568955364f0cf",
+      "hash_basis": "locally observed archive hash; not an upstream signature",
+      "retrieved_at": "2026-10-04T18:12:49.460953+00:00",
+      "status": "source_pinned_executable_unbuilt",
+      "execution": "not_run; no native DICOM output exists in DF-0",
+      "production_dependency": false,
+      "coverage": "snapshot 20260901072548; changing per-IOD templates, no full 2026d conformance claim verified",
+      "licence": "COPYRIGHT reviewed; BSD-style terms with clinical-use disclaimers, retained outside Git",
+      "role": "independent dciodvfy IOD/encoding validator; must review each diagnostic",
+      "licence_sha256": "d4e8cbe04ec0e7cc7e22345a527ec0e926bdca07f7b2e9ece92799c222533bc8"
+    },
+    {
+      "name": "pydicom",
+      "version": "3.0.2",
+      "url": "https://files.pythonhosted.org/packages/46/e0/60466c6d712dad2cf807df315e39863e91609ffd1064ecb835994460bbda/pydicom-3.0.2-py3-none-any.whl",
+      "archive": "pydicom-3.0.2-py3-none-any.whl",
+      "sha256": "abf971a5440f84dbaf42c4b6758e30e62480902584f8b270b9a5d146e278a07b",
+      "hash_basis": "matched published distribution digest",
+      "retrieved_at": "2026-10-04T18:12:50.100843+00:00",
+      "status": "acquired_for_isolated_oracle_qualification",
+      "execution": "not_run; no native DICOM output exists in DF-0",
+      "production_dependency": false,
+      "coverage": "source _version.py identifies DICOM 2024c; parsing is not IOD validation",
+      "licence": "MIT plus included GDCM-derived private dictionary licence; no dictionary copied",
+      "role": "independent strict Part 10 reader and exact native sample comparison",
+      "licence_sha256": "39b3259cb15151df25167119087df1fef33624765e639af42447ba6fe86dada3"
+    }
+  ],
+  "coverage_gap": "Older reader dictionaries and evolving validator templates do not prove 2026d IOD completeness. Resolve required tags/conditions against normative profile before any future DF-1 oracle claim."
+}

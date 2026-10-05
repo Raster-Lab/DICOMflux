@@ -1,0 +1,12 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": {"major": 3, "minor": 24, "patch": 0},
+  "configurePresets": [
+    {"name": "df0-host", "generator": "Ninja", "binaryDir": "${sourceDir}/build/df0-host", "cacheVariables": {"CMAKE_BUILD_TYPE": "Debug", "BUILD_TESTING": "ON"}},
+    {"name": "df0-asan", "inherits": "df0-host", "binaryDir": "${sourceDir}/build/df0-asan", "cacheVariables": {"DICOMFLUX_SANITIZER": "address"}},
+    {"name": "df0-ubsan", "inherits": "df0-host", "binaryDir": "${sourceDir}/build/df0-ubsan", "cacheVariables": {"DICOMFLUX_SANITIZER": "undefined"}},
+    {"name": "df0-tsan", "inherits": "df0-host", "binaryDir": "${sourceDir}/build/df0-tsan", "cacheVariables": {"DICOMFLUX_SANITIZER": "thread"}}
+  ],
+  "buildPresets": [{"name": "df0-host", "configurePreset": "df0-host"}],
+  "testPresets": [{"name": "df0-host", "configurePreset": "df0-host", "output": {"outputOnFailure": true}}]
+}

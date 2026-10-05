@@ -1,0 +1,22 @@
+{
+  "id": "python-optimized",
+  "kind": "DF-0 correction verification",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "-O",
+    "${SOURCE}/bindings/python_probe/probe.py",
+    "${SOURCE}/stage/df0-corrections-v1/lib/libdicomflux_probe.dylib",
+    "--budgets",
+    "${SOURCE}/docs/architecture/qualification-budgets.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:53:17.454560+00:00",
+  "elapsed_seconds": 0.08047462499234825,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expectation_met": true,
+  "inputs_digest": "54716a5f466c4d23938c44d156d8b1c3fcbb7c767523e016b182ff93541b8e09",
+  "stdout": "{\"kind\": \"foundation_probe\", \"python_optimize\": 1, \"python\": \"3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]\", \"machine\": \"arm64\", \"abi_options_size\": 80, \"abi_options_alignment\": 8, \"load_call_gc_explicit_close_double_wrapper_close_invalid_options\": \"passed\", \"engine_writer_tests\": \"not_run; no engine writer implemented\"}\n",
+  "stderr": "",
+  "environment_override": {}
+}

@@ -1,0 +1,17 @@
+{
+  "id": "final-evidence-optimized",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "-O",
+    "${SOURCE}/tools/validate_evidence.py",
+    "--input-manifest",
+    "${SOURCE}/docs/evidence/corrections/current-tested-inputs.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:59:39.245213+00:00",
+  "elapsed_seconds": 0.5415505419999999,
+  "exit_code": 0,
+  "stdout": "{\"kind\": \"document_check\", \"outcome\": \"passed\", \"python_optimize\": 1, \"command_records\": 60, \"preserved_failed_records\": 7, \"historical_source_files_verified_at_checkpoint\": 16, \"historical_checkpoint\": \"59d465f49f3caaa9a7e89b28f92222b4752d068a\", \"current_input_manifest_checked\": true, \"engine_tests_not_run\": 24, \"gate\": \"DF-G0 pending human review\", \"validation\": \"required fields, types, status consistency and source hashes; not a general JSON Schema validator; no retroactive linkage for unbound runs\"}\n",
+  "stderr": "",
+  "input_manifest_sha256": "1c73110fe81db7020e7132de4980bb035a7faf8a358cfc15bdd1395f459ec897"
+}

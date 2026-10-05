@@ -1,0 +1,32 @@
+{
+  "scope": "DF-0 measurement-only prototype, not streaming writer performance",
+  "tracked_peak_bytes": 65648,
+  "composition": "112-byte context + configured 65536-byte transfer chunk on observed ABI",
+  "allocation_sites_observed": 2,
+  "fault_modes": [
+    "return NULL",
+    "deliberate C++ bad_alloc injection; foreign exceptions prohibited by caller contract"
+  ],
+  "declared_bulk_boundary_test": {
+    "logical_bytes": 4294967294,
+    "tracked_allocation_unchanged": true,
+    "bulk_buffer_allocated": false
+  },
+  "process": {
+    "kind": "resource_measurement",
+    "scope": "one foundation-test process; not a writer benchmark",
+    "command": [
+      "${SOURCE}/build/df0-host/df0_unit"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.0070905409957049415,
+    "peak_process_rss_bytes": 2162688,
+    "user_seconds": 0.0010069999999999999,
+    "system_seconds": 0.002596,
+    "stdout": "DF0 prototype checks=89 allocation_sites=2 fault_modes=2 concurrent_measurements=4000 tracked_bytes=65648\n",
+    "stderr": "",
+    "limitations": "RSS includes runtime/test process; library tracked peak is reported separately by the probe. Single run, cache state uncontrolled; no throughput comparison."
+  },
+  "fuzzer_process_peak_rss_mb": 152,
+  "limits": "Allocator counters exclude runtime, bookkeeping and host buffers. RSS is a separate single-process observation; no throughput or writer scalability claim. Other future counters in qualification-budgets.json are unimplemented."
+}

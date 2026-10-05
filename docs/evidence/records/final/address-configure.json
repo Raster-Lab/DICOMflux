@@ -1,0 +1,28 @@
+{
+  "schema_version": "1",
+  "id": "address-configure",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "-S",
+    "${SOURCE}",
+    "-B",
+    "${SOURCE}/build/df0-address",
+    "-G",
+    "Ninja",
+    "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCMAKE_C_COMPILER=/usr/bin/clang",
+    "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+    "-DDICOMFLUX_SANITIZER=address"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:06.998714+00:00",
+  "elapsed_seconds": 0.11820312499185093,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "-- Configuring done (0.1s)\n-- Generating done (0.0s)\n-- Build files have been written to: ${SOURCE}/build/df0-address\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

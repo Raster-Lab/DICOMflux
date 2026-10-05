@@ -1,0 +1,29 @@
+{
+  "gate": "DF-G0",
+  "human_disposition": null,
+  "df1_authorised": false,
+  "status": "hold progression; bounded corrections submitted, qualification/provenance gaps remain",
+  "scope": [
+    "DF-W00",
+    "DF-W01",
+    "DF-W02",
+    "DF-W03",
+    "DF-W04"
+  ],
+  "corrected_for_review": [
+    "DF0-REV-001",
+    "DF0-REV-002",
+    "DF0-REV-003",
+    "DF0-REV-007"
+  ],
+  "remaining_disposition": [
+    "DF0-REV-004",
+    "DF0-REV-005",
+    "DF0-REV-006"
+  ],
+  "decision_requests": [
+    "Review corrected fixture/API/harness details and resource budgets.",
+    "Disposition unavailable target witnesses and Pi5/CM5 Bullseye incompatibilities; do not infer qualification.",
+    "Resolve DCMTK identity and reader/IOD coverage, standards snapshot boundary and historical linkage limitations."
+  ]
+}

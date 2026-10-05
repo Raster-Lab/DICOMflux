@@ -1,0 +1,32 @@
+[
+  {
+    "file": "stage/df0/lib/libdicomflux_probe.dylib",
+    "sha256": "d5b3308d13f6671dbd5643fd012fbd3eed81f8d1f9256de023cc69492d05266b",
+    "bytes": 38120
+  },
+  {
+    "file": "build/df0-host/df0_unit",
+    "sha256": "8b5ee94a565c4fa286c5e9be0c40f8da145661bc57b8a185a3595979ff7fd207",
+    "bytes": 109944
+  },
+  {
+    "file": "build/df0-fuzz/df0_fuzz",
+    "sha256": "3ab9b3772476e9502b7e786d8627b7b0d1770862f02d0df72f851f80e24821f3",
+    "bytes": 447128
+  },
+  {
+    "file": "build/df0-address/df0_unit",
+    "sha256": "a9a02139ff09ed19d424e2b74a9ad89d955d3e6bf8d384a8db12cf076da4bbd7",
+    "bytes": 187528
+  },
+  {
+    "file": "build/df0-undefined/df0_unit",
+    "sha256": "41aa217f1e03ae6be6a39fe1a808e53b641e34584067bb1cb70d6b2b8a6f5df9",
+    "bytes": 193528
+  },
+  {
+    "file": "build/df0-thread/df0_unit",
+    "sha256": "10e5aa9847608a26e8cc50d2df00d83907ca349d4dcd0068b5a1d8b616be2ac7",
+    "bytes": 145752
+  }
+]

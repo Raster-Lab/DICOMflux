@@ -1,0 +1,27 @@
+{
+  "schema_version": "1",
+  "id": "thread-configure",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "-S",
+    "${SOURCE}",
+    "-B",
+    "${SOURCE}/build/df0-thread",
+    "-G",
+    "Ninja",
+    "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja/data/bin/ninja",
+    "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCMAKE_C_COMPILER=/usr/bin/clang",
+    "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+    "-DDICOMFLUX_SANITIZER=thread"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:56:49.774572+00:00",
+  "elapsed_seconds": 0.01801533300022129,
+  "exit_code": 1,
+  "outcome": "failed",
+  "stdout": "-- Configuring incomplete, errors occurred!\n",
+  "stderr": "CMake Error at CMakeLists.txt:2 (project):\n  Running\n\n   '${PRIVATE_WORK}/tooling/ninja/data/bin/ninja' '--version'\n\n  failed with:\n\n   no such file or directory\n\n\n",
+  "scope": "DF-0 prototype only"
+}

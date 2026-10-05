@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "consumer-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-consumers",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:05.579740+00:00",
+  "elapsed_seconds": 0.4576972500071861,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "[1/4] Building C object CMakeFiles/consumer_c.dir/consumer.c.o\n[2/4] Linking C executable consumer_c\n[3/4] Building CXX object CMakeFiles/consumer_cpp.dir/consumer.cpp.o\n[4/4] Linking CXX executable consumer_cpp\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

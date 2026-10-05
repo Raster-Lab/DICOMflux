@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "compiler-version",
+  "kind": "compile_link_probe",
+  "command": [
+    "/usr/bin/clang++",
+    "--version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T06:54:23.859007+00:00",
+  "elapsed_seconds": 0.018992291996255517,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "c15bd156852496d1469f5e71f937c0f036afdaeaefb9e66ea662a1457b338e0d",
+  "stdout": "Apple clang version 21.0.0 (clang-2100.0.123.102)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

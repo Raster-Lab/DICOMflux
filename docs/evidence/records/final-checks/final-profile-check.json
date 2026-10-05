@@ -1,0 +1,17 @@
+{
+  "schema_version": "1",
+  "id": "final-profile-check",
+  "kind": "document_check",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "${SOURCE}/tools/validate_profile_inventory.py"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:32:48.432443+00:00",
+  "elapsed_seconds": 0.054366709,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"document_and_owned_fixture_check\", \"outcome\": \"passed\", \"mandatory_modules\": 10, \"attribute_rows\": 329, \"selected_tags\": 31, \"file_meta_attribute_rows\": 15, \"expected_layouts\": 2, \"engine_profile_validation\": \"not_run\"}\n",
+  "stderr": "",
+  "scope": "DF-0 final document/package integrity; not engine acceptance"
+}

@@ -1,0 +1,5 @@
+{
+    global: dicomflux_probe_query_abi; dicomflux_probe_create;
+            dicomflux_probe_measure; dicomflux_probe_release;
+    local: *;
+};

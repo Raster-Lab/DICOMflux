@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "id": "fuzz-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-fuzz",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:57:34.097807+00:00",
+  "elapsed_seconds": 0.4129328749986598,
+  "exit_code": 1,
+  "outcome": "failed",
+  "stdout": "[1/4] Building CXX object CMakeFiles/df0_fuzz.dir/fuzz/foundation.cpp.o\n[2/4] Building CXX object CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o\n[3/4] Linking CXX shared library libdicomflux_probe.dylib\n[4/4] Linking CXX executable df0_fuzz\nFAILED: [code=1] df0_fuzz \n: && /usr/bin/clang++ -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=fuzzer -fsanitize=address CMakeFiles/df0_fuzz.dir/fuzz/foundation.cpp.o -o df0_fuzz  -Wl,-rpath,${SOURCE}/build/df0-fuzz  libdicomflux_probe.dylib && :\nld: warning: ignoring duplicate libraries: '-lc++'\nld: library '/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.fuzzer_osx.a' not found\nclang++: error: linker command failed with exit code 1 (use -v to see invocation)\nninja: build stopped: subcommand failed.\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

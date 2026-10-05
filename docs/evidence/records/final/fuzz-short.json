@@ -1,0 +1,22 @@
+{
+  "schema_version": "1",
+  "id": "fuzz-short",
+  "kind": "coverage_guided_fuzz",
+  "command": [
+    "${SOURCE}/build/df0-fuzz/df0_fuzz",
+    "${SOURCE}/build/df0-fuzz-corpus",
+    "-seed=20261004",
+    "-max_total_time=10",
+    "-max_len=64",
+    "-print_final_stats=1"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:14.974684+00:00",
+  "elapsed_seconds": 12.153647208004259,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "",
+  "stderr": "INFO: Running with entropic power schedule (0xFF, 100).\nINFO: Seed: 20261004\nINFO: Loaded 2 modules   (178 inline 8-bit counters): 100 [0x102d58000, 0x102d58064), 78 [0x102cd8000, 0x102cd804e), \nINFO: Loaded 2 PC tables (178 PCs): 100 [0x102d58068,0x102d586a8), 78 [0x102cd8050,0x102cd8530), \nINFO:       17 files found in ${SOURCE}/build/df0-fuzz-corpus\nINFO: seed corpus: files: 17 min: 1b max: 32b total: 513b rss: 44Mb\n#18\tINITED cov: 109 ft: 119 corp: 14/417b exec/s: 0 rss: 45Mb\n#432\tNEW    cov: 110 ft: 120 corp: 15/449b lim: 32 exec/s: 0 rss: 50Mb L: 32/32 MS: 4 ChangeBinInt-ChangeByte-CopyPart-ChangeByte-\n#523\tNEW    cov: 111 ft: 121 corp: 16/481b lim: 32 exec/s: 0 rss: 51Mb L: 32/32 MS: 1 ChangeBit-\n#904\tNEW    cov: 112 ft: 122 corp: 17/513b lim: 32 exec/s: 0 rss: 55Mb L: 32/32 MS: 1 ChangeBinInt-\n#2097152\tpulse  cov: 112 ft: 122 corp: 17/513b lim: 64 exec/s: 699050 rss: 152Mb\n#4194304\tpulse  cov: 112 ft: 122 corp: 17/513b lim: 64 exec/s: 599186 rss: 152Mb\n#6548342\tDONE   cov: 112 ft: 122 corp: 17/513b lim: 64 exec/s: 595303 rss: 152Mb\nDone 6548342 runs in 11 second(s)\nstat::number_of_executed_units: 6548342\nstat::average_exec_per_sec:     595303\nstat::new_units_added:          3\nstat::slowest_unit_time_sec:    0\nstat::peak_rss_mb:              152\n",
+  "scope": "DF-0 prototype only"
+}

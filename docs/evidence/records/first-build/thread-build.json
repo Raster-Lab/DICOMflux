@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "id": "thread-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-thread",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:57:31.694083+00:00",
+  "elapsed_seconds": 0.5214860410051188,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "[1/4] Building CXX object CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o\n[2/4] Linking CXX shared library libdicomflux_probe.dylib\n[3/4] Building CXX object CMakeFiles/df0_unit.dir/tests/unit/foundation.cpp.o\n[4/4] Linking CXX executable df0_unit\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "DF-T001",
+    "exercise": "Source/dependency/provenance audit",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "New owned implementation; external oracles segregated; no private import or shipping backend."
+  },
+  {
+    "id": "DF-T002",
+    "exercise": "Independent C11 and C++20 clients",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Clean compile/link/run through installed interface; exact toolchains recorded."
+  },
+  {
+    "id": "DF-T003",
+    "exercise": "ABI major/minor, sizes, flags and exports",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Supported combinations work; incompatible/unknown meaningful options fail safely; intended symbols only."
+  },
+  {
+    "id": "DF-T004",
+    "exercise": "Handle lifecycle and allocator ownership",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Owners released exactly once after terminal completion; no foreign free, stale-wrapper use or cross-instance handle use."
+  },
+  {
+    "id": "DF-T005",
+    "exercise": "Allocation failures, including error path",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Controlled status, bounded diagnostic and no leak/false success at every exercised failure point."
+  },
+  {
+    "id": "DF-T006",
+    "exercise": "Supported VR/value, order and duplicate handling",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Deterministic canonical order; malformed/duplicate/unsupported input rejected."
+  },
+  {
+    "id": "DF-T007",
+    "exercise": "Frozen IOD/profile attribute inventory",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Every applicable required field/condition has positive and negative evidence; no unexplained omissions."
+  },
+  {
+    "id": "DF-T008",
+    "exercise": "Native RGB8 Part 10 fixture",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "SOP/meta/TS identity consistency; correct exact pixels, framing and byte expectations."
+  },
+  {
+    "id": "DF-T009",
+    "exercise": "Odd payload and other padding cases",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Logical payload preserved; legal padding outside payload; total size correct."
+  },
+  {
+    "id": "DF-T010",
+    "exercise": "Independent readers and IOD validation",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Parsed values/pixels agree; validator has no unexplained errors; warnings/discrepancies dispositioned."
+  },
+  {
+    "id": "DF-T011",
+    "exercise": "Plan preflight and single-use state",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Preflight failure writes zero bytes; second execution rejected; post-terminal callbacks absent."
+  },
+  {
+    "id": "DF-T012",
+    "exercise": "Short/zero/failed source and sink progress",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Exact cursor updates; truncation and no-progress fail; partial output never succeeds."
+  },
+  {
+    "id": "DF-T013",
+    "exercise": "Cancellation and close races",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Distinct request/completion; lease survives execution; controlled terminal outcome and no use-after-free."
+  },
+  {
+    "id": "DF-T014",
+    "exercise": "Checked arithmetic and 32-bit field edges",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Padding/product/offset overflow rejected; no giant allocation; field rules not bypassed with undefined length."
+  },
+  {
+    "id": "DF-T015",
+    "exercise": "Budget exhaustion and memory growth",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Limit detected before offending work; tracked and process metrics reported separately."
+  },
+  {
+    "id": "DF-T016",
+    "exercise": "Deterministic/fuzz/sanitizer campaign",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Exact commands, corpora/configurations and actual duration/results retained; regressions reproducible."
+  },
+  {
+    "id": "DF-T017",
+    "exercise": "JNI load, signatures, references and buffers",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Real engine called; CheckJNI/GC/exception/lifetime tests; no acquisition-Core changes."
+  },
+  {
+    "id": "DF-T018",
+    "exercise": "Android ARM, emulator and page-size matrix",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Separate build/run evidence; physical and page-size gaps explicitly blocked, never inferred."
+  },
+  {
+    "id": "DF-T019",
+    "exercise": "Python ownership/signatures/errors",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Real C engine outputs fixture; callbacks survive GC; deterministic cleanup and status mapping."
+  },
+  {
+    "id": "DF-T020",
+    "exercise": "Pi AArch64 execution",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Declared physical target runs writer/Python and resource tests; cross-compile is insufficient."
+  },
+  {
+    "id": "DF-T021",
+    "exercise": "Fresh install and no-codec packaging",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "External consumer builds without source-tree internals or hidden runtime dependency."
+  },
+  {
+    "id": "DF-T022",
+    "exercise": "Privacy/log/artifact review",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Synthetic inputs only; no PHI/credentials/private code in candidate distributable or diagnostics."
+  },
+  {
+    "id": "DF-T023",
+    "exercise": "Unsupported-capability behaviour",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Non-EVRLE, unsupported VR/sequence, unknown-length input, codec/video/network requests fail explicitly."
+  },
+  {
+    "id": "DF-T024",
+    "exercise": "Evidence and completion audit",
+    "engine_verification_status": "not_run",
+    "reason": "DF-1 engine not implemented or authorised in this slice; related DF-0 probes are separate evidence",
+    "required_outcome": "Every claim linked to logs/fixture/build/target; unrun and blocked entries remain visible."
+  }
+]
