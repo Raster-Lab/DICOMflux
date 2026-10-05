@@ -2,7 +2,7 @@
   "gate": "DF-G0",
   "human_disposition": null,
   "df1_authorised": false,
-  "status": "hold progression; bounded corrections submitted, qualification/provenance gaps remain",
+  "status": "submitted for human disposition; progression stopped",
   "scope": [
     "DF-W00",
     "DF-W01",
@@ -10,6 +10,13 @@
     "DF-W03",
     "DF-W04"
   ],
+  "recommendation": "narrower auxiliary-host foundation acceptance with explicit deferred consumer/oracle execution gates",
+  "alternatives": {
+    "complete_acceptance": "Not supported: Linux/Pi/Android/JNI qualification and executable second-reader/IOD evidence remain incomplete.",
+    "narrower_host_foundation": "Recommended, subject to human acceptance and separate explicit future scope. Fresh exact host witnesses and usable limited oracle plans support foundation-only work.",
+    "continued_hold": "Use if the reviewer requires consumer execution or resolved archive provenance before even host-only foundation work, or identifies a material licence/privacy/ABI/profile conflict. No such new material conflict was established by this closure work."
+  },
+  "next_scope_proposal": "Accept only the narrower auxiliary-host foundation boundary, if the reviewer agrees; separately authorise DF-W05 plus the ABI-query/context/error-copy/release subset of DF-W06 on the observed host. Stop before builder/dataset/write-plan/execution APIs, profile/writer/oracle-object work, JNI/Pi integration and all later work orders.",
   "corrected_for_review": [
     "DF0-REV-001",
     "DF0-REV-002",
@@ -21,9 +28,8 @@
     "DF0-REV-005",
     "DF0-REV-006"
   ],
-  "decision_requests": [
-    "Review corrected fixture/API/harness details and resource budgets.",
-    "Disposition unavailable target witnesses and Pi5/CM5 Bullseye incompatibilities; do not infer qualification.",
-    "Resolve DCMTK identity and reader/IOD coverage, standards snapshot boundary and historical linkage limitations."
-  ]
+  "decision_records": "g0-closure/human-decisions.json",
+  "evidence": "g0-closure/manifest.json",
+  "no_writer_acceptance_required_for_df0": true,
+  "engine_tests_not_run": 24
 }

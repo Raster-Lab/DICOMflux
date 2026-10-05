@@ -1,0 +1,20 @@
+{
+  "id": "evidence-normal",
+  "kind": "document_check",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/validate_evidence.py",
+    "--input-manifest",
+    "${PRIVATE_CLOSURE}/host-run/build-source-files.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:21:32.265799+00:00",
+  "elapsed_seconds": 0.2750899999809917,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"document_check\", \"outcome\": \"passed\", \"python_optimize\": 0, \"command_records\": 60, \"preserved_failed_records\": 7, \"historical_source_files_verified_at_checkpoint\": 16, \"historical_checkpoint\": \"59d465f49f3caaa9a7e89b28f92222b4752d068a\", \"current_input_manifest_checked\": true, \"engine_tests_not_run\": 24, \"gate\": \"DF-G0 pending human review\", \"validation\": \"required fields, types, status consistency and source hashes; not a general JSON Schema validator; no retroactive linkage for unbound runs\"}\n",
+  "stderr": "",
+  "input_text": null,
+  "input_manifest_sha256": "08cf34484fbf467e90019b9513e38187dc37f810a147e6443b73e54fe56160f6"
+}

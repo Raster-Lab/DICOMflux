@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-10-05",
+  "dcmtk": {
+    "archive_status": "quarantined; not executed",
+    "comparison": {
+      "retrieved_at": "2026-10-05T08:22:22.928412+00:00",
+      "url": "https://api.github.com/repos/DCMTK/dcmtk/git/trees/ccfd10b84ff3c9a40b7b331698aedf06d421fc43?recursive=1",
+      "response_sha256": "0d01ad0ed0eab48740f87332dd82ae54b089b0e68c399d1c5915aceb513ba971",
+      "official_commit": "ccfd10b84ff3c9a40b7b331698aedf06d421fc43",
+      "archive_sha256": "f103df876040a4f904f01d2464f7868b4feb659d8cd3f46a5f1f61aa440be415",
+      "official_blob_count": 3517,
+      "archive_regular_files": 3516,
+      "common_files": 3516,
+      "matching_common_files": 3516,
+      "differing_common_files": [],
+      "only_archive": [],
+      "only_git": [
+        ".gitignore"
+      ],
+      "scope": "Read-only source comparison; no archive execution or admission; does not reconcile differing published archive hash",
+      "requested_tree_ref": "ccfd10b84ff3c9a40b7b331698aedf06d421fc43",
+      "official_commit_tree_sha": "685ac871c51d663e6a6843db13877f11a3d0211b"
+    },
+    "official_tag": "DCMTK-3.7.0",
+    "tag_object": "dd841c3a858dfb20cfa8574a2a54a33d032b0de4",
+    "commit": "ccfd10b84ff3c9a40b7b331698aedf06d421fc43",
+    "tag_signature": "unsigned",
+    "official_release_assets": "Only a Windows binary asset with an unrelated digest; no source archive digest in that release response",
+    "remaining_discrepancy": "Original archive SHA f103df... differs from historical files-page digest 4158ec...; blob agreement does not reconcile archive packaging/checksum identity. Official OFFIS page returned a challenge. No bypass attempted.",
+    "proposed_alternative": "Acquire a fresh official Git source snapshot pinned to ccfd10b84ff3c9a40b7b331698aedf06d421fc43 / tree 685ac871c51d663e6a6843db13877f11a3d0211b, review licence/component terms and hash the new input independently before an isolated build. Do not reuse quarantined bytes.",
+    "human_admission": null
+  },
+  "pydicom": {
+    "version": "3.0.2",
+    "pypi_digest_reconfirmed": true,
+    "selected_tag_vr_vm": "38/38 match, normal and -O",
+    "strict_invalid_input": "Rejected without force mode",
+    "positive_object_read": "not_run",
+    "iod_validation": "not provided",
+    "dictionary_edition": "2024c; selected tags checked directly rather than inferred from edition label",
+    "setup_failures_preserved": 2
+  },
+  "dicom3tools": {
+    "version": "1.00.snapshot.20260901072548",
+    "source_dictionary": "38/38 selected tags present; 37 literal VR/VM matches; Pixel Data OW/OB equals the profile OB or OW alternatives. No encoding tested.",
+    "iod_template": "VLPhotographicImage and applicable module names found as source data",
+    "build": "blocked by absent imake, makedepend, mkdirhier",
+    "validation": "not_run; template presence does not prove conditions, macros or 2026d completeness"
+  },
+  "retrievals": [
+    {
+      "url": "https://api.github.com/repos/DCMTK/dcmtk/releases/tags/DCMTK-3.7.0",
+      "utc": "2026-10-05T08:15:10.007055+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/DCMTK/dcmtk/releases/tags/DCMTK-3.7.0",
+      "bytes": 3508,
+      "sha256": "a64bd732506c3b2d2ba4df636852a9ea5b635fdfd35e6d33ab7cafc161f72fcc"
+    },
+    {
+      "url": "https://api.github.com/repos/DCMTK/dcmtk/git/ref/tags/DCMTK-3.7.0",
+      "utc": "2026-10-05T08:15:10.514020+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/DCMTK/dcmtk/git/ref/tags/DCMTK-3.7.0",
+      "bytes": 343,
+      "sha256": "b8210b2fb573d8950cb7780794f3eedae020bc70ae2ba56243279479c165bd03"
+    },
+    {
+      "url": "https://pypi.org/pypi/pydicom/3.0.2/json",
+      "utc": "2026-10-05T08:15:10.964734+00:00",
+      "status": 200,
+      "final_url": "https://pypi.org/pypi/pydicom/3.0.2/json",
+      "bytes": 11323,
+      "sha256": "cb013cc464e41a2836995fb840aa0b9108a88163ec738d0592224749087bfadc"
+    },
+    {
+      "url": "https://dicom.offis.de/en/dcmtk/dcmtk-software/",
+      "utc": "2026-10-05T08:15:13.620043+00:00",
+      "status": 200,
+      "final_url": "https://dicom.offis.de/challenge?next=%2Fen%2Fdcmtk%2Fdcmtk-software%2F",
+      "bytes": 14985,
+      "sha256": "1d3603a63a8b872626b1994ad747bc19bdcffb4f831388947ea67abd652e7a62"
+    }
+  ],
+  "all_roles": "Isolated test oracles only; no implementation backend or production dependency"
+}

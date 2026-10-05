@@ -1,0 +1,16 @@
+{
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/bindings/python_probe/probe.py",
+    "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib",
+    "--budgets",
+    "${SOURCE}/docs/architecture/qualification-budgets.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"kind\": \"foundation_probe\", \"python_optimize\": 1, \"python\": \"3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]\", \"machine\": \"arm64\", \"abi_options_size\": 80, \"abi_options_alignment\": 8, \"load_call_gc_explicit_close_double_wrapper_close_invalid_options\": \"passed\", \"engine_writer_tests\": \"not_run; no engine writer implemented\"}\n",
+  "stderr": "",
+  "expected_exit_code": 0,
+  "outcome": "passed",
+  "input_directory": "${PRIVATE_CLOSURE}/retained-regression-inputs/tmp1c0cwd8t"
+}

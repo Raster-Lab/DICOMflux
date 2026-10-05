@@ -1,5 +1,5 @@
 {
-  "admission": "isolated test oracle candidates only; no execution/backend substitution",
+  "admission": "Isolated test-oracle candidates only; pydicom setup/dictionary/rejection checks witnessed. No production dependency or own-engine object acceptance.",
   "oracles": [
     {
       "name": "dcmtk",
@@ -15,7 +15,8 @@
       "licence": "OFFIS BSD-style base plus component terms; source COPYRIGHT inspected, no code executed",
       "role": "independent dcmdump reader",
       "expected_digest_source": "https://support.dcmtk.org/redmine/projects/dcmtk/files",
-      "follow_up": "2026-10-05: original archive SHA unchanged; live files URL redirects to a challenge; official distribution index has no checksum. Search index repeats the historical differing digest. Still quarantined; not executed. See docs/evidence/corrections/dcmtk-investigation.json."
+      "follow_up": "Official release tag resolves to ccfd10b84ff3c9a40b7b331698aedf06d421fc43. All 3516 regular archive files match tagged Git blobs; .gitignore alone is absent. Tag is unsigned. Packaging digest conflict unresolved: quarantine remains, no execution.",
+      "closure_evidence": "../../docs/evidence/g0-closure/oracle-provenance.json"
     },
     {
       "name": "dicom3tools",
@@ -28,10 +29,12 @@
       "status": "source_pinned_executable_unbuilt",
       "execution": "not_run; no native DICOM output exists in DF-0",
       "production_dependency": false,
-      "coverage": "snapshot 20260901072548; changing per-IOD templates, no full 2026d conformance claim verified",
+      "coverage": "Selected 38 tags present; 37 exact VR/VM strings and equivalent Pixel Data OW/OB alternatives. VLPhotographicImage template found; conditional/macro completeness and actual IOD diagnostics unrun.",
       "licence": "COPYRIGHT reviewed; BSD-style terms with clinical-use disclaimers, retained outside Git",
       "role": "independent dciodvfy IOD/encoding validator; must review each diagnostic",
-      "licence_sha256": "d4e8cbe04ec0e7cc7e22345a527ec0e926bdca07f7b2e9ece92799c222533bc8"
+      "licence_sha256": "d4e8cbe04ec0e7cc7e22345a527ec0e926bdca07f7b2e9ece92799c222533bc8",
+      "closure_evidence": "../../docs/evidence/g0-closure/oracle-provenance.json",
+      "build_blocker": "imake, makedepend and mkdirhier not available"
     },
     {
       "name": "pydicom",
@@ -41,14 +44,15 @@
       "sha256": "abf971a5440f84dbaf42c4b6758e30e62480902584f8b270b9a5d146e278a07b",
       "hash_basis": "matched published distribution digest",
       "retrieved_at": "2026-10-04T18:12:50.100843+00:00",
-      "status": "acquired_for_isolated_oracle_qualification",
-      "execution": "not_run; no native DICOM output exists in DF-0",
+      "status": "isolated_setup_and_selected_dictionary_witnessed",
+      "execution": "Normal and -O: 38/38 selected tag VR/VM matches; invalid non-Part10 rejected; invalid wheel hash rejected before import. No positive own-engine object exists.",
       "production_dependency": false,
       "coverage": "source _version.py identifies DICOM 2024c; parsing is not IOD validation",
       "licence": "MIT plus included GDCM-derived private dictionary licence; no dictionary copied",
       "role": "independent strict Part 10 reader and exact native sample comparison",
-      "licence_sha256": "39b3259cb15151df25167119087df1fef33624765e639af42447ba6fe86dada3"
+      "licence_sha256": "39b3259cb15151df25167119087df1fef33624765e639af42447ba6fe86dada3",
+      "closure_evidence": "../../docs/evidence/g0-closure/oracle-provenance.json"
     }
   ],
-  "coverage_gap": "Older reader dictionaries and evolving validator templates do not prove 2026d IOD completeness. Resolve required tags/conditions against normative profile before any future DF-1 oracle claim."
+  "coverage_gap": "Selected dictionary lookup does not prove IOD condition/macro completeness, encoding or object validity. Resolve actual independent-reader/IOD diagnostics only when native objects exist; do not require DF-1 writer acceptance to close the DF-0 host foundation."
 }

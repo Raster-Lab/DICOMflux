@@ -1,0 +1,352 @@
+{
+  "kind": "source_template_inspection_not_executable_validation",
+  "archive_sha256": "5ce41f561177b001e7c6d531cd5a815887901997d94f5c48888568955364f0cf",
+  "input_files": {
+    "libsrc/standard/elmdict/dicom3.tpl": "46dfdb0ca9db759b51d0a72338c2636db1d1b22aa2bbfd0fc7afa00ab5805335",
+    "libsrc/standard/iodcomp/vl.tpl": "0d0c30985d3293c8bc07b3bd34512da987b3d42acdbb9a8fc456ae716621bd1e",
+    "libsrc/standard/module/vl.tpl": "8fa603763b128408493d628b3fd8f7f21d4633694166cf4a32ad94349e722156",
+    "INSTALL": "f089e6000e7b5089b028f1ac3e22987d301f97765fcf8826f097aa256a2e6150",
+    "COPYRIGHT": "d4e8cbe04ec0e7cc7e22345a527ec0e926bdca07f7b2e9ece92799c222533bc8"
+  },
+  "selected_tags": [
+    {
+      "tag": "(0002,0000)",
+      "profile_vr": "UL",
+      "profile_vm": "1",
+      "template_vr": "UL",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0001)",
+      "profile_vr": "OB",
+      "profile_vm": "1",
+      "template_vr": "OB",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0002)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0003)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0010)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0012)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0002,0013)",
+      "profile_vr": "SH",
+      "profile_vm": "1",
+      "template_vr": "SH",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0008)",
+      "profile_vr": "CS",
+      "profile_vm": "2-n",
+      "template_vr": "CS",
+      "template_vm": "2-n",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0016)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0018)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0020)",
+      "profile_vr": "DA",
+      "profile_vm": "1",
+      "template_vr": "DA",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0030)",
+      "profile_vr": "TM",
+      "profile_vm": "1",
+      "template_vr": "TM",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0050)",
+      "profile_vr": "SH",
+      "profile_vm": "1",
+      "template_vr": "SH",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0060)",
+      "profile_vr": "CS",
+      "profile_vm": "1",
+      "template_vr": "CS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0070)",
+      "profile_vr": "LO",
+      "profile_vm": "1",
+      "template_vr": "LO",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0008,0090)",
+      "profile_vr": "PN",
+      "profile_vm": "1",
+      "template_vr": "PN",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0010,0010)",
+      "profile_vr": "PN",
+      "profile_vm": "1",
+      "template_vr": "PN",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0010,0020)",
+      "profile_vr": "LO",
+      "profile_vm": "1",
+      "template_vr": "LO",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0010,0030)",
+      "profile_vr": "DA",
+      "profile_vm": "1",
+      "template_vr": "DA",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0010,0040)",
+      "profile_vr": "CS",
+      "profile_vm": "1",
+      "template_vr": "CS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,000D)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,000E)",
+      "profile_vr": "UI",
+      "profile_vm": "1",
+      "template_vr": "UI",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,0010)",
+      "profile_vr": "SH",
+      "profile_vm": "1",
+      "template_vr": "SH",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,0011)",
+      "profile_vr": "IS",
+      "profile_vm": "1",
+      "template_vr": "IS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,0013)",
+      "profile_vr": "IS",
+      "profile_vm": "1",
+      "template_vr": "IS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0020,0020)",
+      "profile_vr": "CS",
+      "profile_vm": "2",
+      "template_vr": "CS",
+      "template_vm": "2",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0002)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0004)",
+      "profile_vr": "CS",
+      "profile_vm": "1",
+      "template_vr": "CS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0006)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0010)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0011)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0100)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0101)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0102)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,0103)",
+      "profile_vr": "US",
+      "profile_vm": "1",
+      "template_vr": "US",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0028,2110)",
+      "profile_vr": "CS",
+      "profile_vm": "1",
+      "template_vr": "CS",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(0040,0555)",
+      "profile_vr": "SQ",
+      "profile_vm": "1",
+      "template_vr": "SQ",
+      "template_vm": "1",
+      "exact_text_match": true
+    },
+    {
+      "tag": "(7FE0,0010)",
+      "profile_vr": "OB or OW",
+      "profile_vm": "1",
+      "template_vr": "OW/OB",
+      "template_vm": "1",
+      "exact_text_match": false
+    }
+  ],
+  "vl_photographic_iod_present": true,
+  "module_identifiers": [
+    "FileMetaInformation",
+    "Patient",
+    "ClinicalTrialSubject",
+    "GeneralStudy",
+    "PatientStudy",
+    "ClinicalTrialStudy",
+    "GeneralSeries",
+    "VLPhotographicSeriesPseudo",
+    "ClinicalTrialSeries",
+    "GeneralEquipment",
+    "VLPhotographicEquipment",
+    "GeneralAcquisition",
+    "GeneralImage",
+    "GeneralReference",
+    "ImagePixel",
+    "AcquisitionContext",
+    "Device",
+    "Specimen",
+    "VLImage",
+    "VLPhotographicAcquisition",
+    "VLPhotographicGeolocation",
+    "OverlayPlane",
+    "ICCProfile",
+    "CheckSingleFramePseudo",
+    "SOPCommon",
+    "CommonInstanceReference"
+  ],
+  "limitations": [
+    "Template presence is not complete condition or macro evaluation",
+    "No executable built: imake/makedepend/mkdirhier unavailable",
+    "No own-engine DICOM object exists"
+  ],
+  "execution": "not_run"
+}

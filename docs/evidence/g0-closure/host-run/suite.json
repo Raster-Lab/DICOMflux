@@ -1,0 +1,365 @@
+[
+  {
+    "schema_version": "1",
+    "id": "cmake-version",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "--version"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:13.742655+00:00",
+    "elapsed_seconds": 0.011708333011483774,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "ninja-version",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+      "--version"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:13.754790+00:00",
+    "elapsed_seconds": 0.006191124994074926,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "python-version",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "--version"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:13.761412+00:00",
+    "elapsed_seconds": 0.007740500004729256,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "compiler-version",
+    "kind": "compile_link_probe",
+    "command": [
+      "/usr/bin/clang++",
+      "--version"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:13.769605+00:00",
+    "elapsed_seconds": 0.01618800000869669,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-configure",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "-S",
+      "${SOURCE}",
+      "-B",
+      "${SOURCE}/build/g0-adopted-main-host",
+      "-G",
+      "Ninja",
+      "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DCMAKE_C_COMPILER=/usr/bin/clang",
+      "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+      "-DCMAKE_INSTALL_PREFIX=${SOURCE}/install/g0-adopted-main"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:13.786264+00:00",
+    "elapsed_seconds": 0.761663041979773,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-build",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "--build",
+      "${SOURCE}/build/g0-adopted-main-host",
+      "--parallel",
+      "2"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:14.548376+00:00",
+    "elapsed_seconds": 0.6484382089984138,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-unit",
+    "kind": "foundation_test",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+      "--test-dir",
+      "${SOURCE}/build/g0-adopted-main-host",
+      "--verbose",
+      "--output-on-failure"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:15.197251+00:00",
+    "elapsed_seconds": 1.9862604169757105,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-install",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "--install",
+      "${SOURCE}/build/g0-adopted-main-host"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:17.184093+00:00",
+    "elapsed_seconds": 0.012244958023075014,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "consumer-configure",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "-S",
+      "${SOURCE}/build/g0-adopted-main-consumer-src",
+      "-B",
+      "${SOURCE}/build/g0-adopted-main-consumers",
+      "-G",
+      "Ninja",
+      "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+      "-DCMAKE_PREFIX_PATH=${SOURCE}/stage/g0-adopted-main",
+      "-DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:17.199455+00:00",
+    "elapsed_seconds": 0.5492574579839129,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "consumer-build",
+    "kind": "compile_link_probe",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+      "--build",
+      "${SOURCE}/build/g0-adopted-main-consumers",
+      "--parallel",
+      "2"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:17.749181+00:00",
+    "elapsed_seconds": 0.473441958980402,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "consumer-run",
+    "kind": "installed_consumer_test",
+    "command": [
+      "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+      "--test-dir",
+      "${SOURCE}/build/g0-adopted-main-consumers",
+      "--verbose"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:18.223063+00:00",
+    "elapsed_seconds": 2.03247000000556,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "python-probe",
+    "kind": "binding_probe",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/bindings/python_probe/probe.py",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib",
+      "--budgets",
+      "${SOURCE}/docs/architecture/qualification-budgets.json"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:20.256211+00:00",
+    "elapsed_seconds": 0.03656366700306535,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "python-probe-optimized",
+    "kind": "binding_probe",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "-O",
+      "${SOURCE}/bindings/python_probe/probe.py",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib",
+      "--budgets",
+      "${SOURCE}/docs/architecture/qualification-budgets.json"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:20.293218+00:00",
+    "elapsed_seconds": 0.1006282499874942,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "correction-regressions",
+    "kind": "foundation_test",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/tests/regression/test_df0_corrections.py",
+      "--library",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:20.394731+00:00",
+    "elapsed_seconds": 0.9616499170078896,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "binary-policy",
+    "kind": "binary_inspection",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/tools/check_probe_binary.py",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.356851+00:00",
+    "elapsed_seconds": 0.06461508400388993,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "owned-fixture-generate",
+    "kind": "fixture_generation",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/tools/generate_synthetic_pixels.py"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.421938+00:00",
+    "elapsed_seconds": 0.021313083008863032,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "profile-spec-check",
+    "kind": "document_check",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/tools/validate_profile_inventory.py"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.443889+00:00",
+    "elapsed_seconds": 0.032653165981173515,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "resource-observation",
+    "kind": "resource_measurement",
+    "command": [
+      "${PYTHON_RUNTIME}/bin/python3.12",
+      "${SOURCE}/tools/measure_probe_resources.py",
+      "${SOURCE}/build/g0-adopted-main-host/df0_unit"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.477144+00:00",
+    "elapsed_seconds": 0.037791250011650845,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-exports",
+    "kind": "binary_inspection",
+    "command": [
+      "nm",
+      "-gU",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.515496+00:00",
+    "elapsed_seconds": 0.010069791984278709,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  },
+  {
+    "schema_version": "1",
+    "id": "host-dependencies",
+    "kind": "binary_inspection",
+    "command": [
+      "otool",
+      "-L",
+      "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib"
+    ],
+    "cwd": "${SOURCE}",
+    "started_at": "2026-10-05T08:14:21.525978+00:00",
+    "elapsed_seconds": 0.01105612501851283,
+    "exit_code": 0,
+    "outcome": "passed",
+    "build_source_digest": "a0256778d37e1a52f0d5c3ec1acb62e177b330f9cee957e9bff3b8c41a824f35",
+    "scope": "DF-0 prototype only"
+  }
+]

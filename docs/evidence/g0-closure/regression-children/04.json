@@ -1,0 +1,16 @@
+{
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/bindings/python_probe/probe.py",
+    "${SOURCE}/stage/g0-adopted-main/lib/libdicomflux_probe.dylib",
+    "--budgets",
+    "${SOURCE}/build/df0-regression-inputs/tmp1c0cwd8t/invalid-budgets.json"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/bindings/python_probe/probe.py\", line 74, in <module>\n    main()\n  File \"${SOURCE}/bindings/python_probe/probe.py\", line 59, in main\n    with Owner() as owner:\n         ^^^^^^^\n  File \"${SOURCE}/bindings/python_probe/probe.py\", line 47, in __init__\n    check(library.dicomflux_probe_create(C.byref(options), C.byref(self.pointer)) == 0, 'library.dicomflux_probe_create(C.byref(options), C.byref(self.pointer)) == 0')\n  File \"${SOURCE}/bindings/python_probe/probe.py\", line 5, in check\n    raise RuntimeError(str(message))\nRuntimeError: library.dicomflux_probe_create(C.byref(options), C.byref(self.pointer)) == 0\n",
+  "expected_exit_code": 1,
+  "outcome": "expected_rejection",
+  "input_directory": "${PRIVATE_CLOSURE}/retained-regression-inputs/tmp1c0cwd8t"
+}

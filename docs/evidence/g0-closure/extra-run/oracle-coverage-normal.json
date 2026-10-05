@@ -1,0 +1,22 @@
+{
+  "id": "oracle-coverage-normal",
+  "kind": "oracle_setup",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-I",
+    "-S",
+    "${SOURCE}/tools/check_reader_dictionary.py",
+    "--wheel",
+    "${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:21:34.137165+00:00",
+  "elapsed_seconds": 0.34185779199469835,
+  "exit_code": 1,
+  "expected_exit_code": 0,
+  "outcome": "failed",
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"${SOURCE}/tools/check_reader_dictionary.py\", line 88, in <module>\n    main()\n  File \"${SOURCE}/tools/check_reader_dictionary.py\", line 35, in main\n    import pydicom\n  File \"${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/__init__.py\", line 33, in <module>\n  File \"${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/examples/__init__.py\", line 13, in <module>\n  File \"${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/data/data_manager.py\", line 337, in get_testdata_file\n  File \"${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/data/data_manager.py\", line 369, in _get_testdata_file\n  File \"${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/data/download.py\", line 138, in get_url_map\nNotADirectoryError: [Errno 20] Not a directory: '${PRIVATE_WORK}/oracle-archives/pydicom-3.0.2-py3-none-any.whl/pydicom/data/urls.json'\n",
+  "input_text": null,
+  "input_manifest_sha256": "08cf34484fbf467e90019b9513e38187dc37f810a147e6443b73e54fe56160f6"
+}

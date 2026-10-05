@@ -18,9 +18,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
+      "compatibility": "Historical request retained; no exact archived Bullseye image selected or current support qualification established. Do not label incompatible based only on age.",
       "compatibility_source": null,
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-4-Bookworm",
@@ -39,9 +42,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-4-Trixie",
@@ -60,9 +66,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-5-Bullseye",
@@ -85,7 +94,11 @@
       "compatibility_source": "https://www.raspberrypi.com/products/raspberry-pi-5/",
       "previous_compatibility": "Pi 5 Bullseye compatibility unresolved; require a board-supported exact image before qualification",
       "verified_at": "2026-10-05",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "incompatible",
+      "proposed_alternative": "Same board with official 64-bit Bookworm image (CM5 also needs kernel 6.12.x+ and firmware 2025-03-10+) or Trixie; subject to human selection and execution.",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-5-Bookworm",
@@ -104,9 +117,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-5-Trixie",
@@ -125,9 +141,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM4-Bullseye",
@@ -146,9 +165,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
+      "compatibility": "Historical request retained; no exact archived Bullseye image selected or current support qualification established. Do not label incompatible based only on age.",
       "compatibility_source": null,
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM4-Bookworm",
@@ -167,9 +189,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM4-Trixie",
@@ -188,9 +213,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM5-Bullseye",
@@ -211,7 +239,11 @@
       "reason": "No physical target, image, toolchain or runtime available",
       "compatibility": "conflict: official CM5 transition guidance requires Bookworm or newer, kernel 6.12.x+ and firmware 2025-03-10+",
       "compatibility_source": "https://www.raspberrypi.com/documentation/computers/compute-module.html",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "incompatible",
+      "proposed_alternative": "Same board with official 64-bit Bookworm image (CM5 also needs kernel 6.12.x+ and firmware 2025-03-10+) or Trixie; subject to human selection and execution.",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM5-Bookworm",
@@ -230,9 +262,12 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "Pi-CM5-Trixie",
@@ -251,23 +286,38 @@
       "cross_build": "not_run",
       "physical_execution": "blocked",
       "reason": "No physical target, image, toolchain or runtime available",
-      "compatibility": "requested, exact image compatibility not yet witnessed",
-      "compatibility_source": null,
-      "human_disposition": null
+      "compatibility": "Official current 64-bit download compatibility list includes this board; exact local execution not observed.",
+      "compatibility_source": "https://www.raspberrypi.com/software/operating-systems/",
+      "human_disposition": null,
+      "classification": "candidate",
+      "execution_classification": "blocked_by_missing_access",
+      "required_for_next_host_only_slice": false
     },
     {
       "id": "auxiliary-macos-arm64",
       "build": "passed",
       "run": "passed",
       "status": "DF-0 prototype witness only; no macOS support added",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "observed",
+      "observed_page_size_bytes": 16384,
+      "evidence": "g0-closure/host-run; g0-closure/extra-run/page-size.json",
+      "page_size_scope": "macOS observation only; not Android 16 KB qualification"
     },
     {
       "id": "linux-x86_64",
       "build": "blocked",
       "run": "blocked",
       "reason": "No Linux environment/toolchain/sysroot",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access",
+      "limited_external_review": {
+        "url": "https://github.com/Raster-Lab/DICOMflux/pull/1#pullrequestreview-5411436831",
+        "scope": "Five-file direct-GCC probe check reported in technical review; not independently rerun here; original raw artifacts not supplied",
+        "whole_repository": "not_run",
+        "installed_consumer": "not_run",
+        "closes_DF0_REV_004": false
+      }
     },
     {
       "id": "android-arm64-physical",
@@ -280,7 +330,8 @@
         "16384": "blocked"
       },
       "reason": "SDK/NDK/JDK/AGP/Kotlin/device unavailable; minimum API unspecified by user",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access"
     },
     {
       "id": "android-x86_64-emulator",
@@ -291,13 +342,16 @@
         "16384": "blocked"
       },
       "reason": "No emulator or SDK",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access"
     },
     {
       "id": "python-3.14",
       "run": "not_run",
       "reason": "No selected interpreter available",
-      "human_disposition": null
+      "human_disposition": null,
+      "classification": "blocked_by_missing_access"
     }
-  ]
+  ],
+  "closure_note": "All 12 original Pi requests retained. Selection proposals are unapproved; no claim that all requests are mandatory gates. See g0-closure/target-selection.json."
 }

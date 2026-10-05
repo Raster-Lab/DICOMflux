@@ -1,0 +1,19 @@
+{
+  "id": "evidence-optimized",
+  "kind": "document_check",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "-O",
+    "${SOURCE}/tools/validate_evidence.py",
+    "--input-manifest",
+    "${PRIVATE_CLOSURE}/final-checks/input-manifest.json"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:53:04.863717+00:00",
+  "elapsed_seconds": 0.32651245800661854,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"document_check\", \"outcome\": \"passed\", \"python_optimize\": 1, \"command_records\": 60, \"preserved_failed_records\": 7, \"historical_source_files_verified_at_checkpoint\": 16, \"historical_checkpoint\": \"59d465f49f3caaa9a7e89b28f92222b4752d068a\", \"current_input_manifest_checked\": true, \"engine_tests_not_run\": 24, \"gate\": \"DF-G0 pending human review\", \"validation\": \"required fields, types, status consistency and source hashes; not a general JSON Schema validator; no retroactive linkage for unbound runs\"}\n",
+  "stderr": "",
+  "input_manifest_sha256": "f7283c92759d63d33a52085957196aaf0757ca7894530823f2d46946408c72d0"
+}

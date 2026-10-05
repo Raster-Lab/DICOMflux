@@ -1,0 +1,18 @@
+{
+  "id": "java-availability",
+  "kind": "unavailable_prerequisite",
+  "command": [
+    "/usr/bin/java",
+    "-version"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-05T08:21:34.123040+00:00",
+  "elapsed_seconds": 0.01262833399232477,
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "outcome": "expected_rejection",
+  "stdout": "",
+  "stderr": "The operation couldn\u2019t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java.\n\n",
+  "input_text": null,
+  "input_manifest_sha256": "08cf34484fbf467e90019b9513e38187dc37f810a147e6443b73e54fe56160f6"
+}
