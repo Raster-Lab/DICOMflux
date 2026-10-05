@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "consumer-run",
+  "kind": "installed_consumer_test",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/ctest",
+    "--test-dir",
+    "${SOURCE}/build/df0-consumers",
+    "--verbose"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:57:25.230586+00:00",
+  "elapsed_seconds": 0.8506510000006529,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "UpdateCTestConfiguration  from :${SOURCE}/build/df0-consumers/DartConfiguration.tcl\nTest project ${SOURCE}/build/df0-consumers\nConstructing a list of tests\nDone constructing a list of tests\nUpdating test list for fixtures\nAdded 0 tests to meet fixture requirements\nChecking test dependency graph...\nChecking test dependency graph end\ntest 1\n    Start 1: installed_c\n\n1: Test command: ${SOURCE}/build/df0-consumers/consumer_c\n1: Working Directory: ${SOURCE}/build/df0-consumers\n1: Test timeout computed to be: 10000000\n1: C11 installed consumer: pointer_bits=64 options_size=80 alignment=8 libcxx=210106 bytes=768\n1/2 Test #1: installed_c ......................   Passed    0.49 sec\ntest 2\n    Start 2: installed_cpp\n\n2: Test command: ${SOURCE}/build/df0-consumers/consumer_cpp\n2: Working Directory: ${SOURCE}/build/df0-consumers\n2: Test timeout computed to be: 10000000\n2: C++20 installed consumer: 3 logical, 4 encoded\n2/2 Test #2: installed_cpp ....................   Passed    0.35 sec\n\n100% tests passed out of 2\n\nTotal Test time (real) =   0.84 sec\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

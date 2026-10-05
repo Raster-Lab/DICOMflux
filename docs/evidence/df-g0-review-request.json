@@ -1,0 +1,27 @@
+{
+  "gate": "DF-G0",
+  "human_disposition": null,
+  "df1_authorised": false,
+  "status": "pending human review; provisional checkpoint with corrections outstanding",
+  "scope": [
+    "DF-W00",
+    "DF-W01",
+    "DF-W02",
+    "DF-W03",
+    "DF-W04"
+  ],
+  "findings": [
+    "DF0-REV-001",
+    "DF0-REV-002",
+    "DF0-REV-003",
+    "DF0-REV-004",
+    "DF0-REV-005",
+    "DF0-REV-006",
+    "DF0-REV-007"
+  ],
+  "decision_requests": [
+    "Review bounded profile/API/harness corrections after follow-up checks.",
+    "Disposition unavailable Linux/Android/JNI/page-size and Pi witnesses, including incompatible/unresolved images.",
+    "Review oracle provenance/coverage and historical input-linkage limitations."
+  ]
+}

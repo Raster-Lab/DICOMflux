@@ -1,0 +1,447 @@
+{
+  "schema_version": "1",
+  "milestone": "DF-0 host subset; consumer qualification incomplete",
+  "issued_at": "2026-10-04T18:32:48.587721+00:00",
+  "scope": [
+    "DF-W00",
+    "DF-W01",
+    "DF-W02",
+    "DF-W03",
+    "DF-W04"
+  ],
+  "gate": "DF-G0 pending human review; progression held",
+  "repository": "Raster-Lab/DICOMflux",
+  "base_revision": "20852fdd83a6443af5e0601ba7435f7c78f2d25a",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "source_identity": "build-source-files.json",
+  "all_candidate_file_identity": "final delivery source-manifest.json outside repository",
+  "toolchain": "toolchain-lock.json",
+  "targets": "target-matrix.json",
+  "profile": "DF-PHOTO-RGB8-v0.1.0, proposed detail",
+  "budgets": "../architecture/qualification-budgets.json",
+  "work_packages": [
+    {
+      "id": "DF-W00",
+      "status": "complete within DF-0",
+      "evidence": [
+        "df0-authority-and-scope.md"
+      ],
+      "private_evidence": "actual checkout/control paths and initial clean status"
+    },
+    {
+      "id": "DF-W01",
+      "status": "partial; auxiliary host complete, target and JNI qualification blocked",
+      "evidence": [
+        "toolchain-lock.json",
+        "target-matrix.json",
+        "records/final/consumer-run.json",
+        "records/final/python-probe.json",
+        "records/final/binary-policy.json"
+      ]
+    },
+    {
+      "id": "DF-W02",
+      "status": "inventory and fixture/oracle plan submitted; oracle provenance/qualification gaps open",
+      "evidence": [
+        "../profiles/DF-PHOTO-RGB8-v0.1.0.json",
+        "../profiles/file-meta-inventory.json",
+        "../../tests/fixtures/synthetic/golden-layout.json",
+        "../../third_party/manifest/standards.json",
+        "../../third_party/manifest/oracles.json"
+      ]
+    },
+    {
+      "id": "DF-W03",
+      "status": "concrete contract proposal complete; human review pending, engine unimplemented",
+      "evidence": [
+        "../architecture/dicomflux-c-api-candidate.h",
+        "../architecture/c-api-contract.md",
+        "../architecture/qualification-budgets.json",
+        "engine-acceptance-status.json"
+      ]
+    },
+    {
+      "id": "DF-W04",
+      "status": "auxiliary host harnesses executed; broader target witnesses blocked",
+      "evidence": [
+        "records/final/host-unit.json",
+        "records/final/address-unit.json",
+        "records/final/undefined-unit.json",
+        "records/final/thread-unit.json",
+        "records/final/fuzz-short.json",
+        "records/final/fuzz-longer.json",
+        "test-result.schema.json",
+        "resource-report.json"
+      ]
+    }
+  ],
+  "command_records": [
+    {
+      "path": "records/first-build/address-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/address-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/address-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/consumer-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/consumer-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/consumer-run.json",
+      "kind": "installed_consumer_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/fuzz-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/first-build/fuzz-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-dependencies.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-exports.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-install.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/host-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/python-probe.json",
+      "kind": "binding_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/thread-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/thread-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/thread-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/undefined-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/undefined-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/first-build/undefined-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/address-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/address-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/address-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/binary-policy.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/consumer-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/consumer-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/consumer-run.json",
+      "kind": "installed_consumer_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/fuzz-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/fuzz-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/fuzz-longer.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/fuzz-short.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-dependencies.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-exports.json",
+      "kind": "binary_inspection",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-install.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/host-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/owned-fixture-generate.json",
+      "kind": "fixture_generation",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/profile-spec-check.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/python-probe.json",
+      "kind": "binding_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/resource-observation.json",
+      "kind": "resource_measurement",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/final/thread-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/thread-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/thread-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/undefined-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/undefined-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final/undefined-unit.json",
+      "kind": "foundation_test",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final-checks/final-evidence-check.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/final-checks/final-profile-check.json",
+      "kind": "document_check",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/fuzz-1/fuzz-build.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/fuzz-1/fuzz-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/fuzz-1/fuzz-longer.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/fuzz-1/fuzz-short.json",
+      "kind": "coverage_guided_fuzz",
+      "outcome": "passed",
+      "exit_code": 0
+    },
+    {
+      "path": "records/initial/address-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/initial/fuzz-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/initial/host-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/initial/thread-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/initial/undefined-configure.json",
+      "kind": "compile_link_probe",
+      "outcome": "failed",
+      "exit_code": 1
+    },
+    {
+      "path": "records/resource-corrected/resource-corrected.json",
+      "kind": "resource_measurement",
+      "outcome": "passed",
+      "exit_code": 0
+    }
+  ],
+  "engine_acceptance": "engine-acceptance-status.json; all 24 not_run",
+  "discrepancies": "discrepancies.json",
+  "human_review_request": "df-g0-review-request.json",
+  "repository_mutations": "uncommitted local source/docs only; no commit/push/remote change",
+  "privacy": "sanitised public records; exact path map and raw logs in separate private evidence; control package not included in source",
+  "historical_record": true,
+  "current_status": "publication-status.md"
+}

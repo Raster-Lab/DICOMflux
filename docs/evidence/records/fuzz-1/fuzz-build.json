@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "id": "fuzz-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-fuzz",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:06:34.218283+00:00",
+  "elapsed_seconds": 0.10739695800293703,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "[1/2] Building CXX object CMakeFiles/df0_fuzz.dir/fuzz/foundation.cpp.o\n[2/2] Linking CXX executable df0_fuzz\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

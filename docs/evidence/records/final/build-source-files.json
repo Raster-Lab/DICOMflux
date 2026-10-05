@@ -1,0 +1,18 @@
+{
+  "CMakeLists.txt": "8b38903af62c6c09a55d502e78c7a4d029f4d6b4662e00fbde672a51de72d3ae",
+  "bindings/python_probe/probe.py": "be07592d0dc30bcc593b5550663169abd9bb40a5c3d8380dd0dd257490fbe874",
+  "cmake/DICOMfluxProbeConfig.cmake.in": "cd67f38503cba09d5dca4a0da75445a38237c3eb7bd1afeb09026d27ec6d9687",
+  "cmake/probe.exports": "faaa39a9e09e35875fa370472e55d5ed39d299119786a8682f14f4898d0ca5ee",
+  "docs/architecture/dicomflux-c-api-candidate.h": "65c5dfbba046ceda6a6f943114b3843a0bb31520c4056b048d186264d5dd19e5",
+  "docs/architecture/qualification-budgets.json": "7d2480e8a2f98e23d08606aa02291c016ba6f773d40e960fa310f8abd7a14ebc",
+  "fuzz/foundation.cpp": "59868fa78d00602843c228911eafc390fbf9b03076bf71cea23af23d86e16873",
+  "include/dicomflux/df0_probe.h": "4096c31f81df02851179e5ff4d5ace4bcf7d9d9dbdd78023a0b670b9f8a69b4a",
+  "src/c_api/df0_probe.cpp": "83fce076129cf4701bb4a99c7175e79acd91e1b93d494f56fd54a12f02c5a3ed",
+  "src/foundation/probe_logic.hpp": "989905d420e1009be5920bbeca1f6d44995c62e52cefd075a2cc6cbaf59fcd76",
+  "tests/installed_consumer/CMakeLists.txt": "18356eb2b99a90f39960bd8269ca168d5736955dc8950390ac83056d26a9a502",
+  "tests/installed_consumer/consumer.c": "3bd893f2080b87e815092b3ecf7c65666bc4ac2c4859ff03418eb0e61e1e4035",
+  "tests/installed_consumer/consumer.cpp": "5366409f3cb1b85f702c3ec0cf650343cea5e274c425b71439fd009e37b8d3c4",
+  "tests/unit/contract_header.c": "097696d280d4587990c7bfbbed304d784ea143cb75ab33d2feaeac1e959691df",
+  "tests/unit/contract_header.cpp": "39ae3eee0299e0330745d3212e0c0ccf71c83cfc8e4a9a10d0c2b7ac010c3621",
+  "tests/unit/foundation.cpp": "278236d8f8f26f13ef06634468110a3fbcb72fa7ee350fea7b1491aa883213fb"
+}

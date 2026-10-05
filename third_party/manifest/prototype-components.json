@@ -1,0 +1,19 @@
+{
+  "component": "DICOMflux DF-0 probe",
+  "licence": "MIT",
+  "copyright": "Copyright (c) 2026 Raster Images",
+  "owned_sources": [
+    "src/c_api/df0_probe.cpp",
+    "src/foundation/probe_logic.hpp",
+    "include/dicomflux/df0_probe.h"
+  ],
+  "third_party_implementation_backends": [],
+  "codecs": [],
+  "observed_auxiliary_host_runtime_dependencies": [
+    "/usr/lib/libc++.1.dylib (2100.43.0)",
+    "/usr/lib/libSystem.B.dylib (1356.0.0)"
+  ],
+  "shipping_or_release_package": false,
+  "test_only_tools": "build-tools.json and oracles.json; isolated outside repository and production linkage",
+  "license_conclusion": "Project ownership confirmation retained. No third-party tool or standards content relicensed as project MIT code."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "DF-G0 candidate qualification settings, not product limits",
+  "metadata_bytes": 1048576,
+  "attributes": 4096,
+  "items": 4096,
+  "nesting_depth": 16,
+  "fragments": 4096,
+  "diagnostic_entries": 64,
+  "diagnostic_bytes_per_entry": 256,
+  "transfer_chunk_bytes": 65536,
+  "library_tracked_bytes": 8388608,
+  "declared_bulk_bytes": 4294967294,
+  "concurrent_operations_per_context": 1,
+  "decoded_output_bytes": 0,
+  "codec_scratch_bytes": 0,
+  "zero_budget_meaning": "feature disabled, never unlimited",
+  "limitations": "Prototype enforces metadata/count/bulk/chunk/tracked limits only. Items/depth/fragments/diagnostics/concurrency are future contract settings; codecs and decoding are absent. Host buffers, runtime and RSS are outside the allocation counter."
+}

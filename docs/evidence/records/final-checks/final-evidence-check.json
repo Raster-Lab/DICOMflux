@@ -1,0 +1,17 @@
+{
+  "schema_version": "1",
+  "id": "final-evidence-check",
+  "kind": "document_check",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3",
+    "${SOURCE}/tools/validate_evidence.py"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:32:48.487530+00:00",
+  "elapsed_seconds": 0.03475904199999999,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "{\"kind\": \"document_check\", \"outcome\": \"passed\", \"command_records\": 59, \"preserved_failed_records\": 7, \"tested_source_files_unchanged\": 16, \"engine_tests_not_run\": 24, \"gate\": \"DF-G0 pending human review\", \"validation\": \"required fields, types, status consistency and source hashes; not a general JSON Schema validator\"}\n",
+  "stderr": "",
+  "scope": "DF-0 final document/package integrity; not engine acceptance"
+}

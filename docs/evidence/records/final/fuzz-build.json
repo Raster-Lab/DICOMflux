@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "fuzz-build",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "--build",
+    "${SOURCE}/build/df0-fuzz",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:14.517346+00:00",
+  "elapsed_seconds": 0.4565931660035858,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "[1/4] Building CXX object CMakeFiles/df0_fuzz.dir/fuzz/foundation.cpp.o\n[2/4] Building CXX object CMakeFiles/dicomflux_probe.dir/src/c_api/df0_probe.cpp.o\n[3/4] Linking CXX shared library libdicomflux_probe.dylib\n[4/4] Linking CXX executable df0_fuzz\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

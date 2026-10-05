@@ -1,0 +1,26 @@
+{
+  "schema_version": "1",
+  "id": "consumer-configure",
+  "kind": "compile_link_probe",
+  "command": [
+    "${PRIVATE_WORK}/tooling/cmake/data/bin/cmake",
+    "-S",
+    "${SOURCE}/build/df0-consumer-src",
+    "-B",
+    "${SOURCE}/build/df0-consumers",
+    "-G",
+    "Ninja",
+    "-DCMAKE_MAKE_PROGRAM=${PRIVATE_WORK}/tooling/ninja-1.13.2.data/scripts/ninja",
+    "-DCMAKE_PREFIX_PATH=${SOURCE}/stage/df0",
+    "-DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:05.502050+00:00",
+  "elapsed_seconds": 0.07722837499750312,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "-- Configuring done (0.1s)\n-- Generating done (0.0s)\n-- Build files have been written to: ${SOURCE}/build/df0-consumers\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

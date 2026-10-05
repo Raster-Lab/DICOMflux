@@ -1,0 +1,349 @@
+{
+  "profile_id": "DF-PHOTO-RGB8-v0.1.0",
+  "status": "DF-G0 candidate; no file writer",
+  "preamble": {
+    "bytes": 128,
+    "type": "1",
+    "value": "all zero",
+    "tests": "exact bytes; reject short file"
+  },
+  "prefix": {
+    "bytes": 4,
+    "type": "1",
+    "hex": "4449434d",
+    "tests": "exact offset 128 and DICM bytes"
+  },
+  "attributes": [
+    {
+      "id": "FM-0000",
+      "tag": "(0002,0000)",
+      "name": "File Meta Information Group Length",
+      "vr": "UL",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": 204,
+      "value_source": "computed from complete meta layout",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0001",
+      "tag": "(0002,0001)",
+      "name": "File Meta Information Version",
+      "vr": "OB",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "hex:0001",
+      "value_source": "owned fixed specification",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0002",
+      "tag": "(0002,0002)",
+      "name": "Media Storage SOP Class UID",
+      "vr": "UI",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "1.2.840.10008.5.1.4.1.1.77.1.4",
+      "value_source": "same identity as dataset",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0003",
+      "tag": "(0002,0003)",
+      "name": "Media Storage SOP Instance UID",
+      "vr": "UI",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "2.25.302661813519380590220360801495109412004",
+      "value_source": "same identity as dataset",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0010",
+      "tag": "(0002,0010)",
+      "name": "Transfer Syntax UID",
+      "vr": "UI",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "1.2.840.10008.1.2.1",
+      "value_source": "owned fixed specification",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0012",
+      "tag": "(0002,0012)",
+      "name": "Implementation Class UID",
+      "vr": "UI",
+      "vm": "1",
+      "type": "1",
+      "condition": "always required",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "2.25.302661813519380590220360801495109412900",
+      "value_source": "owned fixed specification",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0013",
+      "tag": "(0002,0013)",
+      "name": "Implementation Version Name",
+      "vr": "SH",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": true,
+      "presence": "present",
+      "fixture_value": "DF_SPEC_0001",
+      "value_source": "owned fixed specification",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0016",
+      "tag": "(0002,0016)",
+      "name": "Source Application Entity Title",
+      "vr": "AE",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0017",
+      "tag": "(0002,0017)",
+      "name": "Sending Application Entity Title",
+      "vr": "AE",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0018",
+      "tag": "(0002,0018)",
+      "name": "Receiving Application Entity Title",
+      "vr": "AE",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0026",
+      "tag": "(0002,0026)",
+      "name": "Source Presentation Address",
+      "vr": "UR",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0027",
+      "tag": "(0002,0027)",
+      "name": "Sending Presentation Address",
+      "vr": "UR",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0028",
+      "tag": "(0002,0028)",
+      "name": "Receiving Presentation Address",
+      "vr": "UR",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0100",
+      "tag": "(0002,0100)",
+      "name": "Private Information Creator UID",
+      "vr": "UI",
+      "vm": "1",
+      "type": "3",
+      "condition": "optional; selected version identifier only",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    },
+    {
+      "id": "FM-0102",
+      "tag": "(0002,0102)",
+      "name": "Private Information",
+      "vr": "OB",
+      "vm": "1",
+      "type": "1C",
+      "condition": "creator UID absent, therefore private information not required",
+      "condition_true": false,
+      "presence": "absent",
+      "fixture_value": null,
+      "value_source": "not supplied",
+      "encoding_rule": "Explicit VR Little Endian; UL 4 bytes; OB 00 padding; UI NUL padding; SH space padding; all lengths even",
+      "empty_absent_behavior": "nonempty required for selected fields; other fields absent",
+      "tests": {
+        "positive": "check selected value and byte range",
+        "negative": "remove required field, corrupt length or mismatch SOP identity; reject unexpected private/network meta",
+        "engine_execution": "not_run"
+      },
+      "source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part10/chapter_7.html#table_7.1-1",
+      "vr_vm_source": "https://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_7.html"
+    }
+  ],
+  "out_of_scope": "PS3.6 registry also includes RTV group 0002 entries; PS3.10 Table 7.1-1 does not instantiate them for this file profile."
+}

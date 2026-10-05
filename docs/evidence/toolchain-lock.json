@@ -1,0 +1,100 @@
+{
+  "schema_version": "1",
+  "recorded_at": "2026-10-04T18:26:00.945808+00:00",
+  "qualification": "auxiliary macOS host DF-0 only; no supported product platform qualified",
+  "source_revision": "20852fdd83a6443af5e0601ba7435f7c78f2d25a",
+  "working_tree": "local DF-0 additions; identity is build-source-files.json, not HEAD alone",
+  "host": {
+    "os": "macOS",
+    "version": "27.0.1",
+    "build": "26A434",
+    "architecture": "arm64",
+    "compiler": {
+      "vendor": "Apple Clang",
+      "version": "21.0.0",
+      "build": "clang-2100.0.123.102",
+      "target": "arm64-apple-darwin27.0.0",
+      "c": "/usr/bin/clang",
+      "cxx": "/usr/bin/clang++",
+      "resolved_cxx_sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    },
+    "stdlib": {
+      "name": "libc++",
+      "header_version": 210106,
+      "runtime_version": "2100.43.0",
+      "linkage": "dynamic auxiliary host configuration"
+    },
+    "sdk": {
+      "version": "26.4",
+      "path": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    },
+    "cmake": "4.4.4",
+    "ninja": "1.13.2",
+    "python": {
+      "version": "3.12.14",
+      "architecture": "arm64",
+      "role": "ctypes and harness runner"
+    },
+    "languages": {
+      "c": "C11, extensions off",
+      "cpp": "C++20, extensions off; actual std::span probe"
+    },
+    "configuration": "Debug",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Werror",
+      "-fvisibility=hidden",
+      "-fvisibility-inlines-hidden"
+    ],
+    "sanitizers": [
+      "address",
+      "undefined",
+      "thread"
+    ],
+    "sanitizer_flags": [
+      "-fsanitize=<one configuration>",
+      "-fno-omit-frame-pointer"
+    ],
+    "fuzzer": {
+      "runtime": "compiler-rt 21.1.8 libFuzzer",
+      "archive_sha256": "177a12572bb866cde6fc0c99a590482d8759ff141f30659186e38c83ea8b21ee",
+      "source_sha256": "dd54ae21aee1780fac59445b51ebff601ad016b31ac3a7de3b21126fd3ccb229",
+      "instrumentation": "-fsanitize=fuzzer-no-link and address; standalone archive"
+    }
+  },
+  "candidates_not_qualified": {
+    "cmake_minimum": "3.24",
+    "linux_x86_64_compilers": [
+      "GCC 12+",
+      "Clang 18+"
+    ],
+    "python": "3.14",
+    "android_ndk": "r30 / 30.0.16248370",
+    "android_min_sdk": 23
+  },
+  "linux": {
+    "target_triple": null,
+    "distribution": null,
+    "glibc": null,
+    "sysroot": null,
+    "compiler": null,
+    "status": "blocked; no Linux environment available"
+  },
+  "android": {
+    "installed_ndk": null,
+    "sdk": null,
+    "agp": null,
+    "jdk": null,
+    "kotlin": null,
+    "device": null,
+    "approved_min_sdk": null,
+    "status": "blocked; tools and device unavailable, device/minimum API still unspecified"
+  },
+  "artifacts": {
+    "build_tools": "../../third_party/manifest/build-tools.json",
+    "binaries": "binary-manifest.json"
+  },
+  "initial_observation_discrepancy": "Initial shell-default Python 3.9.0 was x86_64 under Rosetta. One clang lookup timed out. Native /usr/bin and bundled arm64 Python witnesses above supersede only tool qualification, not the preserved initial record."
+}

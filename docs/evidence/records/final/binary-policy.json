@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "binary-policy",
+  "kind": "binary_inspection",
+  "command": [
+    "${PYTHON_RUNTIME}/bin/python3.12",
+    "${SOURCE}/tools/check_probe_binary.py",
+    "${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:06.859708+00:00",
+  "elapsed_seconds": 0.06312620898825116,
+  "exit_code": 0,
+  "outcome": "passed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "{\"kind\": \"binary_inspection\", \"symbols\": [\"dicomflux_probe_create\", \"dicomflux_probe_measure\", \"dicomflux_probe_query_abi\", \"dicomflux_probe_release\"], \"file\": \"${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib: Mach-O 64-bit dynamically linked shared library arm64\", \"dependencies\": \"${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib:\\n\\t@rpath/libdicomflux_probe.dylib (compatibility version 0.0.0, current version 0.0.0)\\n\\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\\n\\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\\n\", \"outcome\": \"passed\"}\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

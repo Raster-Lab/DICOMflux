@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "kind": "owned_synthetic_raw_pixels_not_DICOM",
+  "formula": "r=17*x, g=17*y, b=17*(x XOR y), row-major interleaved RGB",
+  "licence": "MIT; Copyright (c) 2026 Raster Images",
+  "fixtures": [
+    {
+      "name": "rgb16x16",
+      "file": "rgb16x16.rgb",
+      "rows": 16,
+      "columns": 16,
+      "samples_per_pixel": 3,
+      "logical_bytes": 768,
+      "encoded_pixel_value_bytes": 768,
+      "padding_byte": null,
+      "sha256": "3d0cbf70d818e173369ce87844e0f00780d87bf3235333518f486874ed1b9924"
+    },
+    {
+      "name": "rgb1x3-odd",
+      "file": "rgb1x3-odd.rgb",
+      "rows": 1,
+      "columns": 3,
+      "samples_per_pixel": 3,
+      "logical_bytes": 9,
+      "encoded_pixel_value_bytes": 10,
+      "padding_byte": 0,
+      "sha256": "308b4f746e186d9a2c10ac4624c25e3b3ad0902d66057eb850f620894d5ca205"
+    }
+  ]
+}

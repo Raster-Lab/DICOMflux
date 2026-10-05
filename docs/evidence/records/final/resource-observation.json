@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "id": "resource-observation",
+  "kind": "resource_measurement",
+  "command": [
+    "/usr/bin/time",
+    "-l",
+    "${SOURCE}/build/df0-host/df0_unit"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T18:10:06.967385+00:00",
+  "elapsed_seconds": 0.006895208003697917,
+  "exit_code": 1,
+  "outcome": "failed",
+  "build_source_digest": "f7926ec54e91a074a2fe405a7f9aa2b7e2b4b73432b5ce5d2c4d9bf0080040f6",
+  "stdout": "DF0 prototype checks=89 allocation_sites=2 fault_modes=2 concurrent_measurements=4000 tracked_bytes=65648\n",
+  "stderr": "        0.00 real         0.00 user         0.00 sys\ntime: sysctl kern.clockrate: Operation not permitted\n",
+  "scope": "DF-0 prototype only"
+}

@@ -1,0 +1,36 @@
+{
+  "shipping_engine_dependencies": [],
+  "local_test_tools": [
+    {
+      "package": "cmake",
+      "version": "4.4.4",
+      "url": "https://files.pythonhosted.org/packages/3f/02/86b484e16c91de4bdf90dfab37a33c3e5512bc30d3a494759976df0943b9/cmake-4.4.4-py3-none-macosx_10_10_universal2.whl",
+      "archive": "cmake-4.4.4-py3-none-macosx_10_10_universal2.whl",
+      "sha256": "883962a72b1b3a16ff445427f24c8caca9797dd9e563bbe208cbcd89e877f9d3",
+      "retrieved_at": "2026-10-04T17:49:02.059583+00:00",
+      "role": "local build tool only; not engine dependency"
+    },
+    {
+      "package": "ninja",
+      "version": "1.13.2",
+      "url": "https://files.pythonhosted.org/packages/b5/b8/90a9518f2264637084d6199bc20c2f3fb97fefc4c474d277720150c3bd6d/ninja-1.13.2-py3-none-macosx_10_9_universal2.whl",
+      "archive": "ninja-1.13.2-py3-none-macosx_10_9_universal2.whl",
+      "sha256": "fd82e26c0706ad4ab88e5fdd26f3fab0a987a90f810160f6c322e752c6af298b",
+      "retrieved_at": "2026-10-04T17:49:02.281430+00:00",
+      "role": "local build tool only; not engine dependency"
+    }
+  ],
+  "libfuzzer_source": [
+    {
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/compiler-rt-21.1.8.src.tar.xz",
+      "sha256": "dd54ae21aee1780fac59445b51ebff601ad016b31ac3a7de3b21126fd3ccb229",
+      "retrieved_at": "2026-10-04T18:02:59.941211+00:00",
+      "role": "libFuzzer test runtime only; not engine dependency",
+      "upstream_release": "llvmorg-21.1.8",
+      "integrity": "Matches GitHub release-asset SHA256; detached signature not verified"
+    }
+  ],
+  "libfuzzer_license": "Apache-2.0 WITH LLVM-exception; source licence retained privately",
+  "libfuzzer_license_sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+  "ordinary_build_network_fetch": false
+}

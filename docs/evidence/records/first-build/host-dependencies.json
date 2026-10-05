@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "id": "host-dependencies",
+  "kind": "binary_inspection",
+  "command": [
+    "otool",
+    "-L",
+    "${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib"
+  ],
+  "cwd": "${SOURCE}",
+  "started_at": "2026-10-04T17:57:26.149725+00:00",
+  "elapsed_seconds": 0.025592791993403807,
+  "exit_code": 0,
+  "outcome": "passed",
+  "stdout": "${SOURCE}/stage/df0/lib/libdicomflux_probe.dylib:\n\t@rpath/libdicomflux_probe.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+  "stderr": "",
+  "scope": "DF-0 prototype only"
+}

@@ -1,0 +1,722 @@
+{
+  "status": "independently authored specification; no DICOM file generated or parsed",
+  "profile": "DF-PHOTO-RGB8-v0.1.0",
+  "preamble": {
+    "offset": 0,
+    "length": 128,
+    "byte": 0
+  },
+  "prefix": {
+    "offset": 128,
+    "hex": "4449434d"
+  },
+  "filemeta_group_length": 204,
+  "filemeta_version_value": {
+    "offset": 156,
+    "hex": "0001"
+  },
+  "dataset_offset": 348,
+  "empty_acquisition_context_header_hex": "400055055351000000000000",
+  "patient_orientation_header_hex": "2000200043530000",
+  "rgb16x16": {
+    "object_bytes": 1638,
+    "elements": [
+      {
+        "tag": "00020000",
+        "vr": "UL",
+        "header_offset": 132,
+        "value_offset": 140,
+        "logical_length": 4,
+        "encoded_value_length": 4,
+        "end_offset": 144
+      },
+      {
+        "tag": "00020001",
+        "vr": "OB",
+        "header_offset": 144,
+        "value_offset": 156,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 158
+      },
+      {
+        "tag": "00020002",
+        "vr": "UI",
+        "header_offset": 158,
+        "value_offset": 166,
+        "logical_length": 30,
+        "encoded_value_length": 30,
+        "end_offset": 196
+      },
+      {
+        "tag": "00020003",
+        "vr": "UI",
+        "header_offset": 196,
+        "value_offset": 204,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 248
+      },
+      {
+        "tag": "00020010",
+        "vr": "UI",
+        "header_offset": 248,
+        "value_offset": 256,
+        "logical_length": 19,
+        "encoded_value_length": 20,
+        "end_offset": 276
+      },
+      {
+        "tag": "00020012",
+        "vr": "UI",
+        "header_offset": 276,
+        "value_offset": 284,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 328
+      },
+      {
+        "tag": "00020013",
+        "vr": "SH",
+        "header_offset": 328,
+        "value_offset": 336,
+        "logical_length": 12,
+        "encoded_value_length": 12,
+        "end_offset": 348
+      },
+      {
+        "tag": "00080008",
+        "vr": "CS",
+        "header_offset": 348,
+        "value_offset": 356,
+        "logical_length": 16,
+        "encoded_value_length": 16,
+        "end_offset": 372
+      },
+      {
+        "tag": "00080016",
+        "vr": "UI",
+        "header_offset": 372,
+        "value_offset": 380,
+        "logical_length": 30,
+        "encoded_value_length": 30,
+        "end_offset": 410
+      },
+      {
+        "tag": "00080018",
+        "vr": "UI",
+        "header_offset": 410,
+        "value_offset": 418,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 462
+      },
+      {
+        "tag": "00080020",
+        "vr": "DA",
+        "header_offset": 462,
+        "value_offset": 470,
+        "logical_length": 8,
+        "encoded_value_length": 8,
+        "end_offset": 478
+      },
+      {
+        "tag": "00080030",
+        "vr": "TM",
+        "header_offset": 478,
+        "value_offset": 486,
+        "logical_length": 6,
+        "encoded_value_length": 6,
+        "end_offset": 492
+      },
+      {
+        "tag": "00080050",
+        "vr": "SH",
+        "header_offset": 492,
+        "value_offset": 500,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 500
+      },
+      {
+        "tag": "00080060",
+        "vr": "CS",
+        "header_offset": 500,
+        "value_offset": 508,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 510
+      },
+      {
+        "tag": "00080070",
+        "vr": "LO",
+        "header_offset": 510,
+        "value_offset": 518,
+        "logical_length": 19,
+        "encoded_value_length": 20,
+        "end_offset": 538
+      },
+      {
+        "tag": "00080090",
+        "vr": "PN",
+        "header_offset": 538,
+        "value_offset": 546,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 546
+      },
+      {
+        "tag": "00100010",
+        "vr": "PN",
+        "header_offset": 546,
+        "value_offset": 554,
+        "logical_length": 13,
+        "encoded_value_length": 14,
+        "end_offset": 568
+      },
+      {
+        "tag": "00100020",
+        "vr": "LO",
+        "header_offset": 568,
+        "value_offset": 576,
+        "logical_length": 8,
+        "encoded_value_length": 8,
+        "end_offset": 584
+      },
+      {
+        "tag": "00100030",
+        "vr": "DA",
+        "header_offset": 584,
+        "value_offset": 592,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 592
+      },
+      {
+        "tag": "00100040",
+        "vr": "CS",
+        "header_offset": 592,
+        "value_offset": 600,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 600
+      },
+      {
+        "tag": "0020000D",
+        "vr": "UI",
+        "header_offset": 600,
+        "value_offset": 608,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 652
+      },
+      {
+        "tag": "0020000E",
+        "vr": "UI",
+        "header_offset": 652,
+        "value_offset": 660,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 704
+      },
+      {
+        "tag": "00200010",
+        "vr": "SH",
+        "header_offset": 704,
+        "value_offset": 712,
+        "logical_length": 3,
+        "encoded_value_length": 4,
+        "end_offset": 716
+      },
+      {
+        "tag": "00200011",
+        "vr": "IS",
+        "header_offset": 716,
+        "value_offset": 724,
+        "logical_length": 1,
+        "encoded_value_length": 2,
+        "end_offset": 726
+      },
+      {
+        "tag": "00200013",
+        "vr": "IS",
+        "header_offset": 726,
+        "value_offset": 734,
+        "logical_length": 1,
+        "encoded_value_length": 2,
+        "end_offset": 736
+      },
+      {
+        "tag": "00200020",
+        "vr": "CS",
+        "header_offset": 736,
+        "value_offset": 744,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 744
+      },
+      {
+        "tag": "00280002",
+        "vr": "US",
+        "header_offset": 744,
+        "value_offset": 752,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 754
+      },
+      {
+        "tag": "00280004",
+        "vr": "CS",
+        "header_offset": 754,
+        "value_offset": 762,
+        "logical_length": 3,
+        "encoded_value_length": 4,
+        "end_offset": 766
+      },
+      {
+        "tag": "00280006",
+        "vr": "US",
+        "header_offset": 766,
+        "value_offset": 774,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 776
+      },
+      {
+        "tag": "00280010",
+        "vr": "US",
+        "header_offset": 776,
+        "value_offset": 784,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 786
+      },
+      {
+        "tag": "00280011",
+        "vr": "US",
+        "header_offset": 786,
+        "value_offset": 794,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 796
+      },
+      {
+        "tag": "00280100",
+        "vr": "US",
+        "header_offset": 796,
+        "value_offset": 804,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 806
+      },
+      {
+        "tag": "00280101",
+        "vr": "US",
+        "header_offset": 806,
+        "value_offset": 814,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 816
+      },
+      {
+        "tag": "00280102",
+        "vr": "US",
+        "header_offset": 816,
+        "value_offset": 824,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 826
+      },
+      {
+        "tag": "00280103",
+        "vr": "US",
+        "header_offset": 826,
+        "value_offset": 834,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 836
+      },
+      {
+        "tag": "00282110",
+        "vr": "CS",
+        "header_offset": 836,
+        "value_offset": 844,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 846
+      },
+      {
+        "tag": "00400555",
+        "vr": "SQ",
+        "header_offset": 846,
+        "value_offset": 858,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 858
+      },
+      {
+        "tag": "7FE00010",
+        "vr": "OB",
+        "header_offset": 858,
+        "value_offset": 870,
+        "logical_length": 768,
+        "encoded_value_length": 768,
+        "end_offset": 1638
+      }
+    ]
+  },
+  "rgb1x3_odd": {
+    "object_bytes": 880,
+    "elements": [
+      {
+        "tag": "00020000",
+        "vr": "UL",
+        "header_offset": 132,
+        "value_offset": 140,
+        "logical_length": 4,
+        "encoded_value_length": 4,
+        "end_offset": 144
+      },
+      {
+        "tag": "00020001",
+        "vr": "OB",
+        "header_offset": 144,
+        "value_offset": 156,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 158
+      },
+      {
+        "tag": "00020002",
+        "vr": "UI",
+        "header_offset": 158,
+        "value_offset": 166,
+        "logical_length": 30,
+        "encoded_value_length": 30,
+        "end_offset": 196
+      },
+      {
+        "tag": "00020003",
+        "vr": "UI",
+        "header_offset": 196,
+        "value_offset": 204,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 248
+      },
+      {
+        "tag": "00020010",
+        "vr": "UI",
+        "header_offset": 248,
+        "value_offset": 256,
+        "logical_length": 19,
+        "encoded_value_length": 20,
+        "end_offset": 276
+      },
+      {
+        "tag": "00020012",
+        "vr": "UI",
+        "header_offset": 276,
+        "value_offset": 284,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 328
+      },
+      {
+        "tag": "00020013",
+        "vr": "SH",
+        "header_offset": 328,
+        "value_offset": 336,
+        "logical_length": 12,
+        "encoded_value_length": 12,
+        "end_offset": 348
+      },
+      {
+        "tag": "00080008",
+        "vr": "CS",
+        "header_offset": 348,
+        "value_offset": 356,
+        "logical_length": 16,
+        "encoded_value_length": 16,
+        "end_offset": 372
+      },
+      {
+        "tag": "00080016",
+        "vr": "UI",
+        "header_offset": 372,
+        "value_offset": 380,
+        "logical_length": 30,
+        "encoded_value_length": 30,
+        "end_offset": 410
+      },
+      {
+        "tag": "00080018",
+        "vr": "UI",
+        "header_offset": 410,
+        "value_offset": 418,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 462
+      },
+      {
+        "tag": "00080020",
+        "vr": "DA",
+        "header_offset": 462,
+        "value_offset": 470,
+        "logical_length": 8,
+        "encoded_value_length": 8,
+        "end_offset": 478
+      },
+      {
+        "tag": "00080030",
+        "vr": "TM",
+        "header_offset": 478,
+        "value_offset": 486,
+        "logical_length": 6,
+        "encoded_value_length": 6,
+        "end_offset": 492
+      },
+      {
+        "tag": "00080050",
+        "vr": "SH",
+        "header_offset": 492,
+        "value_offset": 500,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 500
+      },
+      {
+        "tag": "00080060",
+        "vr": "CS",
+        "header_offset": 500,
+        "value_offset": 508,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 510
+      },
+      {
+        "tag": "00080070",
+        "vr": "LO",
+        "header_offset": 510,
+        "value_offset": 518,
+        "logical_length": 19,
+        "encoded_value_length": 20,
+        "end_offset": 538
+      },
+      {
+        "tag": "00080090",
+        "vr": "PN",
+        "header_offset": 538,
+        "value_offset": 546,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 546
+      },
+      {
+        "tag": "00100010",
+        "vr": "PN",
+        "header_offset": 546,
+        "value_offset": 554,
+        "logical_length": 13,
+        "encoded_value_length": 14,
+        "end_offset": 568
+      },
+      {
+        "tag": "00100020",
+        "vr": "LO",
+        "header_offset": 568,
+        "value_offset": 576,
+        "logical_length": 8,
+        "encoded_value_length": 8,
+        "end_offset": 584
+      },
+      {
+        "tag": "00100030",
+        "vr": "DA",
+        "header_offset": 584,
+        "value_offset": 592,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 592
+      },
+      {
+        "tag": "00100040",
+        "vr": "CS",
+        "header_offset": 592,
+        "value_offset": 600,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 600
+      },
+      {
+        "tag": "0020000D",
+        "vr": "UI",
+        "header_offset": 600,
+        "value_offset": 608,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 652
+      },
+      {
+        "tag": "0020000E",
+        "vr": "UI",
+        "header_offset": 652,
+        "value_offset": 660,
+        "logical_length": 44,
+        "encoded_value_length": 44,
+        "end_offset": 704
+      },
+      {
+        "tag": "00200010",
+        "vr": "SH",
+        "header_offset": 704,
+        "value_offset": 712,
+        "logical_length": 3,
+        "encoded_value_length": 4,
+        "end_offset": 716
+      },
+      {
+        "tag": "00200011",
+        "vr": "IS",
+        "header_offset": 716,
+        "value_offset": 724,
+        "logical_length": 1,
+        "encoded_value_length": 2,
+        "end_offset": 726
+      },
+      {
+        "tag": "00200013",
+        "vr": "IS",
+        "header_offset": 726,
+        "value_offset": 734,
+        "logical_length": 1,
+        "encoded_value_length": 2,
+        "end_offset": 736
+      },
+      {
+        "tag": "00200020",
+        "vr": "CS",
+        "header_offset": 736,
+        "value_offset": 744,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 744
+      },
+      {
+        "tag": "00280002",
+        "vr": "US",
+        "header_offset": 744,
+        "value_offset": 752,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 754
+      },
+      {
+        "tag": "00280004",
+        "vr": "CS",
+        "header_offset": 754,
+        "value_offset": 762,
+        "logical_length": 3,
+        "encoded_value_length": 4,
+        "end_offset": 766
+      },
+      {
+        "tag": "00280006",
+        "vr": "US",
+        "header_offset": 766,
+        "value_offset": 774,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 776
+      },
+      {
+        "tag": "00280010",
+        "vr": "US",
+        "header_offset": 776,
+        "value_offset": 784,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 786
+      },
+      {
+        "tag": "00280011",
+        "vr": "US",
+        "header_offset": 786,
+        "value_offset": 794,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 796
+      },
+      {
+        "tag": "00280100",
+        "vr": "US",
+        "header_offset": 796,
+        "value_offset": 804,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 806
+      },
+      {
+        "tag": "00280101",
+        "vr": "US",
+        "header_offset": 806,
+        "value_offset": 814,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 816
+      },
+      {
+        "tag": "00280102",
+        "vr": "US",
+        "header_offset": 816,
+        "value_offset": 824,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 826
+      },
+      {
+        "tag": "00280103",
+        "vr": "US",
+        "header_offset": 826,
+        "value_offset": 834,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 836
+      },
+      {
+        "tag": "00282110",
+        "vr": "CS",
+        "header_offset": 836,
+        "value_offset": 844,
+        "logical_length": 2,
+        "encoded_value_length": 2,
+        "end_offset": 846
+      },
+      {
+        "tag": "00400555",
+        "vr": "SQ",
+        "header_offset": 846,
+        "value_offset": 858,
+        "logical_length": 0,
+        "encoded_value_length": 0,
+        "end_offset": 858
+      },
+      {
+        "tag": "7FE00010",
+        "vr": "OB",
+        "header_offset": 858,
+        "value_offset": 870,
+        "logical_length": 9,
+        "encoded_value_length": 10,
+        "end_offset": 880
+      }
+    ],
+    "pad_byte": 0,
+    "pad_offset": 879
+  },
+  "notes": [
+    "File Meta and dataset SOP identities must match.",
+    "The odd fixture uses a distinct test instance UID.",
+    "Header offsets are a specification witness only; native writer and independent-oracle checks belong to DF-1."
+  ]
+}
